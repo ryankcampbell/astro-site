@@ -287,7 +287,7 @@ function renderObs() {
         ((e.sky || []).length ? `<div class="ob-h">What's up</div><ul>${e.sky.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '') +
         ((e.bring || []).length ? `<div class="ob-h">Bring</div><ul>${e.bring.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '') +
         (e.note ? `<p class="ob-note">${esc(e.note)}</p>` : '') +
-        (e.link ? `<p><a href="${esc(e.link)}" target="_blank" rel="noopener">More details ↗</a></p>` : '');
+        (e.link ? `<p><a href="${esc(e.link)}" target="_blank" rel="noopener">${esc(e.link_label || 'More details ↗')}</a></p>` : '');
       inner.appendChild(c);
     });
     const places = Object.values(S.data.places || {});

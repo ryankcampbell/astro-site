@@ -891,7 +891,6 @@
    "date": "2026-10-02",
    "title": "Saturn at its best",
    "place": "stub",
-   "place_tbc": true,
    "time": "time to be announced",
    "optional": true,
    "sky": [
@@ -906,7 +905,9 @@
     "A pencil and paper for sketching",
     "Water and a snack"
    ],
-   "note": "Optional for the class. Computed for Portland with Astronomy Engine."
+   "note": "Optional for the class. We observe together with a local observing group; weather calls and timing are posted on their Discord. Sky times computed for Portland with Astronomy Engine.",
+   "link": "https://discord.com/channels/634566525197615114/1536816037826400436",
+   "link_label": "Updates and last-minute changes: the observing group's Discord ↗"
   }
  ],
  "places": {
