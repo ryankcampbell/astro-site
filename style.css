@@ -310,46 +310,37 @@ p.pane-sub{margin:0 0 16px;color:var(--ink-3)}
   .st-wrap,.inner{padding:16px 16px 60px}
 }
 
-/* ── printable duplex flashcards (study.js printCards) ── */
+/* inline SVG figures (study sets) */
+.fig{color:var(--ink-2);display:flex;justify-content:center}
+.fig svg{width:100%;height:auto;max-height:240px;overflow:visible}
+.q-fig{margin-top:12px;padding:10px;border:1px solid var(--line-soft);border-radius:10px;background:var(--bg)}
+.q-fig.small .fig svg{max-height:140px}
+.fc-side .fig{width:100%;margin-bottom:.8rem}
+.fc-side .fig svg{max-height:150px}
+@media (min-width:640px){.fc-side .fig svg{max-height:170px}}
+/* ── printable duplex flashcards (study.js printCards) ──
+   Designed to survive whatever margins the browser imposes: 0.5 in @page margins, and the
+   whole sheet (cards + note) fits in 7.5 × 9.95 in, so headers/footers land in the margin and a
+   sheet never spills onto a second page.  Left and right margins are equal, so the mirrored
+   backs still line up on a long-edge flip. */
 .st-tools{display:flex;gap:14px}
 #printroot{display:none}
 @media print{
-  @page{size:letter portrait;margin:0}
-  body.printing-cards{overflow:visible;background:#fff}
+  @page{size:letter portrait;margin:.5in}
+  html,body.printing-cards{height:auto;overflow:visible;background:#fff}
   body.printing-cards>*:not(#printroot){display:none!important}
   body.printing-cards #printroot{display:block}
-  .pr-page{position:relative;width:8.5in;height:11in;page-break-after:always;break-after:page;overflow:hidden;background:#fff;color:#0f172a}
-  .pr-card{position:absolute;width:3.75in;height:2.5in;border:1px dashed #94a3b8;padding:.22in .25in;
+  .pr-page{position:relative;width:7.5in;height:9.95in;overflow:hidden;background:#fff;color:#0f172a;
+    break-after:page;page-break-after:always;break-inside:avoid}
+  .pr-page:last-child{break-after:auto;page-break-after:auto}
+  .pr-card{position:absolute;width:3.75in;height:2.45in;border:1px dashed #94a3b8;padding:.22in .25in;box-sizing:border-box;
     display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-  .pr-tag{position:absolute;top:.12in;left:.18in;font:600 8pt -apple-system,Helvetica,sans-serif;color:#6366f1;letter-spacing:.04em}
+  .pr-tag{position:absolute;top:.1in;left:.16in;font:600 8pt -apple-system,Helvetica,sans-serif;color:#6366f1;letter-spacing:.04em}
   .pr-content{font:13pt/1.4 -apple-system,Helvetica,sans-serif}
   .pr-back .pr-content{font-size:11pt}
-  .pr-foot{position:absolute;bottom:.1in;right:.18in;font:7pt -apple-system,Helvetica,sans-serif;color:#94a3b8}
-  .pr-note{position:absolute;bottom:.18in;left:.5in;font:8pt -apple-system,Helvetica,sans-serif;color:#94a3b8}
+  .pr-foot{position:absolute;bottom:.08in;right:.16in;font:7pt -apple-system,Helvetica,sans-serif;color:#94a3b8}
+  .pr-note{position:absolute;bottom:0;left:0;right:0;font:8pt -apple-system,Helvetica,sans-serif;color:#94a3b8}
   .pr-page .katex{font-size:1.05em}
+  .pr-card .fig{color:#334155;width:100%;margin-bottom:.06in}
+  .pr-card .fig svg{max-height:.95in}
 }
-
-/* study & quiz prep picker */
-.pick-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
-.pick-row{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);cursor:pointer}
-.pick-row:hover{border-color:var(--accent-line)}
-.pick-row input{width:18px;height:18px;accent-color:var(--accent)}
-.pick-row.later{opacity:.6}
-.pick-date{width:70px;font-size:12px;color:var(--ink-3);font-weight:600}
-.pick-title{flex:1}
-.pick-title b{color:var(--accent-ink);font-weight:600}
-.pick-n{font-size:12px;color:var(--ink-4);white-space:nowrap}
-.pick-quick{display:flex;gap:16px;margin:4px 0 6px}
-@media (max-width:760px){.pick-n{display:none}.pick-date{width:52px}}
-
-/* observing */
-.evmore{margin-top:4px;font-weight:600}
-.obcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:16px}
-.obcard.next{border-color:var(--accent-line);box-shadow:0 0 0 3px var(--accent-bg),var(--shadow)}
-.ob-when{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-3);font-weight:600}
-.ob-title{margin:6px 0 8px;font-size:22px;letter-spacing:-.01em}
-.ob-place{font-size:14px}
-.ob-note{color:var(--ink-3);font-size:13px;margin-top:4px}
-.ob-h{margin:14px 0 4px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
-.obcard ul{margin:0;padding-left:20px}
-.obcard li{margin:3px 0}

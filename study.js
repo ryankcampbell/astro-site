@@ -89,6 +89,15 @@ function parseNum(s) {
   return NaN;
 }
 
+/* ── figures ──────────────────────────────────────────────────────────
+   A question or card may carry an inline SVG ("figure", and for cards "figure_back").
+   Params are filled like the stem, so a figure can redraw for each attempt.  Lines and text use
+   currentColor, so figures follow the page's ink in day and night mode. */
+function figHTML(svg, q, vals) {
+  if (!svg || !/^\s*<svg[\s>]/.test(svg)) return '';
+  return `<div class="fig">${q ? fill(svg, q, vals) : svg}</div>`;
+}
+
 /* ── flashcards ──────────────────────────────────────────────────────── */
 
 function flashcards(mount, set, ctx) {
@@ -133,8 +142,8 @@ function flashcards(mount, set, ctx) {
     card.setAttribute('aria-pressed', String(flipped));
     card.innerHTML =
       `<div class="fc-side fc-front"><span class="fc-face">${c.tag === 'EX' || c.tag === 'OUT' || c.tag === 'DIAG' ? 'Try it' : 'Front'}</span>` +
-      `<div class="fc-content">${c.front}</div><span class="fc-hint">Tap or press Space to flip</span></div>` +
-      `<div class="fc-side fc-back"><span class="fc-face">Back</span><div class="fc-content">${c.back}</div>` +
+      `${figHTML(c.figure)}<div class="fc-content">${c.front}</div><span class="fc-hint">Tap or press Space to flip</span></div>` +
+      `<div class="fc-side fc-back"><span class="fc-face">Back</span>${figHTML(c.figure_back)}<div class="fc-content">${c.back}</div>` +
       `<span class="fc-hint">Tap to flip back</span></div>`;
     card.onclick = () => { flipped = !flipped; card.classList.toggle('flipped', flipped); card.setAttribute('aria-pressed', String(flipped)); rate.classList.toggle('show', flipped); };
     scene.appendChild(card);
@@ -189,8 +198,8 @@ function flashcards(mount, set, ctx) {
 }
 
 /* ── printable duplex cards ──────────────────────────────────────────
-   US Letter, zero page margins, fixed inch geometry: 2 columns × 4 rows of 3.75 × 2.5 in
-   cards inside a 0.5 in border.  Sheets alternate FRONTS, BACKS.  On the backs page each row's
+   US Letter, 0.5 in page margins, fixed inch geometry: 2 columns × 4 rows of 3.75 × 2.45 in
+   cards filling the 7.5 in wide printable area (see style.css for why not zero margins).  Sheets alternate FRONTS, BACKS.  On the backs page each row's
    columns are swapped, which is exactly what a long-edge duplex flip does to a portrait sheet,
    so every back lands behind its own front.  Dashed cut lines; corner ticks for checking. */
 function printCards(set) {
@@ -205,14 +214,14 @@ function printCards(set) {
       const row = Math.floor(k / COLS), col = k % COLS;
       const x = back ? COLS - 1 - col : col;
       const cell = h('div', 'pr-card' + (back ? ' pr-back' : ''));
-      cell.style.left = (0.5 + 3.75 * x) + 'in';
-      cell.style.top = (0.5 + 2.5 * row) + 'in';
+      cell.style.left = (3.75 * x) + 'in';
+      cell.style.top = (2.45 * row) + 'in';
       cell.innerHTML = back
-        ? `<div class="pr-content">${c.back}</div><div class="pr-foot">${esc(set.code || '')}</div>`
-        : `<div class="pr-tag">${esc(c.tag)}${TAGS[c.tag] ? ' · ' + esc(TAGS[c.tag]) : ''}</div><div class="pr-content">${c.front}</div><div class="pr-foot">${esc(set.title || '')} · ${esc(set.code || '')}</div>`;
+        ? `${figHTML(c.figure_back)}<div class="pr-content">${c.back}</div><div class="pr-foot">${esc(set.code || '')}</div>`
+        : `<div class="pr-tag">${esc(c.tag)}${TAGS[c.tag] ? ' · ' + esc(TAGS[c.tag]) : ''}</div>${figHTML(c.figure)}<div class="pr-content">${c.front}</div><div class="pr-foot">${esc(set.title || '')} · ${esc(set.code || '')}</div>`;
       pg.appendChild(cell);
     });
-    pg.appendChild(h('div', 'pr-note', back ? 'Backs' : `Fronts · print double-sided, <b>flip on long edge</b>, 100% scale (no "fit to page")`));
+    pg.appendChild(h('div', 'pr-note', back ? 'Backs' : `Fronts · print double-sided, <b>flip on long edge</b>, scale 100%, headers and footers off`));
     return pg;
   };
   for (let k = 0; k < cards.length; k += PER) {
@@ -276,7 +285,7 @@ function practice(mount, set, ctx) {
     const grid = h('div', 'q-grid' + (q.figure ? ' two' : ''));
     const left = h('div', 'q-left');
     left.appendChild(h('div', 'q-stem', fill(q.stem, q, vals)));
-    if (q.figure) left.appendChild(h('div', 'q-fig', `<img alt="" src="${esc(q.figure)}">`));
+    if (q.figure) left.appendChild(h('div', 'q-fig', figHTML(q.figure, q, vals)));
     const right = h('div', 'q-right');
     grid.append(left, right);
     art.appendChild(grid);
@@ -338,7 +347,7 @@ function practice(mount, set, ctx) {
         inner.appendChild(h('div', 'res-att',
           `<div class="res-att-top"><span>${esc(a.q.type || '')}</span>` +
           `<span class="${a.correct ? 'ok' : 'no'}">${a.correct ? '✓ Correct' : '✗ Not quite'}</span></div>` +
-          `<div class="q-stem small">${a.stem}</div>${a.shown ? `<div class="q-shown">${a.shown}</div>` : ''}`));
+          `${a.q.figure ? `<div class="q-fig small">${figHTML(a.q.figure, a.q, a.vals)}</div>` : ''}<div class="q-stem small">${a.stem}</div>${a.shown ? `<div class="q-shown">${a.shown}</div>` : ''}`));
       });
       det.appendChild(inner);
       li.appendChild(det);
