@@ -413,7 +413,17 @@
         }
        ]
       }
-     ]
+     ],
+     "study": {
+      "id": "study-1-3b",
+      "kind": "study",
+      "title": "Orbits and time",
+      "cards": 8,
+      "questions": 16,
+      "file": "s/1-3b.json",
+      "hash": "e417681d33a51eac0ca0d7c8ae5c5eebb0d88b0d8a94c0b722eec7fa679e65d8",
+      "bytes": 13160
+     }
     },
     {
      "n": 12,
@@ -875,5 +885,42 @@
    ]
   }
  ],
- "events": []
+ "events": [
+  {
+   "id": "2026-10-02",
+   "date": "2026-10-02",
+   "title": "Saturn at its best",
+   "place": "stub",
+   "place_tbc": true,
+   "time": "time to be announced",
+   "optional": true,
+   "sky": [
+    "6:48 pm sunset; properly dark by about 7:50 pm",
+    "Saturn rises at 6:58 pm in the east; best from about 9 pm (25° up in the ESE by 9:30). Its opposition is Sunday, and the rings are nearly edge-on this year (about 7°), so sketch them.",
+    "The Moon rises at 10:42 pm (just past last quarter), so the sky is dark until then: good for star clusters and the Andromeda Galaxy.",
+    "No other bright planets are up in the evening."
+   ],
+   "bring": [
+    "Warm layers, a hat and gloves",
+    "A red flashlight (or red cellophane over a phone light)",
+    "A pencil and paper for sketching",
+    "Water and a snack"
+   ],
+   "note": "Optional for the class. Computed for Portland with Astronomy Engine."
+  }
+ ],
+ "places": {
+  "gabriel": {
+   "name": "Gabriel Park",
+   "area": "SW Portland",
+   "map": "https://www.google.com/maps/search/?api=1&query=Gabriel+Park+Portland+OR",
+   "note": "In the city: bright planets, the Moon and double stars show well; faint galaxies do not."
+  },
+  "stub": {
+   "name": "L.L. Stub Stewart State Park",
+   "area": "about 35 miles west of Portland",
+   "map": "https://www.google.com/maps/search/?api=1&query=L.L.+Stub+Stewart+State+Park",
+   "note": "Dark sky: the Milky Way, star clusters and galaxies are visible. Allow about 45 minutes to drive; dress for a cold hilltop."
+  }
+ }
 }

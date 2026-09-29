@@ -96,7 +96,7 @@ body.ready #boot{display:none}
 
 /* rail sections */
 .rsec{padding:10px 16px 4px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-4)}
-.evcard{margin:8px 10px 2px;padding:10px 12px;border-radius:10px;border:1px solid var(--accent-line);background:var(--accent-bg);color:var(--accent-ink);font-size:12px}
+.evcard{display:block;width:calc(100% - 20px);text-align:left;margin:8px 10px 2px;padding:10px 12px;border-radius:10px;border:1px solid var(--accent-line);background:var(--accent-bg);color:var(--accent-ink);font-size:12px}
 .evcard b{display:block;font-size:13px}
 .drow{width:calc(100% - 12px);margin:1px 6px;text-align:left;display:flex;gap:10px;align-items:flex-start;padding:7px 10px;border-radius:8px}
 .drow:hover{background:var(--line-soft)}
@@ -341,3 +341,15 @@ p.pane-sub{margin:0 0 16px;color:var(--ink-3)}
 .pick-n{font-size:12px;color:var(--ink-4);white-space:nowrap}
 .pick-quick{display:flex;gap:16px;margin:4px 0 6px}
 @media (max-width:760px){.pick-n{display:none}.pick-date{width:52px}}
+
+/* observing */
+.evmore{margin-top:4px;font-weight:600}
+.obcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:16px}
+.obcard.next{border-color:var(--accent-line);box-shadow:0 0 0 3px var(--accent-bg),var(--shadow)}
+.ob-when{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-3);font-weight:600}
+.ob-title{margin:6px 0 8px;font-size:22px;letter-spacing:-.01em}
+.ob-place{font-size:14px}
+.ob-note{color:var(--ink-3);font-size:13px;margin-top:4px}
+.ob-h{margin:14px 0 4px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.obcard ul{margin:0;padding-left:20px}
+.obcard li{margin:3px 0}

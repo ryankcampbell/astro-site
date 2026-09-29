@@ -1,0 +1,389 @@
+{
+  "code": "1.3b",
+  "title": "Orbits and time",
+  "version": 1,
+  "cards": [
+    {
+      "id": "1.3b-c1",
+      "tag": "CON",
+      "front": "Age of the universe, $t_{\\rm universe}$",
+      "back": "$t_{\\rm universe} = 13.8$ Gyr $= 13.8$ billion years $= 1.38\\times10^{10}$ yr. (1 Gyr $= 10^{9}$ yr.) The longest time there is."
+    },
+    {
+      "id": "1.3b-c2",
+      "tag": "CON",
+      "front": "Age of the solar system, $t_{\\rm solar\\ system}$",
+      "back": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. The Sun, Earth and the planets are about a third as old as the universe."
+    },
+    {
+      "id": "1.3b-c3",
+      "tag": "CON",
+      "front": "Time for the Sun to orbit the Milky Way once, $t_{\\rm orbit\\ Milky\\ Way}$",
+      "back": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. (1 Myr $= 10^{6}$ yr.) In 4.56 Gyr the Sun has been around about 19 times."
+    },
+    {
+      "id": "1.3b-c4",
+      "tag": "DEF",
+      "front": "Orbital velocity, $v_{\\rm orb}$",
+      "back": "The speed any planet orbits at: the distance once around its orbit divided by the time to go once around (that planet's year). Closer planets orbit faster."
+    },
+    {
+      "id": "1.3b-c5",
+      "tag": "EQ",
+      "front": "The orbital velocity equation",
+      "back": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$, where $r$ = radius of the orbit (m or km), $t$ = time for one orbit, the planet's year (s). It is $v = \\dfrac{d}{t}$ with $d = 2\\pi r$, the circumference of the orbit."
+    },
+    {
+      "id": "1.3b-c6",
+      "tag": "CON",
+      "front": "Earth's orbital velocity",
+      "back": "$v_{\\rm orb} = 30$ km/s $= 3\\times10^{4}$ m/s for Earth. Memorize this one."
+    },
+    {
+      "id": "1.3b-c7",
+      "tag": "EX",
+      "front": "Work an example: calculate the Earth's orbital velocity ($r = 1.5\\times10^{11}$ m)",
+      "back": "$d = 2\\pi r = 2\\pi(1.5\\times10^{11}\\ \\text{m}) = 9.42\\times10^{11}$ m. $t = 365\\times24\\times60\\times60 = 3.15\\times10^{7}$ s. $v_{\\rm orb} = \\dfrac{d}{t} = \\dfrac{9.42\\times10^{11}\\ \\text{m}}{3.15\\times10^{7}\\ \\text{s}} = 2.99\\times10^{4}$ m/s $= 30$ km/s."
+    },
+    {
+      "id": "1.3b-c8",
+      "tag": "OUT",
+      "front": "Outline: finding any planet's orbital velocity",
+      "back": "1. Distance once around: $d = 2\\pi r$ (AU to m: $\\times 1.5\\times10^{11}$). 2. Time once around, in seconds: years $\\times\\ 3.15\\times10^{7}$ s. 3. Divide: $v_{\\rm orb} = \\dfrac{d}{t}$ in m/s. 4. Divide by 1000 for km/s."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1.3b-001",
+      "skills": [
+        "1.3b-c1"
+      ],
+      "type": "memory",
+      "dok": 1,
+      "format": "mc",
+      "stem": "How old is the universe?",
+      "choices": [
+        "4.56 Gyr",
+        "240 Myr",
+        "13.8 Gyr",
+        "13.8 Myr"
+      ],
+      "answer": 2,
+      "explain": "$t_{\\rm universe} = 13.8$ Gyr, 13.8 billion years. 4.56 Gyr is the age of the solar system, and 240 Myr is one trip of the Sun around the Milky Way."
+    },
+    {
+      "id": "1.3b-002",
+      "skills": [
+        "1.3b-c2"
+      ],
+      "type": "memory",
+      "dok": 1,
+      "format": "mc",
+      "stem": "How old is the solar system (the Sun, Earth and the planets)?",
+      "choices": [
+        "13.8 Gyr",
+        "4.56 Gyr",
+        "240 Myr",
+        "4.56 Myr"
+      ],
+      "answer": 1,
+      "explain": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. Mind the prefix: 4.56 Myr would be a thousand times too young."
+    },
+    {
+      "id": "1.3b-003",
+      "skills": [
+        "1.3b-c3"
+      ],
+      "type": "memory",
+      "dok": 1,
+      "format": "mc",
+      "stem": "How long does the Sun take to go once around the center of the Milky Way?",
+      "choices": [
+        "240 Myr",
+        "240 years",
+        "1 year",
+        "13.8 Gyr"
+      ],
+      "answer": 0,
+      "explain": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. One year is Earth going once around the Sun, a much smaller orbit."
+    },
+    {
+      "id": "1.3b-004",
+      "skills": [
+        "1.3b-c6"
+      ],
+      "type": "memory",
+      "dok": 1,
+      "format": "mc",
+      "stem": "What is Earth's orbital velocity around the Sun?",
+      "choices": [
+        "3 km/s",
+        "300 km/s",
+        "$3\\times10^{5}$ km/s",
+        "30 km/s"
+      ],
+      "answer": 3,
+      "explain": "$v_{\\rm orb} = 30$ km/s for Earth. $3\\times10^{5}$ km/s is the speed of light, 10,000 times faster."
+    },
+    {
+      "id": "1.3b-005",
+      "skills": [
+        "1.3b-c4",
+        "1.3b-c5"
+      ],
+      "type": "memory",
+      "dok": 1,
+      "format": "mc",
+      "stem": "Which is the orbital velocity equation?",
+      "choices": [
+        "$v_{\\rm orb} = 2\\pi r t$",
+        "$v_{\\rm orb} = \\dfrac{\\pi r^2}{t}$",
+        "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$",
+        "$v_{\\rm orb} = \\dfrac{t}{2\\pi r}$"
+      ],
+      "answer": 2,
+      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the distance once around, the circumference $2\\pi r$, divided by the time once around. $\\pi r^2$ is the area inside the orbit, not the distance along it."
+    },
+    {
+      "id": "1.3b-006",
+      "skills": [
+        "1.3b-c5",
+        "1.3b-c8"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "numeric",
+      "params": {
+        "r": {
+          "min": 0.5,
+          "max": 3,
+          "step": 0.1
+        },
+        "t": {
+          "min": 0.5,
+          "max": 4,
+          "step": 0.1
+        }
+      },
+      "stem": "A planet around another star orbits {r} AU from its star, and its year is {t} Earth years long. What is its orbital velocity in km/s? (1 AU $= 1.5\\times10^{8}$ km, 1 yr $= 3.15\\times10^{7}$ s)",
+      "answer": "2*3.1416*r*1.5e8/(t*3.15e7)",
+      "tol": 0.03,
+      "units": "km/s",
+      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r})(1.5\\times10^{8}\\ \\text{km})}{({t})(3.15\\times10^{7}\\ \\text{s})} =$ {answer} km/s. Distance in km over time in seconds gives km/s directly."
+    },
+    {
+      "id": "1.3b-007",
+      "skills": [
+        "1.3b-c6"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "numeric",
+      "params": {
+        "n": {
+          "min": 1,
+          "max": 50,
+          "step": 1
+        }
+      },
+      "stem": "Earth moves along its orbit at $v_{\\rm orb} = 30$ km/s. How many km does Earth travel in {n} minutes?",
+      "answer": "30*n*60",
+      "tol": 0.03,
+      "units": "km",
+      "explain": "$d = v t = (30\\ \\text{km/s})({n}\\times60\\ \\text{s}) =$ {answer} km. That is 1,800 km every minute, and you feel none of it."
+    },
+    {
+      "id": "1.3b-008",
+      "skills": [
+        "1.3b-c3"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "numeric",
+      "params": {
+        "T": {
+          "min": 1,
+          "max": 4,
+          "step": 0.1
+        }
+      },
+      "stem": "The Sun goes once around the Milky Way every 240 Myr. How many times has it gone around in the last {T} Gyr?",
+      "answer": "T*1000/240",
+      "tol": 0.03,
+      "units": "times",
+      "explain": "Same units first: ${T}$ Gyr $= {T}\\times1000$ Myr. Number of orbits $= \\dfrac{{T}\\times1000\\ \\text{Myr}}{240\\ \\text{Myr}} =$ {answer} times."
+    },
+    {
+      "id": "1.3b-009",
+      "skills": [
+        "1.3b-c3"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "numeric",
+      "params": {
+        "T": {
+          "min": 10,
+          "max": 200,
+          "step": 1
+        }
+      },
+      "stem": "A fossil is {T} Myr old. How many seconds ago did that creature live? (1 yr $= 3.15\\times10^{7}$ s)",
+      "answer": "T*1e6*3.15e7",
+      "tol": 0.03,
+      "units": "s",
+      "explain": "1 Myr $= 10^{6}$ yr, so $t = ({T}\\times10^{6}\\ \\text{yr})\\left(3.15\\times10^{7}\\ \\dfrac{\\text{s}}{\\text{yr}}\\right) =$ {answer} s."
+    },
+    {
+      "id": "1.3b-010",
+      "skills": [
+        "1.3b-c5"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "numeric",
+      "params": {
+        "r": {
+          "min": 6700,
+          "max": 7200,
+          "step": 10
+        },
+        "t": {
+          "min": 90,
+          "max": 100,
+          "step": 0.5
+        }
+      },
+      "stem": "A satellite circles Earth {r} km from Earth's center and goes around once every {t} minutes. What is its orbital velocity in km/s?",
+      "answer": "2*3.1416*r/(t*60)",
+      "tol": 0.03,
+      "units": "km/s",
+      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r}\\ \\text{km})}{({t})(60\\ \\text{s})} =$ {answer} km/s. The time has to be in seconds to get km/s."
+    },
+    {
+      "id": "1.3b-011",
+      "skills": [
+        "1.3b-c5",
+        "1.3b-c6"
+      ],
+      "type": "procedural",
+      "dok": 3,
+      "format": "numeric",
+      "params": {
+        "r": {
+          "min": 0.5,
+          "max": 3,
+          "step": 0.1
+        },
+        "t": {
+          "min": 0.5,
+          "max": 4,
+          "step": 0.1
+        }
+      },
+      "stem": "A planet around another star orbits {r} AU from its star, with a year {t} Earth years long. Use the relative form: its orbital velocity is how many times Earth's?",
+      "answer": "r/t",
+      "tol": 0.03,
+      "units": "times",
+      "explain": "Divide the equation for the planet by the one for Earth: $\\dfrac{v_{\\rm orb}}{v_{{\\rm orb},\\oplus}} = \\dfrac{2\\pi r/ t }{2\\pi(1\\ \\text{AU})/(1\\ \\text{yr})}$. The $2\\pi$ cancels, leaving $\\dfrac{ {r}\\ \\text{AU}/1\\ \\text{AU} }{ {t}\\ \\text{yr}/1\\ \\text{yr} } =$ {answer} times, or about {answer} $\\times$ 30 km/s."
+    },
+    {
+      "id": "1.3b-012",
+      "skills": [
+        "1.3b-c2"
+      ],
+      "type": "procedural",
+      "dok": 2,
+      "format": "slider",
+      "scale": "log",
+      "min": 10,
+      "max": 20,
+      "stem": "Order of magnitude: how many seconds old is the solar system? Pick the power of ten.",
+      "answer": "4.56e9*3.15e7",
+      "tol_dex": 0.5,
+      "units": "s",
+      "explain": "$t = (4.56\\times10^{9}\\ \\text{yr})(3.15\\times10^{7}\\ \\text{s/yr}) = 1.44\\times10^{17}$ s. Multiply the $10^{9}$ and $10^{7}$ by adding the powers: $10^{16}$, and $4.56\\times3.15 \\approx 14$ bumps it to $10^{17}$."
+    },
+    {
+      "id": "1.3b-013",
+      "skills": [
+        "1.3b-c1",
+        "1.3b-c2",
+        "1.3b-c3"
+      ],
+      "type": "conceptual",
+      "dok": 2,
+      "format": "order",
+      "stem": "Put these lengths of time in order, shortest first.",
+      "items": [
+        "Light from the Sun to reach Earth",
+        "Earth to spin once on its axis",
+        "The Moon to go through all its phases",
+        "Earth to go once around the Sun",
+        "A human lifetime",
+        "The Sun to go once around the Milky Way",
+        "The age of the solar system",
+        "The age of the universe"
+      ],
+      "explain": "8.3 min, 24 hr, about a month (29.5 days), 1 yr, about 80 yr, 240 Myr, 4.56 Gyr, 13.8 Gyr. The list runs from $10^{-5}$ yr up to $10^{10}$ yr: fifteen orders of magnitude."
+    },
+    {
+      "id": "1.3b-014",
+      "skills": [
+        "1.3b-c4",
+        "1.3b-c6"
+      ],
+      "type": "conceptual",
+      "dok": 2,
+      "format": "order",
+      "stem": "Put these planets in order of orbital velocity, fastest first.",
+      "items": [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Neptune"
+      ],
+      "explain": "Closer planets orbit faster. Mercury is about 48 km/s, Earth 30 km/s, Jupiter 13 km/s, and Neptune only about 5 km/s. You will find out why with Kepler and Newton."
+    },
+    {
+      "id": "1.3b-015",
+      "skills": [
+        "1.3b-c4",
+        "1.3b-c5"
+      ],
+      "type": "conceptual",
+      "dok": 2,
+      "format": "mc",
+      "stem": "Uranus is about 19 times farther from the Sun than Earth, so its path once around is 19 times longer. Its year is 84 Earth years. Compared with Earth, Uranus orbits…",
+      "choices": [
+        "slower, because its year grows more than its path does",
+        "faster, because its path is 19 times longer",
+        "at the same speed, because all planets orbit at 30 km/s",
+        "you cannot tell without its mass"
+      ],
+      "answer": 0,
+      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the top grows 19 times but the bottom grows 84 times, so $v_{\\rm orb} \\approx \\dfrac{19}{84}\\times30$ km/s $\\approx 7$ km/s. Farther out, slower."
+    },
+    {
+      "id": "1.3b-016",
+      "skills": [
+        "1.3b-c1",
+        "1.3b-c2"
+      ],
+      "type": "conceptual",
+      "dok": 2,
+      "format": "mc",
+      "stem": "The universe is about how many times older than the solar system?",
+      "choices": [
+        "About 1.5 times",
+        "About 3 times",
+        "About 10 times",
+        "About 60 times"
+      ],
+      "answer": 1,
+      "explain": "$\\dfrac{13.8\\ \\text{Gyr}}{4.56\\ \\text{Gyr}} \\approx 3$. The same order of magnitude: the solar system has been around for about a third of all time. (About 60 is how many 240 Myr trips around the Milky Way fit in 13.8 Gyr.)"
+    }
+  ]
+}

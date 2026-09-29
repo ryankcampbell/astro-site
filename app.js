@@ -120,6 +120,7 @@ function parseHash() {
   const h = decodeURIComponent(location.hash.replace(/^#/, ''));
   const p = h.split('/').filter(Boolean);
   if (p[0] === 'f') return { type: 'featured', world: p[1] || null, item: p[2] || null };
+  if (p[0] === 'obs') return { type: 'obs' };
   const um = /^u(\d)$/.exec(p[0] || '');
   if (um) {
     const n = +um[1];
@@ -152,7 +153,7 @@ function route() {
   renderUnits();
   renderRail();
   renderReader();
-  document.body.classList.toggle('reading', r.type === 'day' || r.type === 'schedule' || r.type === 'study' || (r.type === 'featured' && !!r.world));
+  document.body.classList.toggle('reading', r.type === 'day' || r.type === 'schedule' || r.type === 'study' || r.type === 'obs' || (r.type === 'featured' && !!r.world));
   $('#backbtn').hidden = !(isPhone() && document.body.classList.contains('reading'));
 }
 const isPhone = () => window.matchMedia('(max-width:760px)').matches;
@@ -161,7 +162,7 @@ const isPhone = () => window.matchMedia('(max-width:760px)').matches;
 
 function renderUnits() {
   const box = $('#units'); box.innerHTML = '';
-  const cur = S.route.type === 'featured' ? 'f' : S.route.unit;
+  const cur = S.route.type === 'featured' ? 'f' : S.route.type === 'obs' ? defaultUnit().unit : S.route.unit;
   units().forEach(u => {
     const b = el('button', 'utab' + (u.unit === cur ? ' on' : '') + (u.live ? '' : ' soon'), `U${u.unit}`);
     b.title = u.live ? u.title : `${u.title}: schedule coming`;
@@ -191,7 +192,7 @@ function renderRail() {
     renderSave(null);
     return;
   }
-  const u = unitOf(r.unit);
+  const u = unitOf(r.type === 'obs' ? defaultUnit().unit : r.unit);
   if (!u) return;
   renderEvents(body);
   if (!u.live) {
@@ -204,6 +205,12 @@ function renderRail() {
     `<div class="ddate">📅</div><div class="dmeta"><div class="dtitle">${esc(u.title)}</div><div class="dsub">Unit schedule</div></div>`);
   head.onclick = () => go(`#u${u.unit}/schedule`);
   body.appendChild(head);
+  if ((S.data.events || []).length) {
+    const ob = el('button', 'drow' + (r.type === 'obs' ? ' on' : ''),
+      `<div class="ddate">🔭</div><div class="dmeta"><div class="dtitle">Observing</div><div class="dsub">Where and when we look up next</div></div>`);
+    ob.onclick = () => go('#obs');
+    body.appendChild(ob);
+  }
   if (u.rows.some(x => x.study)) {
     const sp = el('button', 'drow' + (r.type === 'study' ? ' on' : ''),
       `<div class="ddate">🧠</div><div class="dmeta"><div class="dtitle">Study &amp; quiz prep</div><div class="dsub">Pick days; flashcards and practice</div></div>`);
@@ -235,17 +242,63 @@ function renderRail() {
   renderSave(u);
 }
 
+const placeOf = e => (S.data.places || {})[e.place] || (e.place ? { name: e.place } : null);
+const upcoming = () => (S.data.events || []).filter(e => e.date >= todayISO).sort((a, b) => a.date < b.date ? -1 : 1);
+function whenText(e) {
+  const d = new Date(e.date + 'T12:00:00');
+  const days = Math.round((d - new Date(todayISO + 'T12:00:00')) / 864e5);
+  const rel = days === 0 ? 'Tonight' : days === 1 ? 'Tomorrow' : days < 7 ? d.toLocaleDateString('en-US', { weekday: 'long' }) : '';
+  return { d, days, label: `${rel ? rel + ', ' : ''}${d.toLocaleDateString('en-US', { weekday: rel ? undefined : 'short', month: 'short', day: 'numeric' })}` };
+}
 function renderEvents(body) {
-  const soon = (S.data.events || []).filter(e => e.date >= todayISO).sort((a, b) => a.date < b.date ? -1 : 1);
-  soon.slice(0, 2).forEach(e => {
-    const d = new Date(e.date + 'T12:00:00');
-    const days = Math.round((d - new Date(todayISO + 'T12:00:00')) / 864e5);
-    if (days > 21) return;
-    const c = el('div', 'evcard', `<b>🔭 ${esc(e.title)}</b>${esc(MONTH[d.getMonth()])} ${d.getDate()}` +
-      `${e.time ? ', ' + esc(e.time) : ''}${e.place ? ' · ' + esc(e.place) : ''}` +
-      `${e.note ? `<div style="margin-top:4px">${esc(e.note)}</div>` : ''}` +
-      `${e.link ? `<div style="margin-top:4px"><a href="${esc(e.link)}" target="_blank" rel="noopener">Details ↗</a></div>` : ''}`);
+  upcoming().slice(0, 2).forEach(e => {
+    const w = whenText(e);
+    if (w.days > 21) return;
+    const pl = placeOf(e);
+    const c = el('button', 'evcard', `<b>🔭 ${esc(e.title)}</b>${esc(w.label)}${e.time ? ' · ' + esc(e.time) : ''}` +
+      `${pl ? `<div>${esc(pl.name)}${e.place_tbc ? ' (to be confirmed)' : ''}</div>` : ''}` +
+      `<div class="evmore">${e.optional ? 'Optional · ' : ''}Details →</div>`);
+    c.onclick = () => go('#obs');
     body.appendChild(c);
+  });
+}
+
+/* ── observing: #obs is the link to send students ─────────────────── */
+
+function renderObs() {
+  $('#dochead').innerHTML = `<div class="dh-kicker">Portland · observing with the class</div><h1 class="dh-title">🔭 Observing</h1>`;
+  clearStage('obs');
+  showPane('obs', p => {
+    p.innerHTML = '';
+    const inner = el('div', 'inner');
+    const up = upcoming();
+    if (!up.length) inner.appendChild(el('div', 'emptyday', '<b>No observing session is scheduled right now.</b>Check back soon.'));
+    up.forEach((e, k) => {
+      const w = whenText(e), pl = placeOf(e);
+      const c = el('div', 'obcard' + (k === 0 ? ' next' : ''));
+      c.innerHTML =
+        `<div class="ob-when">${k === 0 ? '<span class="tag today">Next</span>' : ''}${e.optional ? '<span class="tag">Optional</span>' : ''}` +
+        `<span>${esc(w.label)}${e.time ? ' · ' + esc(e.time) : ''}</span></div>` +
+        `<h2 class="ob-title">${esc(e.title)}</h2>` +
+        (pl ? `<div class="ob-place"><b>${esc(pl.name)}</b>${pl.area ? ', ' + esc(pl.area) : ''}` +
+              `${e.place_tbc ? ' <span class="tag quiz">to be confirmed</span>' : ''}` +
+              `${pl.map ? ` · <a href="${esc(pl.map)}" target="_blank" rel="noopener">Map ↗</a>` : ''}` +
+              `${pl.note ? `<div class="ob-note">${esc(pl.note)}</div>` : ''}</div>` : '') +
+        ((e.sky || []).length ? `<div class="ob-h">What's up</div><ul>${e.sky.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '') +
+        ((e.bring || []).length ? `<div class="ob-h">Bring</div><ul>${e.bring.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '') +
+        (e.note ? `<p class="ob-note">${esc(e.note)}</p>` : '') +
+        (e.link ? `<p><a href="${esc(e.link)}" target="_blank" rel="noopener">More details ↗</a></p>` : '');
+      inner.appendChild(c);
+    });
+    const places = Object.values(S.data.places || {});
+    if (places.length) {
+      inner.appendChild(el('div', 'ob-h', 'Where we usually go'));
+      const g = el('div', 'fgrid');
+      places.forEach(pl => g.appendChild(el('div', 'fcard', `<h3>${esc(pl.name)}</h3><p>${esc(pl.area || '')}</p><p>${esc(pl.note || '')}</p>` +
+        (pl.map ? `<a href="${esc(pl.map)}" target="_blank" rel="noopener">Map ↗</a>` : ''))));
+      inner.appendChild(g);
+    }
+    p.appendChild(inner);
   });
 }
 
@@ -292,6 +345,7 @@ function renderReader() {
   const head = $('#dochead'), chips = $('#chips');
   head.innerHTML = ''; chips.innerHTML = '';
   if (r.type === 'featured') return r.world ? renderWorld(r) : renderFeaturedGrid();
+  if (r.type === 'obs') return renderObs();
   const u = unitOf(r.unit);
   if (!u) return;
   if (r.type === 'schedule') return renderSchedule(u);
