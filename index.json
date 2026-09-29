@@ -198,6 +198,35 @@
      "short": "9/21",
      "note": "",
      "kind": "lesson",
+     "code": "1.2c",
+     "title": "Proportionality",
+     "labels": [
+      {
+       "text": "HW 1.2c",
+       "kind": "hw"
+      }
+     ],
+     "keys": [
+      "1.2c"
+     ],
+     "items": [
+      {
+       "id": "hw-1-2c",
+       "kind": "hw",
+       "title": "HW 1.2c",
+       "file": "p/hw-1-2c.pdf",
+       "hash": "8d6ecab5ebd61b44bd71c624501c01c10119eadd3bb792f31f593348451d9b89",
+       "bytes": 104439
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "date": "2026-09-22",
+     "dow": "Tue",
+     "short": "9/22",
+     "note": "early release 12:30",
+     "kind": "lesson",
      "code": "1.3a",
      "title": "Timescales in the Universe",
      "labels": [
@@ -255,35 +284,6 @@
       "hash": "85d54fba78e4f86b0d42e4909a53c5aa87928020ec6583e59cf48763790cb254",
       "bytes": 12890
      }
-    },
-    {
-     "n": 8,
-     "date": "2026-09-22",
-     "dow": "Tue",
-     "short": "9/22",
-     "note": "early release 12:30",
-     "kind": "lesson",
-     "code": "1.2c",
-     "title": "Proportionality",
-     "labels": [
-      {
-       "text": "HW 1.2c",
-       "kind": "hw"
-      }
-     ],
-     "keys": [
-      "1.2c"
-     ],
-     "items": [
-      {
-       "id": "hw-1-2c",
-       "kind": "hw",
-       "title": "HW 1.2c",
-       "file": "p/hw-1-2c.pdf",
-       "hash": "8d6ecab5ebd61b44bd71c624501c01c10119eadd3bb792f31f593348451d9b89",
-       "bytes": 104439
-      }
-     ]
     },
     {
      "n": 9,
@@ -709,7 +709,7 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit1-schedule.pdf",
-    "hash": "992676501697aeab6a9ebce457f64ab213ed2ce19dfff2175a4e04822719abcf",
+    "hash": "e4bcf7c9aba357a775b12fec503bdbdb4ee27dfe058b57bdd57033a0d151315d",
     "bytes": 64812
    }
   },
