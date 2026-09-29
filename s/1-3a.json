@@ -1,383 +1,524 @@
 {
-  "code": "1.3a",
-  "title": "Light and distance",
-  "version": 1,
-  "cards": [
-    {
-      "id": "1.3a-c1",
-      "tag": "EQ",
-      "front": "The velocity equation",
-      "back": "$v = \\dfrac{d}{t}$, where $v$ = velocity (m/s or km/s), $d$ = distance (m or km), $t$ = time (s). Solved for the others: $d = vt$ and $t = \\dfrac{d}{v}$."
+ "code": "1.3a",
+ "title": "Light and distance",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.3a-c1",
+   "tag": "EQ",
+   "front": "The velocity equation",
+   "back": "$v = \\dfrac{d}{t}$, where $v$ = velocity (m/s or km/s), $d$ = distance (m or km), $t$ = time (s). Solved for the others: $d = vt$ and $t = \\dfrac{d}{v}$.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-c1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><text x='70' y='36' text-anchor='middle' font-size='12' fill-opacity='.75'>clock starts</text><text x='320' y='36' text-anchor='middle' font-size='12' fill-opacity='.75'>time t later</text><circle cx='70' cy='70' r='14' fill='none' stroke='currentColor' stroke-opacity='.45' stroke-width='1.5' stroke-dasharray='3 3'/><line x1='92' y1='70' x2='296' y2='70' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.35' stroke-dasharray='2 6'/><circle cx='320' cy='70' r='14' fill='#94a3b8'/><line x1='340' y1='70' x2='376' y2='70' stroke='currentColor' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-c1)'/><text x='358' y='60' text-anchor='middle' font-size='14' font-style='italic'>v</text><line x1='70' y1='110' x2='320' y2='110' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-c1)' marker-end='url(#m-1-3a-c1)'/><line x1='70' y1='104' x2='70' y2='116' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='320' y1='104' x2='320' y2='116' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='195' y='128' text-anchor='middle'>distance d</text></svg>"
+  },
+  {
+   "id": "1.3a-c2",
+   "tag": "DEF",
+   "front": "Velocity",
+   "back": "How far something moves each unit of time: $\\text{velocity} = \\dfrac{\\text{distance}}{\\text{time}}$. Same distance in half the time means twice the velocity."
+  },
+  {
+   "id": "1.3a-c3",
+   "tag": "CON",
+   "front": "The speed of light, $c$",
+   "back": "$c = 3\\times10^{8}$ m/s $= 3\\times10^{5}$ km/s $= 300{,}000$ km per second"
+  },
+  {
+   "id": "1.3a-c4",
+   "tag": "DEF",
+   "front": "Light-year (ly)",
+   "back": "A distance, not a time: how far a light wave travels in one year going at $c$. 100,000 ly means how far light would travel in 100,000 years.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-c4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-c4a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><polygon points='42,56 46.2,66.2 57.2,67.1 48.8,74.2 51.4,84.9 42,79.2 32.6,84.9 35.2,74.2 26.8,67.1 37.8,66.2' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><text x='42' y='104' text-anchor='middle' font-size='12' fill-opacity='.75'>flash</text><text x='200' y='40' text-anchor='middle'>light travels at c for 1 year</text><path d='M300,72 q4,-6 8,0 t8,0 t8,0 t8,0 t8,0' fill='none' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='340' y1='72' x2='354' y2='72' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-c4a)'/><line x1='66' y1='72' x2='294' y2='72' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.3' stroke-dasharray='2 6'/><line x1='42' y1='124' x2='340' y2='124' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-c4)' marker-end='url(#m-1-3a-c4)'/><line x1='42' y1='118' x2='42' y2='130' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='340' y1='118' x2='340' y2='130' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='191' y='142' text-anchor='middle'>1 light-year: a distance</text></svg>"
+  },
+  {
+   "id": "1.3a-c5",
+   "tag": "CON",
+   "front": "1 light-year in meters",
+   "back": "$1\\ \\text{ly} = 9.46\\times10^{15}$ m $= 6.31\\times10^{4}$ AU"
+  },
+  {
+   "id": "1.3a-c6",
+   "tag": "EQ",
+   "front": "The equation for light-distances",
+   "back": "$d = ct$, where $d$ = distance (m), $c = 3\\times10^{8}$ m/s (the speed of light), $t$ = light-travel time (s). It is $v = \\dfrac{d}{t}$ solved for $d$, with $c$ for the velocity.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-c6' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-c6a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><polygon points='40,54 44.2,64.2 55.2,65.1 46.8,72.2 49.4,82.9 40,77.2 30.6,82.9 33.2,72.2 24.8,65.1 35.8,64.2' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><circle cx='360' cy='70' r='11' fill='#3b82f6'/><text x='360' y='100' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><path d='M160,70 q4,-6 8,0 t8,0 t8,0 t8,0 t8,0' fill='none' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='200' y1='70' x2='214' y2='70' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-c6a)'/><text x='196' y='48' text-anchor='middle'>speed c</text><line x1='40' y1='122' x2='360' y2='122' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-c6)' marker-end='url(#m-1-3a-c6)'/><line x1='40' y1='116' x2='40' y2='128' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='360' y1='116' x2='360' y2='128' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='200' y='140' text-anchor='middle' font-size='12'>distance d, crossed in light-travel time t</text><text x='396' y='156' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "lightpulse",
+    "title": "d = ct: sunlight crossing 1 AU",
+    "from": {
+     "label": "Sun",
+     "color": "#f59e0b"
     },
-    {
-      "id": "1.3a-c2",
-      "tag": "DEF",
-      "front": "Velocity",
-      "back": "How far something moves each unit of time: $\\text{velocity} = \\dfrac{\\text{distance}}{\\text{time}}$. Same distance in half the time means twice the velocity."
+    "to": {
+     "label": "Earth",
+     "color": "#3b82f6"
     },
-    {
-      "id": "1.3a-c3",
-      "tag": "CON",
-      "front": "The speed of light, $c$",
-      "back": "$c = 3\\times10^{8}$ m/s $= 3\\times10^{5}$ km/s $= 300{,}000$ km per second"
-    },
-    {
-      "id": "1.3a-c4",
-      "tag": "DEF",
-      "front": "Light-year (ly)",
-      "back": "A distance, not a time: how far a light wave travels in one year going at $c$. 100,000 ly means how far light would travel in 100,000 years."
-    },
-    {
-      "id": "1.3a-c5",
-      "tag": "CON",
-      "front": "1 light-year in meters",
-      "back": "$1\\ \\text{ly} = 9.46\\times10^{15}$ m $= 6.31\\times10^{4}$ AU"
-    },
-    {
-      "id": "1.3a-c6",
-      "tag": "EQ",
-      "front": "The equation for light-distances",
-      "back": "$d = ct$, where $d$ = distance (m), $c = 3\\times10^{8}$ m/s (the speed of light), $t$ = light-travel time (s). It is $v = \\dfrac{d}{t}$ solved for $d$, with $c$ for the velocity."
-    },
-    {
-      "id": "1.3a-c7",
-      "tag": "EX",
-      "front": "Work an example: how many meters is 1 light-year?",
-      "back": "$d_{ly} = ct = (3\\times10^{8}\\ \\text{m/s})(365\\times24\\times60\\times60\\ \\text{s}) = (3\\times10^{8}\\ \\text{m/s})(3.15\\times10^{7}\\ \\text{s}) = 9.46\\times10^{15}$ m"
-    },
-    {
-      "id": "1.3a-c8",
-      "tag": "EX",
-      "front": "Work an example: how long does sunlight take to reach Earth (1 AU)?",
-      "back": "$t = \\dfrac{d}{c} = \\dfrac{1.5\\times10^{11}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}} = 500$ s $\\approx 8.3$ min. We see the Sun as it was 8.3 minutes ago."
-    },
-    {
-      "id": "1.3a-c9",
-      "tag": "EX",
-      "front": "Work an example: shrink the Sun (radius 696,340 km) to a 14 cm basketball. What is the shrink, and Earth's Scaled Dist.?",
-      "back": "Shrink $= \\dfrac{6.96\\times10^{10}\\ \\text{cm}}{14\\ \\text{cm}} \\approx 5\\times10^{9}$: a 5 billion times shrinking. Scaled Dist. $= \\dfrac{1.5\\times10^{11}\\ \\text{m}}{5\\times10^{9}} = 30$ m. Same shrink for every size and distance; same units before you divide."
+    "distance_au": 1,
+    "label": "1 AU"
+   }
+  },
+  {
+   "id": "1.3a-c7",
+   "tag": "EX",
+   "front": "Work an example: how many meters is 1 light-year?",
+   "back": "$d_{ly} = ct = (3\\times10^{8}\\ \\text{m/s})(365\\times24\\times60\\times60\\ \\text{s}) = (3\\times10^{8}\\ \\text{m/s})(3.15\\times10^{7}\\ \\text{s}) = 9.46\\times10^{15}$ m"
+  },
+  {
+   "id": "1.3a-c8",
+   "tag": "EX",
+   "front": "Work an example: how long does sunlight take to reach Earth (1 AU)?",
+   "back": "$t = \\dfrac{d}{c} = \\dfrac{1.5\\times10^{11}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}} = 500$ s $\\approx 8.3$ min. We see the Sun as it was 8.3 minutes ago.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-c8' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-c8a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><circle cx='34' cy='70' r='26' fill='#f59e0b'/><text x='34' y='116' text-anchor='middle' font-size='12' fill-opacity='.75'>Sun</text><circle cx='362' cy='70' r='8' fill='#3b82f6'/><text x='362' y='96' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><path d='M170,70 q4,-6 8,0 t8,0 t8,0 t8,0 t8,0' fill='none' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='210' y1='70' x2='224' y2='70' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-c8a)'/><text x='206' y='46' text-anchor='middle'>sunlight at c: t = ?</text><line x1='34' y1='128' x2='362' y2='128' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-c8)' marker-end='url(#m-1-3a-c8)'/><line x1='34' y1='122' x2='34' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='362' y1='122' x2='362' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='198' y='146' text-anchor='middle'>1 AU = 1.5×10¹¹ m</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3a-c9",
+   "tag": "EX",
+   "front": "Work an example: shrink the Sun (radius 696,340 km) to a 14 cm basketball. What is the shrink, and Earth's Scaled Dist.?",
+   "back": "Shrink $= \\dfrac{6.96\\times10^{10}\\ \\text{cm}}{14\\ \\text{cm}} \\approx 5\\times10^{9}$: a 5 billion times shrinking. Scaled Dist. $= \\dfrac{1.5\\times10^{11}\\ \\text{m}}{5\\times10^{9}} = 30$ m. Same shrink for every size and distance; same units before you divide.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-c9' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='58' cy='68' r='42' fill='#f59e0b'/><text x='58' y='128' text-anchor='middle' font-size='12'>real Sun</text><text x='58' y='144' text-anchor='middle' font-size='11' fill-opacity='.75'>radius 696,340 km</text><line x1='112' y1='68' x2='160' y2='68' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3a-c9)'/><text x='136' y='56' text-anchor='middle' font-size='12'>shrink</text><circle cx='180' cy='68' r='10' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><path d='M170,68 H190 M180,58 V78' fill='none' stroke='currentColor' stroke-width='0.8' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.6'/><text x='180' y='96' text-anchor='middle' font-size='11' fill-opacity='.75'>14 cm ball</text><line x1='194' y1='68' x2='352' y2='68' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-opacity='.5' stroke-dasharray='3 5'/><circle cx='358' cy='68' r='3' fill='#3b82f6'/><text x='358' y='54' text-anchor='middle' font-size='11' fill-opacity='.75'>Earth</text><text x='274' y='88' text-anchor='middle' font-size='12'>Scaled Dist. = ?</text><text x='396' y='156' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "shrink",
+    "title": "Drag the shrink",
+    "shrink": 5000000000.0,
+    "min": 8,
+    "max": 11,
+    "objects": [
+     {
+      "label": "Sun",
+      "size_m": 696000000.0,
+      "color": "#f59e0b"
+     },
+     {
+      "label": "Earth",
+      "size_m": 6370000.0,
+      "dist_m": 150000000000.0,
+      "color": "#3b82f6"
+     },
+     {
+      "label": "Pluto (40 AU)",
+      "size_m": 1190000.0,
+      "dist_m": 6000000000000.0,
+      "color": "#94a3b8"
+     },
+     {
+      "label": "Proxima Centauri (4.3 ly)",
+      "size_m": 107000000.0,
+      "dist_m": 4.07e+16,
+      "color": "#fde68a"
+     }
+    ]
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.3a-001",
+   "skills": [
+    "1.3a-c3"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "What is the speed of light in meters per second?",
+   "choices": [
+    "$3\\times10^{5}$ m/s",
+    "$3\\times10^{8}$ m/s",
+    "$3\\times10^{10}$ m/s",
+    "$9.46\\times10^{15}$ m/s"
+   ],
+   "answer": 1,
+   "explain": "$c = 3\\times10^{8}$ m/s. The $3\\times10^{5}$ is the same speed in km/s, not m/s."
+  },
+  {
+   "id": "1.3a-002",
+   "skills": [
+    "1.3a-c4"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "A light-year is a unit of…",
+   "choices": [
+    "time",
+    "speed",
+    "distance",
+    "brightness"
+   ],
+   "answer": 2,
+   "explain": "A light-year is a distance: how far light travels in one year going at $c$."
+  },
+  {
+   "id": "1.3a-003",
+   "skills": [
+    "1.3a-c5"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "One light-year is about how many meters?",
+   "choices": [
+    "$1.5\\times10^{11}$ m",
+    "$3\\times10^{8}$ m",
+    "$6.31\\times10^{4}$ m",
+    "$9.46\\times10^{15}$ m"
+   ],
+   "answer": 3,
+   "explain": "$1\\ \\text{ly} = 9.46\\times10^{15}$ m. $1.5\\times10^{11}$ m is 1 AU, and $6.31\\times10^{4}$ is the number of AU in a light-year."
+  },
+  {
+   "id": "1.3a-004",
+   "skills": [
+    "1.3a-c1",
+    "1.3a-c2"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "Which is the velocity equation?",
+   "choices": [
+    "$v = \\dfrac{d}{t}$",
+    "$v = dt$",
+    "$v = \\dfrac{t}{d}$",
+    "$d = \\dfrac{v}{t}$"
+   ],
+   "answer": 0,
+   "explain": "$v = \\dfrac{d}{t}$: velocity is distance divided by time. Solved for distance it becomes $d = vt$."
+  },
+  {
+   "id": "1.3a-005",
+   "skills": [
+    "1.3a-c5"
+   ],
+   "type": "memory",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put these lengths in order, smallest first.",
+   "items": [
+    "Earth's radius",
+    "The Sun's radius",
+    "1 AU",
+    "The distance to Pluto",
+    "1 light-year",
+    "The distance to Proxima Centauri"
+   ],
+   "explain": "$R_\\oplus = 6.37\\times10^{6}$ m, $R_\\odot = 6.96\\times10^{8}$ m, 1 AU $= 1.5\\times10^{11}$ m, $d_{\\rm pluto} = 40$ AU $= 6\\times10^{12}$ m, 1 ly $= 9.46\\times10^{15}$ m, $d_{\\rm proxima} = 4.3$ ly $= 4.1\\times10^{16}$ m.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-005' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><text x='200' y='34' text-anchor='middle' font-size='12' fill-opacity='.8'>each tick is 10 times longer than the one before</text><line x1='30' y1='84' x2='382' y2='84' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' marker-end='url(#m-1-3a-005)'/><path d='M30,76v16M91.8,76v16M153.6,76v16M215.5,76v16M277.3,76v16M339.1,76v16' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/><path d='M60.9,79v10M122.7,79v10M184.5,79v10M246.4,79v10M308.2,79v10M370,79v10' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.6'/><text x='30' y='110' text-anchor='middle' font-size='12'>10⁶</text><text x='91.8' y='110' text-anchor='middle' font-size='12'>10⁸</text><text x='153.6' y='110' text-anchor='middle' font-size='12'>10¹⁰</text><text x='215.5' y='110' text-anchor='middle' font-size='12'>10¹²</text><text x='277.3' y='110' text-anchor='middle' font-size='12'>10¹⁴</text><text x='339.1' y='110' text-anchor='middle' font-size='12'>10¹⁶</text><text x='200' y='138' text-anchor='middle' font-size='12' fill-opacity='.75'>lengths in meters</text><text x='30' y='64' text-anchor='start' font-size='11' fill-opacity='.7'>smaller</text><text x='380' y='64' text-anchor='end' font-size='11' fill-opacity='.7'>larger</text></svg>"
+  },
+  {
+   "id": "1.3a-006",
+   "skills": [
+    "1.3a-c6",
+    "1.3a-c8"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "d": {
+     "min": 0.4,
+     "max": 40,
+     "step": 0.1
     }
-  ],
-  "questions": [
-    {
-      "id": "1.3a-001",
-      "skills": [
-        "1.3a-c3"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "What is the speed of light in meters per second?",
-      "choices": [
-        "$3\\times10^{5}$ m/s",
-        "$3\\times10^{8}$ m/s",
-        "$3\\times10^{10}$ m/s",
-        "$9.46\\times10^{15}$ m/s"
-      ],
-      "answer": 1,
-      "explain": "$c = 3\\times10^{8}$ m/s. The $3\\times10^{5}$ is the same speed in km/s, not m/s."
+   },
+   "stem": "A planet orbits {d} AU from the Sun. How many minutes does sunlight take to reach it? (1 AU $= 1.5\\times10^{11}$ m)",
+   "answer": "d*1.5e11/3e8/60",
+   "tol": 0.03,
+   "units": "min",
+   "explain": "$t = \\dfrac{ d }{c} = \\dfrac{({d})(1.5\\times10^{11}\\ \\text{m})}{3\\times10^{8}\\ \\text{m/s}}$, then divide the seconds by 60: $t \\approx$ {answer} min. (That is 8.3 min for every AU.)",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-006' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-006a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><circle cx='30' cy='66' r='24' fill='#f59e0b'/><text x='30' y='108' text-anchor='middle' font-size='12' fill-opacity='.75'>Sun</text><circle cx='362' cy='66' r='9' fill='#d9a066'/><text x='362' y='94' text-anchor='middle' font-size='12' fill-opacity='.75'>planet</text><path d='M170,66 q4,-6 8,0 t8,0 t8,0 t8,0 t8,0' fill='none' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='210' y1='66' x2='224' y2='66' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-006a)'/><text x='206' y='42' text-anchor='middle'>sunlight at c: t = ? min</text><line x1='30' y1='124' x2='362' y2='124' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-006)' marker-end='url(#m-1-3a-006)'/><line x1='30' y1='118' x2='30' y2='130' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='362' y1='118' x2='362' y2='130' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='196' y='142' text-anchor='middle'>{d} AU</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "lightpulse",
+    "when": "after",
+    "title": "Sunlight on its way",
+    "from": {
+     "label": "Sun",
+     "color": "#f59e0b"
     },
-    {
-      "id": "1.3a-002",
-      "skills": [
-        "1.3a-c4"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "A light-year is a unit of…",
-      "choices": [
-        "time",
-        "speed",
-        "distance",
-        "brightness"
-      ],
-      "answer": 2,
-      "explain": "A light-year is a distance: how far light travels in one year going at $c$."
+    "to": {
+     "label": "planet",
+     "color": "#3b82f6"
     },
-    {
-      "id": "1.3a-003",
-      "skills": [
-        "1.3a-c5"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "One light-year is about how many meters?",
-      "choices": [
-        "$1.5\\times10^{11}$ m",
-        "$3\\times10^{8}$ m",
-        "$6.31\\times10^{4}$ m",
-        "$9.46\\times10^{15}$ m"
-      ],
-      "answer": 3,
-      "explain": "$1\\ \\text{ly} = 9.46\\times10^{15}$ m. $1.5\\times10^{11}$ m is 1 AU, and $6.31\\times10^{4}$ is the number of AU in a light-year."
-    },
-    {
-      "id": "1.3a-004",
-      "skills": [
-        "1.3a-c1",
-        "1.3a-c2"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "Which is the velocity equation?",
-      "choices": [
-        "$v = \\dfrac{d}{t}$",
-        "$v = dt$",
-        "$v = \\dfrac{t}{d}$",
-        "$d = \\dfrac{v}{t}$"
-      ],
-      "answer": 0,
-      "explain": "$v = \\dfrac{d}{t}$: velocity is distance divided by time. Solved for distance it becomes $d = vt$."
-    },
-    {
-      "id": "1.3a-005",
-      "skills": [
-        "1.3a-c5"
-      ],
-      "type": "memory",
-      "dok": 2,
-      "format": "order",
-      "stem": "Put these lengths in order, smallest first.",
-      "items": [
-        "Earth's radius",
-        "The Sun's radius",
-        "1 AU",
-        "The distance to Pluto",
-        "1 light-year",
-        "The distance to Proxima Centauri"
-      ],
-      "explain": "$R_\\oplus = 6.37\\times10^{6}$ m, $R_\\odot = 6.96\\times10^{8}$ m, 1 AU $= 1.5\\times10^{11}$ m, $d_{\\rm pluto} = 40$ AU $= 6\\times10^{12}$ m, 1 ly $= 9.46\\times10^{15}$ m, $d_{\\rm proxima} = 4.3$ ly $= 4.1\\times10^{16}$ m."
-    },
-    {
-      "id": "1.3a-006",
-      "skills": [
-        "1.3a-c6",
-        "1.3a-c8"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "d": {
-          "min": 0.4,
-          "max": 40,
-          "step": 0.1
-        }
-      },
-      "stem": "A planet orbits {d} AU from the Sun. How many minutes does sunlight take to reach it? (1 AU $= 1.5\\times10^{11}$ m)",
-      "answer": "d*1.5e11/3e8/60",
-      "tol": 0.03,
-      "units": "min",
-      "explain": "$t = \\dfrac{ d }{c} = \\dfrac{({d})(1.5\\times10^{11}\\ \\text{m})}{3\\times10^{8}\\ \\text{m/s}}$, then divide the seconds by 60: $t \\approx$ {answer} min. (That is 8.3 min for every AU.)"
-    },
-    {
-      "id": "1.3a-007",
-      "skills": [
-        "1.3a-c6"
-      ],
-      "type": "procedural",
-      "dok": 3,
-      "format": "numeric",
-      "params": {
-        "t": {
-          "min": 2.4,
-          "max": 2.7,
-          "step": 0.01
-        }
-      },
-      "stem": "A laser pulse is fired from Earth at a mirror the Apollo astronauts left on the Moon. The echo comes back {t} s after the pulse left. How far away is the Moon, in meters?",
-      "answer": "3e8*t/2",
-      "tol": 0.03,
-      "units": "m",
-      "explain": "$d = ct$ gives the whole round trip, there and back. $d_{\\rm round} = (3\\times10^{8}\\ \\text{m/s})({t}\\ \\text{s})$, and the Moon is half of that: {answer} m."
-    },
-    {
-      "id": "1.3a-008",
-      "skills": [
-        "1.3a-c1",
-        "1.3a-c3"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "d": {
-          "min": 20,
-          "max": 25,
-          "step": 0.1
-        }
-      },
-      "stem": "Voyager 1 is about {d} billion km from Earth. How many hours does a radio command, moving at $c$, take to reach it?",
-      "answer": "d*1e12/3e8/3600",
-      "tol": 0.03,
-      "units": "hr",
-      "explain": "$t = \\dfrac{ d }{v} = \\dfrac{{d}\\times10^{12}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}}$ in seconds, then divide by 3600 s/hr: $t \\approx$ {answer} hr. A question and its answer take about two days round trip."
-    },
-    {
-      "id": "1.3a-009",
-      "skills": [
-        "1.3a-c5"
-      ],
-      "type": "procedural",
-      "dok": 1,
-      "format": "numeric",
-      "params": {
-        "L": {
-          "min": 5,
-          "max": 500,
-          "step": 1
-        }
-      },
-      "stem": "A star is {L} ly away. How far is that in meters?",
-      "answer": "L*9.46e15",
-      "tol": 0.03,
-      "units": "m",
-      "explain": "$d = ({L}\\ \\text{ly})\\left(9.46\\times10^{15}\\ \\dfrac{\\text{m}}{\\text{ly}}\\right) =$ {answer} m."
-    },
-    {
-      "id": "1.3a-010",
-      "skills": [
-        "1.3a-c5"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "d": {
-          "min": 10,
-          "max": 400,
-          "step": 1
-        }
-      },
-      "stem": "A star is {d} trillion km away (1 trillion km $= 10^{15}$ m). How many light-years is that?",
-      "answer": "d*1e15/9.46e15",
-      "tol": 0.03,
-      "units": "ly",
-      "explain": "$d = \\dfrac{{d}\\times10^{15}\\ \\text{m}}{9.46\\times10^{15}\\ \\text{m/ly}} =$ {answer} ly. Roughly 10 trillion km per light-year."
-    },
-    {
-      "id": "1.3a-011",
-      "skills": [
-        "1.3a-c9"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "r": {
-          "min": 20,
-          "max": 60,
-          "step": 1
-        }
-      },
-      "stem": "You shrink the Sun (radius 696,340 km) down to a beach ball of radius {r} cm. This represents a shrinking of how many times?",
-      "answer": "6.96e10/r",
-      "tol": 0.03,
-      "units": "times",
-      "explain": "Put both radii in cm first: $696{,}340\\ \\text{km} = 6.96\\times10^{10}$ cm. Shrink $= \\dfrac{6.96\\times10^{10}\\ \\text{cm}}{{r}\\ \\text{cm}} =$ {answer} times."
-    },
-    {
-      "id": "1.3a-012",
-      "skills": [
-        "1.3a-c9"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "s": {
-          "min": 1,
-          "max": 20,
-          "step": 1
-        },
-        "d": {
-          "min": 0.4,
-          "max": 40,
-          "step": 0.1
-        }
-      },
-      "stem": "A scale model uses a {s} billion times shrinking. A planet orbits {d} AU from the Sun. What is its Scaled Dist., in meters? (1 AU $= 1.5\\times10^{11}$ m)",
-      "answer": "d*1.5e11/(s*1e9)",
-      "tol": 0.03,
-      "units": "m",
-      "explain": "$\\text{Scaled Dist.} = \\dfrac{\\text{actual distance}}{\\text{shrink}} = \\dfrac{({d})(1.5\\times10^{11}\\ \\text{m})}{{s}\\times10^{9}} =$ {answer} m."
-    },
-    {
-      "id": "1.3a-013",
-      "skills": [
-        "1.3a-c5",
-        "1.3a-c9"
-      ],
-      "type": "procedural",
-      "dok": 3,
-      "format": "slider",
-      "scale": "log",
-      "min": 0,
-      "max": 12,
-      "stem": "Order of magnitude: in the basketball model (a 5 billion times shrinking), how far from the ball would Proxima Centauri (4.3 ly) sit? Pick the power of ten, in meters.",
-      "answer": "4.3*9.46e15/5e9",
-      "tol_dex": 0.5,
-      "units": "m",
-      "explain": "$\\text{Scaled Dist.} = \\dfrac{(4.3)(9.46\\times10^{15}\\ \\text{m})}{5\\times10^{9}} \\approx 8\\times10^{6}$ m, about 8,000 km. The planets fit in a walk through the Park Blocks; the nearest star does not fit on this continent."
-    },
-    {
-      "id": "1.3a-014",
-      "skills": [
-        "1.3a-c8"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "mc",
-      "stem": "Why do we see the Sun as it was about 8 minutes ago?",
-      "choices": [
-        "The Sun's light is bent by Earth's air, which delays it",
-        "Our eyes and brain take about 8 minutes to process the image",
-        "The Sun only gives off light in bursts every 8 minutes",
-        "Its light needs about 8.3 minutes to cross the 1 AU to Earth"
-      ],
-      "answer": 3,
-      "explain": "$t = \\dfrac{d}{c} = \\dfrac{1.5\\times10^{11}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}} = 500$ s $\\approx 8.3$ min. Light is fast, but not instant."
-    },
-    {
-      "id": "1.3a-015",
-      "skills": [
-        "1.3a-c4",
-        "1.3a-c6"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "order",
-      "stem": "Alien astronomers (and a few of our own machines) look back at Earth. Because of light-travel time, each sees Earth at some time in the past. Order them from the most recent view of Earth to the oldest.",
-      "items": [
-        "An astronaut on the Moon",
-        "A rover on Mars",
-        "A probe near Neptune",
-        "An alien at Proxima Centauri",
-        "An alien in the Andromeda Galaxy"
-      ],
-      "explain": "Farther away means the light left Earth longer ago. Moon: about a second. Mars: minutes. Neptune: hours. Proxima: 4.3 years. Andromeda: 2.2 million years, before there were humans."
-    },
-    {
-      "id": "1.3a-016",
-      "skills": [
-        "1.3a-c4",
-        "1.3a-c6"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "mc",
-      "stem": "A star 300 ly away explodes. On the star's own clock, the explosion happens tonight. When could astronomers on Earth first see it?",
-      "choices": [
-        "Tonight",
-        "In 300 years",
-        "300 years ago",
-        "Never, it is too far"
-      ],
-      "answer": 1,
-      "explain": "A distance of 300 ly means light needs 300 years to cross it. The light from tonight's explosion reaches Earth in 300 years. Turn it around: whatever we see from that star tonight left it 300 years ago."
+    "distance_au": "{d}",
+    "label": "{d} AU"
+   }
+  },
+  {
+   "id": "1.3a-007",
+   "skills": [
+    "1.3a-c6"
+   ],
+   "type": "procedural",
+   "dok": 3,
+   "format": "numeric",
+   "params": {
+    "t": {
+     "min": 2.4,
+     "max": 2.7,
+     "step": 0.01
     }
-  ]
+   },
+   "stem": "A laser pulse is fired from Earth at a mirror the Apollo astronauts left on the Moon. The echo comes back {t} s after the pulse left. How far away is the Moon, in meters?",
+   "answer": "3e8*t/2",
+   "tol": 0.03,
+   "units": "m",
+   "explain": "$d = ct$ gives the whole round trip, there and back. $d_{\\rm round} = (3\\times10^{8}\\ \\text{m/s})({t}\\ \\text{s})$, and the Moon is half of that: {answer} m.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-007' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-007a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><text x='200' y='22' text-anchor='middle'>echo returns {t} s after the pulse leaves</text><circle cx='52' cy='76' r='26' fill='#3b82f6'/><text x='52' y='118' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><circle cx='348' cy='76' r='8' fill='#94a3b8'/><text x='348' y='100' text-anchor='middle' font-size='12' fill-opacity='.75'>Moon</text><line x1='84' y1='66' x2='332' y2='66' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-007a)'/><line x1='332' y1='86' x2='84' y2='86' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 4' marker-end='url(#m-1-3a-007a)'/><text x='208' y='58' text-anchor='middle' font-size='11' fill-opacity='.8'>pulse out</text><text x='208' y='102' text-anchor='middle' font-size='11' fill-opacity='.8'>echo back</text><line x1='52' y1='128' x2='348' y2='128' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-007)' marker-end='url(#m-1-3a-007)'/><line x1='52' y1='122' x2='52' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='348' y1='122' x2='348' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='200' y='148' text-anchor='middle'>d = ?</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "lightpulse",
+    "when": "after",
+    "title": "The laser echo",
+    "from": {
+     "label": "Earth",
+     "color": "#3b82f6"
+    },
+    "to": {
+     "label": "Moon",
+     "color": "#94a3b8"
+    },
+    "time_s": "{t}",
+    "round_trip": true,
+    "label": "there and back: {t} s"
+   }
+  },
+  {
+   "id": "1.3a-008",
+   "skills": [
+    "1.3a-c1",
+    "1.3a-c3"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "d": {
+     "min": 20,
+     "max": 25,
+     "step": 0.1
+    }
+   },
+   "stem": "Voyager 1 is about {d} billion km from Earth. How many hours does a radio command, moving at $c$, take to reach it?",
+   "answer": "d*1e12/3e8/3600",
+   "tol": 0.03,
+   "units": "hr",
+   "explain": "$t = \\dfrac{ d }{v} = \\dfrac{{d}\\times10^{12}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}}$ in seconds, then divide by 3600 s/hr: $t \\approx$ {answer} hr. A question and its answer take about two days round trip.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-008' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-008a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><circle cx='40' cy='70' r='18' fill='#3b82f6'/><text x='40' y='106' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><path d='M62.9,53.9 A28,28 0 0 1 62.9,86.1' fill='none' stroke='#6366f1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.9'/><path d='M71.1,48.2 A38,38 0 0 1 71.1,91.8' fill='none' stroke='#6366f1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.6'/><path d='M79.3,42.5 A48,48 0 0 1 79.3,97.5' fill='none' stroke='#6366f1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><line x1='100' y1='70' x2='330' y2='70' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.3' stroke-dasharray='2 6'/><rect x='344' y='65' width='12' height='10' rx='1.5' fill='#94a3b8'/><path d='M344,58 Q334,70 344,82' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/><line x1='356' y1='70' x2='372' y2='64' stroke='currentColor' stroke-width='1.2' stroke-linecap='round'/><text x='352' y='102' text-anchor='middle' font-size='12' fill-opacity='.75'>Voyager 1</text><text x='200' y='44' text-anchor='middle'>radio command at c: t = ? hr</text><line x1='40' y1='126' x2='350' y2='126' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-008)' marker-end='url(#m-1-3a-008)'/><line x1='40' y1='120' x2='40' y2='132' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='350' y1='120' x2='350' y2='132' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='195' y='144' text-anchor='middle'>{d} billion km</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "lightpulse",
+    "when": "after",
+    "title": "A command to Voyager 1",
+    "from": {
+     "label": "Earth",
+     "color": "#3b82f6"
+    },
+    "to": {
+     "label": "Voyager 1",
+     "color": "#94a3b8"
+    },
+    "distance_km": "{d}e9",
+    "label": "{d} billion km"
+   }
+  },
+  {
+   "id": "1.3a-009",
+   "skills": [
+    "1.3a-c5"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "L": {
+     "min": 5,
+     "max": 500,
+     "step": 1
+    }
+   },
+   "stem": "A star is {L} ly away. How far is that in meters?",
+   "answer": "L*9.46e15",
+   "tol": 0.03,
+   "units": "m",
+   "explain": "$d = ({L}\\ \\text{ly})\\left(9.46\\times10^{15}\\ \\dfrac{\\text{m}}{\\text{ly}}\\right) =$ {answer} m.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-009' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='40' cy='66' r='14' fill='#3b82f6'/><text x='40' y='98' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><polygon points='356,50 360.2,60.2 371.2,61.1 362.8,68.2 365.4,78.9 356,73.2 346.6,78.9 349.2,68.2 340.8,61.1 351.8,60.2' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><text x='356' y='98' text-anchor='middle' font-size='12' fill-opacity='.75'>star</text><line x1='62' y1='66' x2='334' y2='66' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.3' stroke-dasharray='2 6'/><line x1='40' y1='118' x2='356' y2='118' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-009)' marker-end='url(#m-1-3a-009)'/><line x1='40' y1='112' x2='40' y2='124' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='356' y1='112' x2='356' y2='124' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='198' y='136' text-anchor='middle'>{L} ly</text><text x='200' y='44' text-anchor='middle'>how many meters?</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3a-010",
+   "skills": [
+    "1.3a-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "d": {
+     "min": 10,
+     "max": 400,
+     "step": 1
+    }
+   },
+   "stem": "A star is {d} trillion km away (1 trillion km $= 10^{15}$ m). How many light-years is that?",
+   "answer": "d*1e15/9.46e15",
+   "tol": 0.03,
+   "units": "ly",
+   "explain": "$d = \\dfrac{{d}\\times10^{15}\\ \\text{m}}{9.46\\times10^{15}\\ \\text{m/ly}} =$ {answer} ly. Roughly 10 trillion km per light-year.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-010' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='40' cy='66' r='14' fill='#3b82f6'/><text x='40' y='98' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><polygon points='356,50 360.2,60.2 371.2,61.1 362.8,68.2 365.4,78.9 356,73.2 346.6,78.9 349.2,68.2 340.8,61.1 351.8,60.2' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><text x='356' y='98' text-anchor='middle' font-size='12' fill-opacity='.75'>star</text><line x1='62' y1='66' x2='334' y2='66' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.3' stroke-dasharray='2 6'/><line x1='40' y1='118' x2='356' y2='118' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-010)' marker-end='url(#m-1-3a-010)'/><line x1='40' y1='112' x2='40' y2='124' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='356' y1='112' x2='356' y2='124' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='198' y='136' text-anchor='middle'>{d} trillion km</text><text x='200' y='44' text-anchor='middle'>how many light-years?</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3a-011",
+   "skills": [
+    "1.3a-c9"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "r": {
+     "min": 20,
+     "max": 60,
+     "step": 1
+    }
+   },
+   "stem": "You shrink the Sun (radius 696,340 km) down to a beach ball of radius {r} cm. This represents a shrinking of how many times?",
+   "answer": "6.96e10/r",
+   "tol": 0.03,
+   "units": "times",
+   "explain": "Put both radii in cm first: $696{,}340\\ \\text{km} = 6.96\\times10^{10}$ cm. Shrink $= \\dfrac{6.96\\times10^{10}\\ \\text{cm}}{{r}\\ \\text{cm}} =$ {answer} times.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-011' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='70' cy='74' r='52' fill='#f59e0b'/><line x1='70' y1='74' x2='122' y2='74' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'/><circle cx='70' cy='74' r='2.5' fill='currentColor'/><text x='70' y='146' text-anchor='middle' font-size='11' fill-opacity='.8'>real Sun, radius 696,340 km</text><line x1='150' y1='74' x2='214' y2='74' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3a-011)'/><text x='182' y='60' text-anchor='middle' font-size='12'>shrink</text><text x='182' y='96' text-anchor='middle' font-size='12'>? times</text><circle cx='300' cy='74' r='26' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><path d='M300,48 Q286,74 300,100 M300,48 Q314,74 300,100' fill='none' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.5'/><line x1='300' y1='74' x2='326' y2='74' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'/><text x='300' y='124' text-anchor='middle' font-size='11' fill-opacity='.8'>beach ball, radius {r} cm</text></svg>"
+  },
+  {
+   "id": "1.3a-012",
+   "skills": [
+    "1.3a-c9"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "s": {
+     "min": 1,
+     "max": 20,
+     "step": 1
+    },
+    "d": {
+     "min": 0.4,
+     "max": 40,
+     "step": 0.1
+    }
+   },
+   "stem": "A scale model uses a {s} billion times shrinking. A planet orbits {d} AU from the Sun. What is its Scaled Dist., in meters? (1 AU $= 1.5\\times10^{11}$ m)",
+   "answer": "d*1.5e11/(s*1e9)",
+   "tol": 0.03,
+   "units": "m",
+   "explain": "$\\text{Scaled Dist.} = \\dfrac{\\text{actual distance}}{\\text{shrink}} = \\dfrac{({d})(1.5\\times10^{11}\\ \\text{m})}{{s}\\times10^{9}} =$ {answer} m.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-012' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><text x='200' y='22' text-anchor='middle' font-size='12' fill-opacity='.85'>real distance {d} AU, shrunk {s} billion times</text><circle cx='46' cy='76' r='12' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><text x='46' y='106' text-anchor='middle' font-size='11' fill-opacity='.75'>model Sun</text><line x1='62' y1='76' x2='348' y2='76' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-opacity='.5' stroke-dasharray='3 5'/><circle cx='356' cy='76' r='4' fill='#d9a066'/><text x='356' y='106' text-anchor='middle' font-size='11' fill-opacity='.75'>model planet</text><line x1='46' y1='128' x2='356' y2='128' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-012)' marker-end='url(#m-1-3a-012)'/><line x1='46' y1='122' x2='46' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='356' y1='122' x2='356' y2='134' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='201' y='148' text-anchor='middle'>Scaled Dist. = ? m</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3a-013",
+   "skills": [
+    "1.3a-c5",
+    "1.3a-c9"
+   ],
+   "type": "procedural",
+   "dok": 3,
+   "format": "slider",
+   "scale": "log",
+   "min": 0,
+   "max": 12,
+   "stem": "Order of magnitude: in the basketball model (a 5 billion times shrinking), how far from the ball would Proxima Centauri (4.3 ly) sit? Pick the power of ten, in meters.",
+   "answer": "4.3*9.46e15/5e9",
+   "tol_dex": 0.5,
+   "units": "m",
+   "explain": "$\\text{Scaled Dist.} = \\dfrac{(4.3)(9.46\\times10^{15}\\ \\text{m})}{5\\times10^{9}} \\approx 8\\times10^{6}$ m, about 8,000 km. The planets fit in a walk through the Park Blocks; the nearest star does not fit on this continent.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-013' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='40' cy='70' r='10' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><text x='40' y='100' text-anchor='middle' font-size='11' fill-opacity='.75'>basketball Sun</text><line x1='56' y1='70' x2='180' y2='70' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-opacity='.5' stroke-dasharray='3 5'/><path d='M186,82 L196,58 M198,82 L208,58' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/><line x1='214' y1='70' x2='338' y2='70' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-opacity='.5' stroke-dasharray='3 5'/><polygon points='354,57 357.4,65.3 366.4,66 359.6,71.8 361.6,80.5 354,75.8 346.4,80.5 348.4,71.8 341.6,66 350.6,65.3' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><text x='354' y='100' text-anchor='end' font-size='11' fill-opacity='.75'>Proxima Centauri</text><text x='200' y='32' text-anchor='middle' font-size='12' fill-opacity='.85'>real distance 4.3 ly, shrunk 5 billion times</text><text x='200' y='128' text-anchor='middle'>Scaled Dist. = 10^? m</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "shrink",
+    "when": "after",
+    "title": "Try other shrinks",
+    "shrink": 5000000000.0,
+    "min": 8,
+    "max": 11,
+    "objects": [
+     {
+      "label": "Sun",
+      "size_m": 696000000.0,
+      "color": "#f59e0b"
+     },
+     {
+      "label": "Earth",
+      "size_m": 6370000.0,
+      "dist_m": 150000000000.0,
+      "color": "#3b82f6"
+     },
+     {
+      "label": "Pluto (40 AU)",
+      "size_m": 1190000.0,
+      "dist_m": 6000000000000.0,
+      "color": "#94a3b8"
+     },
+     {
+      "label": "Proxima Centauri (4.3 ly)",
+      "size_m": 107000000.0,
+      "dist_m": 4.07e+16,
+      "color": "#fde68a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1.3a-014",
+   "skills": [
+    "1.3a-c8"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why do we see the Sun as it was about 8 minutes ago?",
+   "choices": [
+    "The Sun's light is bent by Earth's air, which delays it",
+    "Our eyes and brain take about 8 minutes to process the image",
+    "The Sun only gives off light in bursts every 8 minutes",
+    "Its light needs about 8.3 minutes to cross the 1 AU to Earth"
+   ],
+   "answer": 3,
+   "explain": "$t = \\dfrac{d}{c} = \\dfrac{1.5\\times10^{11}\\ \\text{m}}{3\\times10^{8}\\ \\text{m/s}} = 500$ s $\\approx 8.3$ min. Light is fast, but not instant."
+  },
+  {
+   "id": "1.3a-015",
+   "skills": [
+    "1.3a-c4",
+    "1.3a-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Alien astronomers (and a few of our own machines) look back at Earth. Because of light-travel time, each sees Earth at some time in the past. Order them from the most recent view of Earth to the oldest.",
+   "items": [
+    "An astronaut on the Moon",
+    "A rover on Mars",
+    "A probe near Neptune",
+    "An alien at Proxima Centauri",
+    "An alien in the Andromeda Galaxy"
+   ],
+   "explain": "Farther away means the light left Earth longer ago. Moon: about a second. Mars: minutes. Neptune: hours. Proxima: 4.3 years. Andromeda: 2.2 million years, before there were humans.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-015' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='200' cy='70' r='28' fill='none' stroke='#6366f1' stroke-opacity='.8' stroke-width='1.8'/><circle cx='200' cy='70' r='44' fill='none' stroke='#6366f1' stroke-opacity='.5' stroke-width='1.8'/><circle cx='200' cy='70' r='60' fill='none' stroke='#6366f1' stroke-opacity='.28' stroke-width='1.8'/><circle cx='200' cy='70' r='14' fill='#3b82f6'/><text x='200' y='152' text-anchor='middle' font-size='12' fill-opacity='.85'>light leaving Earth spreads outward at c</text></svg>"
+  },
+  {
+   "id": "1.3a-016",
+   "skills": [
+    "1.3a-c4",
+    "1.3a-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "A star 300 ly away explodes. On the star's own clock, the explosion happens tonight. When could astronomers on Earth first see it?",
+   "choices": [
+    "Tonight",
+    "In 300 years",
+    "300 years ago",
+    "Never, it is too far"
+   ],
+   "answer": 1,
+   "explain": "A distance of 300 ly means light needs 300 years to cross it. The light from tonight's explosion reaches Earth in 300 years. Turn it around: whatever we see from that star tonight left it 300 years ago.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3a-016' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3a-016a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><polygon points='42,46 46.1,60.3 61,59.8 48.7,68.2 53.8,82.2 42,73 30.2,82.2 35.3,68.2 23,59.8 37.9,60.3' fill='#fde68a' stroke='currentColor' stroke-opacity='.55' stroke-width='.8' stroke-linejoin='round'/><text x='42' y='102' text-anchor='middle' font-size='11' fill-opacity='.8'>star explodes</text><text x='42' y='116' text-anchor='middle' font-size='11' fill-opacity='.65'>(its clock: tonight)</text><path d='M78,66 q4,-6 8,0 t8,0 t8,0 t8,0' fill='none' stroke='#6366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='110' y1='66' x2='124' y2='66' stroke='#6366f1' stroke-width='2' stroke-linecap='round' marker-end='url(#m-1-3a-016a)'/><line x1='144' y1='66' x2='338' y2='66' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.3' stroke-dasharray='2 6'/><circle cx='356' cy='66' r='11' fill='#3b82f6'/><text x='356' y='96' text-anchor='middle' font-size='12' fill-opacity='.75'>Earth</text><text x='200' y='36' text-anchor='middle' font-size='12' fill-opacity='.85'>light moves at c</text><line x1='42' y1='134' x2='356' y2='134' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' marker-start='url(#m-1-3a-016)' marker-end='url(#m-1-3a-016)'/><line x1='42' y1='128' x2='42' y2='140' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><line x1='356' y1='128' x2='356' y2='140' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-opacity='.5'/><text x='199' y='152' text-anchor='middle'>300 ly</text></svg>"
+  }
+ ]
 }

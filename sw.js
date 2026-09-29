@@ -5,10 +5,10 @@
      d/ p/ s/ documents   cache-first; requested as file?h=<hash>, so a changed file is a new URL
      the shell            cache-first, revalidated in the background
    Documents are cached when first opened, never pre-cached (marsmap is 18 MB). */
-const CACHE_VERSION = '0efea2230309';
+const CACHE_VERSION = 'cd2b78fb7c48';
 const SHELL = `astro-shell-${CACHE_VERSION}`;
 const DOCS = 'astro-docs-v1';
-const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'study.js', 'index.json',
+const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'study.js', 'figs.js', 'index.json',
   'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png',
   'katex/katex.min.js', 'katex/auto-render.min.js', 'katex/katex.min.css'];
 

@@ -1,389 +1,510 @@
 {
-  "code": "1.3b",
-  "title": "Orbits and time",
-  "version": 1,
-  "cards": [
-    {
-      "id": "1.3b-c1",
-      "tag": "CON",
-      "front": "Age of the universe, $t_{\\rm universe}$",
-      "back": "$t_{\\rm universe} = 13.8$ Gyr $= 13.8$ billion years $= 1.38\\times10^{10}$ yr. (1 Gyr $= 10^{9}$ yr.) The longest time there is."
+ "code": "1.3b",
+ "title": "Orbits and time",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.3b-c1",
+   "tag": "CON",
+   "front": "Age of the universe, $t_{\\rm universe}$",
+   "back": "$t_{\\rm universe} = 13.8$ Gyr $= 13.8$ billion years $= 1.38\\times10^{10}$ yr. (1 Gyr $= 10^{9}$ yr.) The longest time there is.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-c1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='24' y1='100' x2='386' y2='100' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' marker-end='url(#m-1-3b-c1)'/><path d='M24,96v8M56,96v8M88,96v8M120,96v8M152,96v8M184,96v8M216,96v8M248,96v8M280,96v8M312,96v8M344,96v8M376,96v8' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.6'/><text x='24' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10⁰</text><text x='88' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10²</text><text x='152' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10⁴</text><text x='216' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10⁶</text><text x='280' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10⁸</text><text x='344' y='120' text-anchor='middle' font-size='11' fill-opacity='.8'>10¹⁰</text><path d='M30,80L24,95 M88,80L84.9,95 M234,48L292.2,95 M306,48L333.1,95 M368,48L348.5,95' fill='none' stroke='currentColor' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.45'/><circle cx='24' cy='100' r='3.5' fill='#f59e0b'/><text x='30' y='60' text-anchor='middle' font-size='11'>1 yr</text><circle cx='84.9' cy='100' r='3.5' fill='#f59e0b'/><text x='88' y='60' text-anchor='middle' font-size='11'>lifetime</text><circle cx='292.2' cy='100' r='3.5' fill='#f59e0b'/><text x='234' y='28' text-anchor='middle' font-size='11'>Sun's lap</text><text x='234' y='41' text-anchor='middle' font-size='11' fill-opacity='.75'>240 Myr</text><circle cx='333.1' cy='100' r='3.5' fill='#f59e0b'/><text x='306' y='28' text-anchor='middle' font-size='11'>solar system</text><text x='306' y='41' text-anchor='middle' font-size='11' fill-opacity='.75'>4.56 Gyr</text><circle cx='348.5' cy='100' r='3.5' fill='#f59e0b'/><text x='368' y='28' text-anchor='middle' font-size='11'>universe</text><text x='368' y='41' text-anchor='middle' font-size='11' fill-opacity='.75'>13.8 Gyr</text><text x='200' y='146' text-anchor='middle' font-size='11' fill-opacity='.7'>years, powers of ten</text></svg>"
+  },
+  {
+   "id": "1.3b-c2",
+   "tag": "CON",
+   "front": "Age of the solar system, $t_{\\rm solar\\ system}$",
+   "back": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. The Sun, Earth and the planets are about a third as old as the universe.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-c2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><text x='200' y='36' text-anchor='middle'>universe: 13.8 Gyr</text><rect x='259.7' y='54' width='116.3' height='20' rx='3' fill='#f59e0b' fill-opacity='.85'/><rect x='24' y='54' width='352' height='20' rx='3' fill='none' stroke='currentColor' stroke-opacity='.6' stroke-width='1.5'/><text x='24' y='92' text-anchor='start' font-size='11' fill-opacity='.75'>Big Bang</text><text x='376' y='92' text-anchor='end' font-size='11' fill-opacity='.75'>now</text><text x='317.8' y='118' text-anchor='middle' font-size='12'>solar system: 4.56 Gyr</text><text x='317.8' y='134' text-anchor='middle' font-size='11' fill-opacity='.75'>about a third</text></svg>"
+  },
+  {
+   "id": "1.3b-c3",
+   "tag": "CON",
+   "front": "Time for the Sun to orbit the Milky Way once, $t_{\\rm orbit\\ Milky\\ Way}$",
+   "back": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. (1 Myr $= 10^{6}$ yr.) In 4.56 Gyr the Sun has been around about 19 times.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-c3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><ellipse cx='200' cy='78' rx='165' ry='46' fill='currentColor' fill-opacity='.06' stroke='currentColor' stroke-opacity='.3' stroke-width='1.2'/><ellipse cx='200' cy='78' rx='28' ry='13' fill='#fde68a' stroke='currentColor' stroke-opacity='.4' stroke-width='.8'/><ellipse cx='200' cy='78' rx='105' ry='29' fill='none' stroke='currentColor' stroke-opacity='.5' stroke-width='1.3' stroke-dasharray='4 4'/><path d='M160,105.6 Q200,109 240,105.6' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' marker-end='url(#m-1-3b-c3)'/><circle cx='305' cy='78' r='5' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><text x='305' y='68' text-anchor='middle' font-size='12'>Sun</text><text x='200' y='150' text-anchor='middle'>one lap: 240 Myr</text><text x='200' y='18' text-anchor='middle' font-size='11' fill-opacity='.7'>Milky Way, seen tilted</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "logline",
+    "title": "Where 240 Myr sits",
+    "min": -3,
+    "max": 11,
+    "unit": "years",
+    "events": [
+     {
+      "label": "a day",
+      "value": 0.00274
+     },
+     {
+      "label": "a human life",
+      "value": 80
+     },
+     {
+      "label": "humans exist",
+      "value": 300000.0
+     },
+     {
+      "label": "dinosaurs gone",
+      "value": 66000000.0
+     },
+     {
+      "label": "Sun around the Milky Way",
+      "value": 240000000.0
+     },
+     {
+      "label": "solar system",
+      "value": 4560000000.0
+     },
+     {
+      "label": "universe",
+      "value": 13800000000.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "1.3b-c4",
+   "tag": "DEF",
+   "front": "Orbital velocity, $v_{\\rm orb}$",
+   "back": "The speed any planet orbits at: the distance once around its orbit divided by the time to go once around (that planet's year). Closer planets orbit faster.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-c4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='34' cy='80' r='16' fill='#f59e0b'/><path d='M84.6,26 A74,74 0 0 1 84.6,134' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><circle cx='108' cy='80' r='6' fill='#94a3b8'/><line x1='120' y1='80' x2='120' y2='32' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3b-c4)'/><path d='M188.9,26 A164,164 0 0 1 188.9,134' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><circle cx='198' cy='80' r='6' fill='#3b82f6'/><line x1='210' y1='80' x2='210' y2='48' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3b-c4)'/><path d='M314.9,26 A286,286 0 0 1 314.9,134' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><circle cx='320' cy='80' r='6' fill='#94a3b8'/><line x1='332' y1='80' x2='332' y2='62' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3b-c4)'/><text x='200' y='154' text-anchor='middle' font-size='12' fill-opacity='.85'>closer planets orbit faster</text></svg>"
+  },
+  {
+   "id": "1.3b-c5",
+   "tag": "EQ",
+   "front": "The orbital velocity equation",
+   "back": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$, where $r$ = radius of the orbit (m or km), $t$ = time for one orbit, the planet's year (s). It is $v = \\dfrac{d}{t}$ with $d = 2\\pi r$, the circumference of the orbit.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-c5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='92' cy='80' r='58' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-width='1.5'/><circle cx='92' cy='80' r='11' fill='#f59e0b'/><line x1='104' y1='80' x2='143' y2='80' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'/><text x='122' y='73' text-anchor='middle' font-style='italic'>r</text><circle cx='150' cy='80' r='6' fill='#3b82f6'/><path d='M159,91.8 A68,68 0 0 1 33.1,114' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' marker-end='url(#m-1-3b-c5)'/><text x='92' y='160' text-anchor='middle' font-size='12'>2πr</text><text x='200' y='56' text-anchor='start' font-size='12'>distance once around: 2πr</text><text x='200' y='80' text-anchor='start' font-size='12'>time once around: t (its year)</text><text x='200' y='108' text-anchor='start' font-size='14' font-weight='600'>v_orb = 2πr / t</text></svg>"
+  },
+  {
+   "id": "1.3b-c6",
+   "tag": "CON",
+   "front": "Earth's orbital velocity",
+   "back": "$v_{\\rm orb} = 30$ km/s $= 3\\times10^{4}$ m/s for Earth. Memorize this one."
+  },
+  {
+   "id": "1.3b-c7",
+   "tag": "EX",
+   "front": "Work an example: calculate the Earth's orbital velocity ($r = 1.5\\times10^{11}$ m)",
+   "back": "$d = 2\\pi r = 2\\pi(1.5\\times10^{11}\\ \\text{m}) = 9.42\\times10^{11}$ m. $t = 365\\times24\\times60\\times60 = 3.15\\times10^{7}$ s. $v_{\\rm orb} = \\dfrac{d}{t} = \\dfrac{9.42\\times10^{11}\\ \\text{m}}{3.15\\times10^{7}\\ \\text{s}} = 2.99\\times10^{4}$ m/s $= 30$ km/s.",
+   "interactive": {
+    "kind": "orbit",
+    "title": "Earth's orbit",
+    "r_label": "r = 1 AU",
+    "period_label": "1 year"
+   }
+  },
+  {
+   "id": "1.3b-c8",
+   "tag": "OUT",
+   "front": "Outline: finding any planet's orbital velocity",
+   "back": "1. Distance once around: $d = 2\\pi r$ (AU to m: $\\times 1.5\\times10^{11}$). 2. Time once around, in seconds: years $\\times\\ 3.15\\times10^{7}$ s. 3. Divide: $v_{\\rm orb} = \\dfrac{d}{t}$ in m/s. 4. Divide by 1000 for km/s."
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.3b-001",
+   "skills": [
+    "1.3b-c1"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "How old is the universe?",
+   "choices": [
+    "4.56 Gyr",
+    "240 Myr",
+    "13.8 Gyr",
+    "13.8 Myr"
+   ],
+   "answer": 2,
+   "explain": "$t_{\\rm universe} = 13.8$ Gyr, 13.8 billion years. 4.56 Gyr is the age of the solar system, and 240 Myr is one trip of the Sun around the Milky Way."
+  },
+  {
+   "id": "1.3b-002",
+   "skills": [
+    "1.3b-c2"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "How old is the solar system (the Sun, Earth and the planets)?",
+   "choices": [
+    "13.8 Gyr",
+    "4.56 Gyr",
+    "240 Myr",
+    "4.56 Myr"
+   ],
+   "answer": 1,
+   "explain": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. Mind the prefix: 4.56 Myr would be a thousand times too young."
+  },
+  {
+   "id": "1.3b-003",
+   "skills": [
+    "1.3b-c3"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "How long does the Sun take to go once around the center of the Milky Way?",
+   "choices": [
+    "240 Myr",
+    "240 years",
+    "1 year",
+    "13.8 Gyr"
+   ],
+   "answer": 0,
+   "explain": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. One year is Earth going once around the Sun, a much smaller orbit."
+  },
+  {
+   "id": "1.3b-004",
+   "skills": [
+    "1.3b-c6"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "What is Earth's orbital velocity around the Sun?",
+   "choices": [
+    "3 km/s",
+    "300 km/s",
+    "$3\\times10^{5}$ km/s",
+    "30 km/s"
+   ],
+   "answer": 3,
+   "explain": "$v_{\\rm orb} = 30$ km/s for Earth. $3\\times10^{5}$ km/s is the speed of light, 10,000 times faster."
+  },
+  {
+   "id": "1.3b-005",
+   "skills": [
+    "1.3b-c4",
+    "1.3b-c5"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "Which is the orbital velocity equation?",
+   "choices": [
+    "$v_{\\rm orb} = 2\\pi r t$",
+    "$v_{\\rm orb} = \\dfrac{\\pi r^2}{t}$",
+    "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$",
+    "$v_{\\rm orb} = \\dfrac{t}{2\\pi r}$"
+   ],
+   "answer": 2,
+   "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the distance once around, the circumference $2\\pi r$, divided by the time once around. $\\pi r^2$ is the area inside the orbit, not the distance along it."
+  },
+  {
+   "id": "1.3b-006",
+   "skills": [
+    "1.3b-c5",
+    "1.3b-c8"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "r": {
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1
     },
-    {
-      "id": "1.3b-c2",
-      "tag": "CON",
-      "front": "Age of the solar system, $t_{\\rm solar\\ system}$",
-      "back": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. The Sun, Earth and the planets are about a third as old as the universe."
-    },
-    {
-      "id": "1.3b-c3",
-      "tag": "CON",
-      "front": "Time for the Sun to orbit the Milky Way once, $t_{\\rm orbit\\ Milky\\ Way}$",
-      "back": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. (1 Myr $= 10^{6}$ yr.) In 4.56 Gyr the Sun has been around about 19 times."
-    },
-    {
-      "id": "1.3b-c4",
-      "tag": "DEF",
-      "front": "Orbital velocity, $v_{\\rm orb}$",
-      "back": "The speed any planet orbits at: the distance once around its orbit divided by the time to go once around (that planet's year). Closer planets orbit faster."
-    },
-    {
-      "id": "1.3b-c5",
-      "tag": "EQ",
-      "front": "The orbital velocity equation",
-      "back": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$, where $r$ = radius of the orbit (m or km), $t$ = time for one orbit, the planet's year (s). It is $v = \\dfrac{d}{t}$ with $d = 2\\pi r$, the circumference of the orbit."
-    },
-    {
-      "id": "1.3b-c6",
-      "tag": "CON",
-      "front": "Earth's orbital velocity",
-      "back": "$v_{\\rm orb} = 30$ km/s $= 3\\times10^{4}$ m/s for Earth. Memorize this one."
-    },
-    {
-      "id": "1.3b-c7",
-      "tag": "EX",
-      "front": "Work an example: calculate the Earth's orbital velocity ($r = 1.5\\times10^{11}$ m)",
-      "back": "$d = 2\\pi r = 2\\pi(1.5\\times10^{11}\\ \\text{m}) = 9.42\\times10^{11}$ m. $t = 365\\times24\\times60\\times60 = 3.15\\times10^{7}$ s. $v_{\\rm orb} = \\dfrac{d}{t} = \\dfrac{9.42\\times10^{11}\\ \\text{m}}{3.15\\times10^{7}\\ \\text{s}} = 2.99\\times10^{4}$ m/s $= 30$ km/s."
-    },
-    {
-      "id": "1.3b-c8",
-      "tag": "OUT",
-      "front": "Outline: finding any planet's orbital velocity",
-      "back": "1. Distance once around: $d = 2\\pi r$ (AU to m: $\\times 1.5\\times10^{11}$). 2. Time once around, in seconds: years $\\times\\ 3.15\\times10^{7}$ s. 3. Divide: $v_{\\rm orb} = \\dfrac{d}{t}$ in m/s. 4. Divide by 1000 for km/s."
+    "t": {
+     "min": 0.5,
+     "max": 4,
+     "step": 0.1
     }
-  ],
-  "questions": [
-    {
-      "id": "1.3b-001",
-      "skills": [
-        "1.3b-c1"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "How old is the universe?",
-      "choices": [
-        "4.56 Gyr",
-        "240 Myr",
-        "13.8 Gyr",
-        "13.8 Myr"
-      ],
-      "answer": 2,
-      "explain": "$t_{\\rm universe} = 13.8$ Gyr, 13.8 billion years. 4.56 Gyr is the age of the solar system, and 240 Myr is one trip of the Sun around the Milky Way."
-    },
-    {
-      "id": "1.3b-002",
-      "skills": [
-        "1.3b-c2"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "How old is the solar system (the Sun, Earth and the planets)?",
-      "choices": [
-        "13.8 Gyr",
-        "4.56 Gyr",
-        "240 Myr",
-        "4.56 Myr"
-      ],
-      "answer": 1,
-      "explain": "$t_{\\rm solar\\ system} = 4.56$ Gyr $= 4.56\\times10^{9}$ yr. Mind the prefix: 4.56 Myr would be a thousand times too young."
-    },
-    {
-      "id": "1.3b-003",
-      "skills": [
-        "1.3b-c3"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "How long does the Sun take to go once around the center of the Milky Way?",
-      "choices": [
-        "240 Myr",
-        "240 years",
-        "1 year",
-        "13.8 Gyr"
-      ],
-      "answer": 0,
-      "explain": "$t_{\\rm orbit\\ Milky\\ Way} = 240$ Myr $= 2.4\\times10^{8}$ yr. One year is Earth going once around the Sun, a much smaller orbit."
-    },
-    {
-      "id": "1.3b-004",
-      "skills": [
-        "1.3b-c6"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "What is Earth's orbital velocity around the Sun?",
-      "choices": [
-        "3 km/s",
-        "300 km/s",
-        "$3\\times10^{5}$ km/s",
-        "30 km/s"
-      ],
-      "answer": 3,
-      "explain": "$v_{\\rm orb} = 30$ km/s for Earth. $3\\times10^{5}$ km/s is the speed of light, 10,000 times faster."
-    },
-    {
-      "id": "1.3b-005",
-      "skills": [
-        "1.3b-c4",
-        "1.3b-c5"
-      ],
-      "type": "memory",
-      "dok": 1,
-      "format": "mc",
-      "stem": "Which is the orbital velocity equation?",
-      "choices": [
-        "$v_{\\rm orb} = 2\\pi r t$",
-        "$v_{\\rm orb} = \\dfrac{\\pi r^2}{t}$",
-        "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$",
-        "$v_{\\rm orb} = \\dfrac{t}{2\\pi r}$"
-      ],
-      "answer": 2,
-      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the distance once around, the circumference $2\\pi r$, divided by the time once around. $\\pi r^2$ is the area inside the orbit, not the distance along it."
-    },
-    {
-      "id": "1.3b-006",
-      "skills": [
-        "1.3b-c5",
-        "1.3b-c8"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "r": {
-          "min": 0.5,
-          "max": 3,
-          "step": 0.1
-        },
-        "t": {
-          "min": 0.5,
-          "max": 4,
-          "step": 0.1
-        }
-      },
-      "stem": "A planet around another star orbits {r} AU from its star, and its year is {t} Earth years long. What is its orbital velocity in km/s? (1 AU $= 1.5\\times10^{8}$ km, 1 yr $= 3.15\\times10^{7}$ s)",
-      "answer": "2*3.1416*r*1.5e8/(t*3.15e7)",
-      "tol": 0.03,
-      "units": "km/s",
-      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r})(1.5\\times10^{8}\\ \\text{km})}{({t})(3.15\\times10^{7}\\ \\text{s})} =$ {answer} km/s. Distance in km over time in seconds gives km/s directly."
-    },
-    {
-      "id": "1.3b-007",
-      "skills": [
-        "1.3b-c6"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "n": {
-          "min": 1,
-          "max": 50,
-          "step": 1
-        }
-      },
-      "stem": "Earth moves along its orbit at $v_{\\rm orb} = 30$ km/s. How many km does Earth travel in {n} minutes?",
-      "answer": "30*n*60",
-      "tol": 0.03,
-      "units": "km",
-      "explain": "$d = v t = (30\\ \\text{km/s})({n}\\times60\\ \\text{s}) =$ {answer} km. That is 1,800 km every minute, and you feel none of it."
-    },
-    {
-      "id": "1.3b-008",
-      "skills": [
-        "1.3b-c3"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "T": {
-          "min": 1,
-          "max": 4,
-          "step": 0.1
-        }
-      },
-      "stem": "The Sun goes once around the Milky Way every 240 Myr. How many times has it gone around in the last {T} Gyr?",
-      "answer": "T*1000/240",
-      "tol": 0.03,
-      "units": "times",
-      "explain": "Same units first: ${T}$ Gyr $= {T}\\times1000$ Myr. Number of orbits $= \\dfrac{{T}\\times1000\\ \\text{Myr}}{240\\ \\text{Myr}} =$ {answer} times."
-    },
-    {
-      "id": "1.3b-009",
-      "skills": [
-        "1.3b-c3"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "T": {
-          "min": 10,
-          "max": 200,
-          "step": 1
-        }
-      },
-      "stem": "A fossil is {T} Myr old. How many seconds ago did that creature live? (1 yr $= 3.15\\times10^{7}$ s)",
-      "answer": "T*1e6*3.15e7",
-      "tol": 0.03,
-      "units": "s",
-      "explain": "1 Myr $= 10^{6}$ yr, so $t = ({T}\\times10^{6}\\ \\text{yr})\\left(3.15\\times10^{7}\\ \\dfrac{\\text{s}}{\\text{yr}}\\right) =$ {answer} s."
-    },
-    {
-      "id": "1.3b-010",
-      "skills": [
-        "1.3b-c5"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "numeric",
-      "params": {
-        "r": {
-          "min": 6700,
-          "max": 7200,
-          "step": 10
-        },
-        "t": {
-          "min": 90,
-          "max": 100,
-          "step": 0.5
-        }
-      },
-      "stem": "A satellite circles Earth {r} km from Earth's center and goes around once every {t} minutes. What is its orbital velocity in km/s?",
-      "answer": "2*3.1416*r/(t*60)",
-      "tol": 0.03,
-      "units": "km/s",
-      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r}\\ \\text{km})}{({t})(60\\ \\text{s})} =$ {answer} km/s. The time has to be in seconds to get km/s."
-    },
-    {
-      "id": "1.3b-011",
-      "skills": [
-        "1.3b-c5",
-        "1.3b-c6"
-      ],
-      "type": "procedural",
-      "dok": 3,
-      "format": "numeric",
-      "params": {
-        "r": {
-          "min": 0.5,
-          "max": 3,
-          "step": 0.1
-        },
-        "t": {
-          "min": 0.5,
-          "max": 4,
-          "step": 0.1
-        }
-      },
-      "stem": "A planet around another star orbits {r} AU from its star, with a year {t} Earth years long. Use the relative form: its orbital velocity is how many times Earth's?",
-      "answer": "r/t",
-      "tol": 0.03,
-      "units": "times",
-      "explain": "Divide the equation for the planet by the one for Earth: $\\dfrac{v_{\\rm orb}}{v_{{\\rm orb},\\oplus}} = \\dfrac{2\\pi r/ t }{2\\pi(1\\ \\text{AU})/(1\\ \\text{yr})}$. The $2\\pi$ cancels, leaving $\\dfrac{ {r}\\ \\text{AU}/1\\ \\text{AU} }{ {t}\\ \\text{yr}/1\\ \\text{yr} } =$ {answer} times, or about {answer} $\\times$ 30 km/s."
-    },
-    {
-      "id": "1.3b-012",
-      "skills": [
-        "1.3b-c2"
-      ],
-      "type": "procedural",
-      "dok": 2,
-      "format": "slider",
-      "scale": "log",
-      "min": 10,
-      "max": 20,
-      "stem": "Order of magnitude: how many seconds old is the solar system? Pick the power of ten.",
-      "answer": "4.56e9*3.15e7",
-      "tol_dex": 0.5,
-      "units": "s",
-      "explain": "$t = (4.56\\times10^{9}\\ \\text{yr})(3.15\\times10^{7}\\ \\text{s/yr}) = 1.44\\times10^{17}$ s. Multiply the $10^{9}$ and $10^{7}$ by adding the powers: $10^{16}$, and $4.56\\times3.15 \\approx 14$ bumps it to $10^{17}$."
-    },
-    {
-      "id": "1.3b-013",
-      "skills": [
-        "1.3b-c1",
-        "1.3b-c2",
-        "1.3b-c3"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "order",
-      "stem": "Put these lengths of time in order, shortest first.",
-      "items": [
-        "Light from the Sun to reach Earth",
-        "Earth to spin once on its axis",
-        "The Moon to go through all its phases",
-        "Earth to go once around the Sun",
-        "A human lifetime",
-        "The Sun to go once around the Milky Way",
-        "The age of the solar system",
-        "The age of the universe"
-      ],
-      "explain": "8.3 min, 24 hr, about a month (29.5 days), 1 yr, about 80 yr, 240 Myr, 4.56 Gyr, 13.8 Gyr. The list runs from $10^{-5}$ yr up to $10^{10}$ yr: fifteen orders of magnitude."
-    },
-    {
-      "id": "1.3b-014",
-      "skills": [
-        "1.3b-c4",
-        "1.3b-c6"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "order",
-      "stem": "Put these planets in order of orbital velocity, fastest first.",
-      "items": [
-        "Mercury",
-        "Venus",
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Neptune"
-      ],
-      "explain": "Closer planets orbit faster. Mercury is about 48 km/s, Earth 30 km/s, Jupiter 13 km/s, and Neptune only about 5 km/s. You will find out why with Kepler and Newton."
-    },
-    {
-      "id": "1.3b-015",
-      "skills": [
-        "1.3b-c4",
-        "1.3b-c5"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "mc",
-      "stem": "Uranus is about 19 times farther from the Sun than Earth, so its path once around is 19 times longer. Its year is 84 Earth years. Compared with Earth, Uranus orbits…",
-      "choices": [
-        "slower, because its year grows more than its path does",
-        "faster, because its path is 19 times longer",
-        "at the same speed, because all planets orbit at 30 km/s",
-        "you cannot tell without its mass"
-      ],
-      "answer": 0,
-      "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the top grows 19 times but the bottom grows 84 times, so $v_{\\rm orb} \\approx \\dfrac{19}{84}\\times30$ km/s $\\approx 7$ km/s. Farther out, slower."
-    },
-    {
-      "id": "1.3b-016",
-      "skills": [
-        "1.3b-c1",
-        "1.3b-c2"
-      ],
-      "type": "conceptual",
-      "dok": 2,
-      "format": "mc",
-      "stem": "The universe is about how many times older than the solar system?",
-      "choices": [
-        "About 1.5 times",
-        "About 3 times",
-        "About 10 times",
-        "About 60 times"
-      ],
-      "answer": 1,
-      "explain": "$\\dfrac{13.8\\ \\text{Gyr}}{4.56\\ \\text{Gyr}} \\approx 3$. The same order of magnitude: the solar system has been around for about a third of all time. (About 60 is how many 240 Myr trips around the Milky Way fit in 13.8 Gyr.)"
+   },
+   "stem": "A planet around another star orbits {r} AU from its star, and its year is {t} Earth years long. What is its orbital velocity in km/s? (1 AU $= 1.5\\times10^{8}$ km, 1 yr $= 3.15\\times10^{7}$ s)",
+   "answer": "2*3.1416*r*1.5e8/(t*3.15e7)",
+   "tol": 0.03,
+   "units": "km/s",
+   "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r})(1.5\\times10^{8}\\ \\text{km})}{({t})(3.15\\times10^{7}\\ \\text{s})} =$ {answer} km/s. Distance in km over time in seconds gives km/s directly.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-006' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='90' cy='80' r='58' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-width='1.5'/><circle cx='90' cy='80' r='11' fill='#f59e0b'/><line x1='90' y1='80' x2='137.5' y2='46.7' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'/><circle cx='137.5' cy='46.7' r='6' fill='#dc6b4a'/><text x='112' y='46' text-anchor='end' font-size='12'>{r} AU</text><text x='176' y='64' text-anchor='start' font-size='12'>one orbit takes {t} Earth years</text><text x='176' y='94' text-anchor='start'>v_orb = ? km/s</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>",
+   "interactive": {
+    "kind": "orbit",
+    "title": "Watch one orbit",
+    "r_label": "r = {r} AU",
+    "period_label": "{t} years",
+    "center_label": "star",
+    "when": "after"
+   }
+  },
+  {
+   "id": "1.3b-007",
+   "skills": [
+    "1.3b-c6"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "n": {
+     "min": 1,
+     "max": 50,
+     "step": 1
     }
-  ]
+   },
+   "stem": "Earth moves along its orbit at $v_{\\rm orb} = 30$ km/s. How many km does Earth travel in {n} minutes?",
+   "answer": "30*n*60",
+   "tol": 0.03,
+   "units": "km",
+   "explain": "$d = v t = (30\\ \\text{km/s})({n}\\times60\\ \\text{s}) =$ {answer} km. That is 1,800 km every minute, and you feel none of it.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-007' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker><marker id='m-1-3b-007a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='#6366f1'/></marker></defs><path d='M20,130 Q200,14 380,130' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><path d='M106.4,87.7 Q200,56.3 293.6,87.7' fill='none' stroke='#6366f1' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' marker-end='url(#m-1-3b-007a)'/><circle cx='84.8' cy='95.8' r='8' fill='none' stroke='currentColor' stroke-opacity='.45' stroke-width='1.3' stroke-dasharray='3 3'/><circle cx='315.2' cy='95.8' r='8' fill='#3b82f6'/><text x='84.8' y='121.8' text-anchor='middle' font-size='11' fill-opacity='.7'>start</text><text x='315.2' y='121.8' text-anchor='middle' font-size='11' fill-opacity='.7'>{n} min later</text><text x='200' y='52' text-anchor='middle'>d = ? km</text><text x='200' y='154' text-anchor='middle' font-size='12' fill-opacity='.85'>along Earth's orbit at 30 km/s</text></svg>"
+  },
+  {
+   "id": "1.3b-008",
+   "skills": [
+    "1.3b-c3"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "T": {
+     "min": 1,
+     "max": 4,
+     "step": 0.1
+    }
+   },
+   "stem": "The Sun goes once around the Milky Way every 240 Myr. How many times has it gone around in the last {T} Gyr?",
+   "answer": "T*1000/240",
+   "tol": 0.03,
+   "units": "times",
+   "explain": "Same units first: ${T}$ Gyr $= {T}\\times1000$ Myr. Number of orbits $= \\dfrac{{T}\\times1000\\ \\text{Myr}}{240\\ \\text{Myr}} =$ {answer} times.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-008' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><ellipse cx='200' cy='78' rx='165' ry='46' fill='currentColor' fill-opacity='.06' stroke='currentColor' stroke-opacity='.3' stroke-width='1.2'/><ellipse cx='200' cy='78' rx='28' ry='13' fill='#fde68a' stroke='currentColor' stroke-opacity='.4' stroke-width='.8'/><ellipse cx='200' cy='78' rx='105' ry='29' fill='none' stroke='currentColor' stroke-opacity='.5' stroke-width='1.3' stroke-dasharray='4 4'/><path d='M160,105.6 Q200,109 240,105.6' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' marker-end='url(#m-1-3b-008)'/><circle cx='305' cy='78' r='5' fill='#f59e0b' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><text x='305' y='68' text-anchor='middle' font-size='12'>Sun</text><text x='200' y='150' text-anchor='middle' font-size='12'>one lap = 240 Myr.  Laps in {T} Gyr?</text><text x='396' y='16' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3b-009",
+   "skills": [
+    "1.3b-c3"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "T": {
+     "min": 10,
+     "max": 200,
+     "step": 1
+    }
+   },
+   "stem": "A fossil is {T} Myr old. How many seconds ago did that creature live? (1 yr $= 3.15\\times10^{7}$ s)",
+   "answer": "T*1e6*3.15e7",
+   "tol": 0.03,
+   "units": "s",
+   "explain": "1 Myr $= 10^{6}$ yr, so $t = ({T}\\times10^{6}\\ \\text{yr})\\left(3.15\\times10^{7}\\ \\dfrac{\\text{s}}{\\text{yr}}\\right) =$ {answer} s.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 36 400 100' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-009' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='40' y1='80' x2='368' y2='80' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3b-009)'/><circle cx='40' cy='80' r='13' fill='#94a3b8'/><path d='M40,80 m0,-2 a2,2 0 1 1 -2,3 a5,5 0 1 1 8,-5 a8,8 0 1 1 -12,11' fill='none' stroke='currentColor' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.7'/><circle cx='360' cy='80' r='4' fill='currentColor'/><text x='40' y='112' text-anchor='middle' font-size='11' fill-opacity='.75'>creature lived</text><text x='360' y='104' text-anchor='middle' font-size='11' fill-opacity='.75'>now</text><text x='200' y='64' text-anchor='middle'>{T} Myr ago</text><text x='200' y='104' text-anchor='middle'>= ? s</text></svg>"
+  },
+  {
+   "id": "1.3b-010",
+   "skills": [
+    "1.3b-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "r": {
+     "min": 6700,
+     "max": 7200,
+     "step": 10
+    },
+    "t": {
+     "min": 90,
+     "max": 100,
+     "step": 0.5
+    }
+   },
+   "stem": "A satellite circles Earth {r} km from Earth's center and goes around once every {t} minutes. What is its orbital velocity in km/s?",
+   "answer": "2*3.1416*r/(t*60)",
+   "tol": 0.03,
+   "units": "km/s",
+   "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{ t } = \\dfrac{2\\pi({r}\\ \\text{km})}{({t})(60\\ \\text{s})} =$ {answer} km/s. The time has to be in seconds to get km/s.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-010' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='96' cy='80' r='60' fill='none' stroke='currentColor' stroke-opacity='.5' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='96' cy='80' r='30' fill='#3b82f6'/><line x1='96' y1='80' x2='142' y2='41.4' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'/><circle cx='96' cy='80' r='2.2' fill='currentColor'/><rect x='137' y='37.4' width='10' height='8' rx='1.5' fill='#94a3b8' stroke='currentColor' stroke-opacity='.5' stroke-width='.8'/><line x1='129' y1='41.4' x2='155' y2='41.4' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-opacity='.6'/><text x='184' y='60' text-anchor='start' font-size='12'>distance from center: {r} km</text><text x='184' y='84' text-anchor='start' font-size='12'>once around every {t} min</text><text x='184' y='112' text-anchor='start'>v_orb = ? km/s</text></svg>",
+   "interactive": {
+    "kind": "orbit",
+    "title": "Watch one orbit",
+    "r_label": "r = {r} km",
+    "period_label": "{t} min",
+    "center_color": "#3b82f6",
+    "center_label": "Earth",
+    "color": "#94a3b8",
+    "when": "after"
+   }
+  },
+  {
+   "id": "1.3b-011",
+   "skills": [
+    "1.3b-c5",
+    "1.3b-c6"
+   ],
+   "type": "procedural",
+   "dok": 3,
+   "format": "numeric",
+   "params": {
+    "r": {
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1
+    },
+    "t": {
+     "min": 0.5,
+     "max": 4,
+     "step": 0.1
+    }
+   },
+   "stem": "A planet around another star orbits {r} AU from its star, with a year {t} Earth years long. Use the relative form: its orbital velocity is how many times Earth's?",
+   "answer": "r/t",
+   "tol": 0.03,
+   "units": "times",
+   "explain": "Divide the equation for the planet by the one for Earth: $\\dfrac{v_{\\rm orb}}{v_{{\\rm orb},\\oplus}} = \\dfrac{2\\pi r/ t }{2\\pi(1\\ \\text{AU})/(1\\ \\text{yr})}$. The $2\\pi$ cancels, leaving $\\dfrac{ {r}\\ \\text{AU}/1\\ \\text{AU} }{ {t}\\ \\text{yr}/1\\ \\text{yr} } =$ {answer} times, or about {answer} $\\times$ 30 km/s.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-011' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='100' cy='64' r='40' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-width='1.5'/><circle cx='100' cy='64' r='9' fill='#f59e0b'/><circle cx='140' cy='64' r='6' fill='#3b82f6'/><text x='100' y='124' text-anchor='middle' font-size='12'>Earth</text><text x='100' y='140' text-anchor='middle' font-size='12' fill-opacity='.8'>1 AU,  1 yr</text><circle cx='300' cy='64' r='40' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-width='1.5'/><circle cx='300' cy='64' r='9' fill='#f59e0b'/><circle cx='340' cy='64' r='6' fill='#dc6b4a'/><text x='300' y='124' text-anchor='middle' font-size='12'>the planet</text><text x='300' y='140' text-anchor='middle' font-size='12' fill-opacity='.8'>{r} AU,  {t} yr</text><text x='200' y='68' text-anchor='middle' fill-opacity='.7'>vs</text><text x='396' y='158' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>same size drawn, not to scale</text></svg>",
+   "interactive": {
+    "kind": "orbit",
+    "title": "Watch one orbit",
+    "r_label": "r = {r} AU",
+    "period_label": "{t} years",
+    "center_label": "star",
+    "when": "after"
+   }
+  },
+  {
+   "id": "1.3b-012",
+   "skills": [
+    "1.3b-c2"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "slider",
+   "scale": "log",
+   "min": 10,
+   "max": 20,
+   "stem": "Order of magnitude: how many seconds old is the solar system? Pick the power of ten.",
+   "answer": "4.56e9*3.15e7",
+   "tol_dex": 0.5,
+   "units": "s",
+   "explain": "$t = (4.56\\times10^{9}\\ \\text{yr})(3.15\\times10^{7}\\ \\text{s/yr}) = 1.44\\times10^{17}$ s. Multiply the $10^{9}$ and $10^{7}$ by adding the powers: $10^{16}$, and $4.56\\times3.15 \\approx 14$ bumps it to $10^{17}$.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 36 400 100' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-012' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='46' y1='80' x2='368' y2='80' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' marker-end='url(#m-1-3b-012)'/><circle cx='40' cy='80' r='10' fill='#f59e0b'/><circle cx='360' cy='80' r='4' fill='currentColor'/><text x='40' y='110' text-anchor='start' font-size='11' fill-opacity='.75'>solar system forms</text><text x='360' y='104' text-anchor='middle' font-size='11' fill-opacity='.75'>now</text><text x='200' y='64' text-anchor='middle'>4.56 Gyr</text><text x='200' y='104' text-anchor='middle'>= 10^? s</text></svg>"
+  },
+  {
+   "id": "1.3b-013",
+   "skills": [
+    "1.3b-c1",
+    "1.3b-c2",
+    "1.3b-c3"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put these lengths of time in order, shortest first.",
+   "items": [
+    "Light from the Sun to reach Earth",
+    "Earth to spin once on its axis",
+    "The Moon to go through all its phases",
+    "Earth to go once around the Sun",
+    "A human lifetime",
+    "The Sun to go once around the Milky Way",
+    "The age of the solar system",
+    "The age of the universe"
+   ],
+   "explain": "8.3 min, 24 hr, about a month (29.5 days), 1 yr, about 80 yr, 240 Myr, 4.56 Gyr, 13.8 Gyr. The list runs from $10^{-5}$ yr up to $10^{10}$ yr: fifteen orders of magnitude.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-013' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><text x='200' y='34' text-anchor='middle' font-size='12' fill-opacity='.8'>each tick is 10 times longer than the one before</text><line x1='24' y1='84' x2='384' y2='84' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' marker-end='url(#m-1-3b-013)'/><path d='M24,76v16M85.1,76v16M146.1,76v16M207.2,76v16M268.2,76v16M329.3,76v16' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/><path d='M44.4,79v10M64.7,79v10M105.4,79v10M125.8,79v10M166.5,79v10M186.8,79v10M227.5,79v10M247.9,79v10M288.6,79v10M308.9,79v10M349.6,79v10M370,79v10' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.6'/><text x='24' y='110' text-anchor='middle' font-size='12'>10⁻⁶</text><text x='85.1' y='110' text-anchor='middle' font-size='12'>10⁻³</text><text x='146.1' y='110' text-anchor='middle' font-size='12'>10⁰</text><text x='207.2' y='110' text-anchor='middle' font-size='12'>10³</text><text x='268.2' y='110' text-anchor='middle' font-size='12'>10⁶</text><text x='329.3' y='110' text-anchor='middle' font-size='12'>10⁹</text><text x='200' y='138' text-anchor='middle' font-size='12' fill-opacity='.75'>times in years</text><text x='24' y='64' text-anchor='start' font-size='11' fill-opacity='.7'>shorter</text><text x='382' y='64' text-anchor='end' font-size='11' fill-opacity='.7'>longer</text></svg>",
+   "interactive": {
+    "kind": "logline",
+    "when": "after",
+    "title": "Times on a power-of-ten line",
+    "min": -3,
+    "max": 11,
+    "unit": "years",
+    "events": [
+     {
+      "label": "a day",
+      "value": 0.00274
+     },
+     {
+      "label": "a human life",
+      "value": 80
+     },
+     {
+      "label": "humans exist",
+      "value": 300000.0
+     },
+     {
+      "label": "dinosaurs gone",
+      "value": 66000000.0
+     },
+     {
+      "label": "Sun around the Milky Way",
+      "value": 240000000.0
+     },
+     {
+      "label": "solar system",
+      "value": 4560000000.0
+     },
+     {
+      "label": "universe",
+      "value": 13800000000.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "1.3b-014",
+   "skills": [
+    "1.3b-c4",
+    "1.3b-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put these planets in order of orbital velocity, fastest first.",
+   "items": [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Neptune"
+   ],
+   "explain": "Closer planets orbit faster. Mercury is about 48 km/s, Earth 30 km/s, Jupiter 13 km/s, and Neptune only about 5 km/s. You will find out why with Kepler and Newton."
+  },
+  {
+   "id": "1.3b-015",
+   "skills": [
+    "1.3b-c4",
+    "1.3b-c5"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Uranus is about 19 times farther from the Sun than Earth, so its path once around is 19 times longer. Its year is 84 Earth years. Compared with Earth, Uranus orbits…",
+   "choices": [
+    "slower, because its year grows more than its path does",
+    "faster, because its path is 19 times longer",
+    "at the same speed, because all planets orbit at 30 km/s",
+    "you cannot tell without its mass"
+   ],
+   "answer": 0,
+   "explain": "$v_{\\rm orb} = \\dfrac{2\\pi r}{t}$: the top grows 19 times but the bottom grows 84 times, so $v_{\\rm orb} \\approx \\dfrac{19}{84}\\times30$ km/s $\\approx 7$ km/s. Farther out, slower.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-3b-015' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='40' cy='80' r='12' fill='#f59e0b'/><circle cx='40' cy='80' r='34' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-width='1.5'/><circle cx='74' cy='80' r='5' fill='#3b82f6'/><path d='M331.7,10 A300,300 0 0 1 331.7,150' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='.35'/><circle cx='340' cy='80' r='8' fill='#94a3b8'/><text x='74' y='136' text-anchor='middle' font-size='12'>Earth</text><text x='74' y='151' text-anchor='middle' font-size='11' fill-opacity='.8'>1 yr</text><text x='262' y='64' text-anchor='end' font-size='12'>Uranus</text><text x='262' y='82' text-anchor='end' font-size='11' fill-opacity='.8'>path 19× longer</text><text x='262' y='98' text-anchor='end' font-size='11' fill-opacity='.8'>year 84 yr</text><text x='396' y='156' text-anchor='end' font-size='10' fill-opacity='.6' font-style='italic'>not to scale</text></svg>"
+  },
+  {
+   "id": "1.3b-016",
+   "skills": [
+    "1.3b-c1",
+    "1.3b-c2"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "The universe is about how many times older than the solar system?",
+   "choices": [
+    "About 1.5 times",
+    "About 3 times",
+    "About 10 times",
+    "About 60 times"
+   ],
+   "answer": 1,
+   "explain": "$\\dfrac{13.8\\ \\text{Gyr}}{4.56\\ \\text{Gyr}} \\approx 3$. The same order of magnitude: the solar system has been around for about a third of all time. (About 60 is how many 240 Myr trips around the Milky Way fit in 13.8 Gyr.)"
+  }
+ ]
 }

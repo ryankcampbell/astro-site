@@ -318,6 +318,21 @@ p.pane-sub{margin:0 0 16px;color:var(--ink-3)}
 .fc-side .fig{width:100%;margin-bottom:.8rem}
 .fc-side .fig svg{max-height:150px}
 @media (min-width:640px){.fc-side .fig svg{max-height:170px}}
+/* interactive figures (figs.js) */
+.ix{width:100%}
+.ix-title{font-size:12px;font-weight:600;color:var(--ink-3);margin-bottom:4px}
+.ix-cv{display:block;width:100%}
+.ix-ctl{display:flex;align-items:center;gap:10px;margin-top:6px;flex-wrap:wrap}
+.ix-btn{padding:5px 12px;border-radius:7px;border:1px solid var(--accent-line);background:var(--accent-bg);color:var(--accent-ink);font-size:13px;font-weight:600}
+.ix-btn:hover{background:var(--accent);color:#fff}
+.ix-read{font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.ix-shrink{display:flex;flex-direction:column;gap:4px}
+.ix-range{width:100%;accent-color:var(--accent)}
+.ix-tbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.ix-tbl th{text-align:left;font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;padding:4px 6px;border-bottom:1px solid var(--line)}
+.ix-tbl td{padding:4px 6px;border-bottom:1px solid var(--line-soft);font-variant-numeric:tabular-nums}
+.ix-sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.fc-ix{margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
 /* ── printable duplex flashcards (study.js printCards) ──
    Designed to survive whatever margins the browser imposes: 0.5 in @page margins, and the
    whole sheet (cards + note) fits in 7.5 × 9.95 in, so headers/footers land in the margin and a

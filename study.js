@@ -98,6 +98,13 @@ function figHTML(svg, q, vals) {
   return `<div class="fig">${q ? fill(svg, q, vals) : svg}</div>`;
 }
 
+function mountIx(el, spec, q, vals) {
+  if (!spec || !window.Interactives) return;
+  let s = spec;
+  if (q) { try { s = JSON.parse(fill(JSON.stringify(spec), q, vals)); } catch (e) { return; } }
+  window.Interactives.mount(el, s);
+}
+
 /* ── flashcards ──────────────────────────────────────────────────────── */
 
 function flashcards(mount, set, ctx) {
@@ -145,10 +152,17 @@ function flashcards(mount, set, ctx) {
       `${figHTML(c.figure)}<div class="fc-content">${c.front}</div><span class="fc-hint">Tap or press Space to flip</span></div>` +
       `<div class="fc-side fc-back"><span class="fc-face">Back</span>${figHTML(c.figure_back)}<div class="fc-content">${c.back}</div>` +
       `<span class="fc-hint">Tap to flip back</span></div>`;
-    card.onclick = () => { flipped = !flipped; card.classList.toggle('flipped', flipped); card.setAttribute('aria-pressed', String(flipped)); rate.classList.toggle('show', flipped); };
+    card.onclick = () => { flipped = !flipped; card.classList.toggle('flipped', flipped); card.setAttribute('aria-pressed', String(flipped)); rate.classList.toggle('show', flipped);
+      if (ix && flipped && ix.hidden) { ix.hidden = false; if (!ix.firstChild) mountIx(ix, c.interactive); } };
     scene.appendChild(card);
     wrap.appendChild(scene);
     math(card);
+    let ix = null;
+    if (c.interactive) {     // below the card (a <button> cannot hold controls); shown once flipped
+      ix = h('div', 'fc-ix'); ix.hidden = !flipped && c.interactive.when !== 'before';
+      wrap.appendChild(ix);
+      if (!ix.hidden) mountIx(ix, c.interactive);
+    }
 
     const nav = h('div', 'st-actions');
     const prev = h('button', 'btn-2', '← Prev'); prev.disabled = i === 0;
@@ -286,6 +300,7 @@ function practice(mount, set, ctx) {
     const left = h('div', 'q-left');
     left.appendChild(h('div', 'q-stem', fill(q.stem, q, vals)));
     if (q.figure) left.appendChild(h('div', 'q-fig', figHTML(q.figure, q, vals)));
+    if (q.interactive && q.interactive.when !== 'after') { const d = h('div', 'q-fig'); left.appendChild(d); mountIx(d, q.interactive, q, vals); }
     const right = h('div', 'q-right');
     grid.append(left, right);
     art.appendChild(grid);
@@ -314,7 +329,11 @@ function practice(mount, set, ctx) {
         (res.shown ? `<div class="q-shown">${res.shown}</div>` : '') +
         `<div class="q-exlabel">Explanation</div><div class="q-explain">${fill(q.explain, q, vals, ans)}</div>`;
       math(fb);
-      check.hidden = true; next.hidden = false; next.focus();
+      if (q.interactive && q.interactive.when === 'after') {
+        fb.appendChild(h('div', 'q-exlabel', 'Watch it'));
+        const d = h('div', 'q-fig'); fb.appendChild(d); mountIx(d, q.interactive, q, vals);
+      }
+      check.hidden = true; next.hidden = false; next.focus({ preventScroll: true });
     };
     next.onclick = () => { i++; draw(); };
     math(art);
