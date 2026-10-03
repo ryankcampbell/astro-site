@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29",
+ "generated": "2026-10-02",
  "units": [
   {
    "unit": 1,
@@ -451,6 +451,44 @@
        "file": "p/hw-1-4a.pdf",
        "hash": "9d7519ffd054323a42eca436c04cf14c114d1c8fa898f218f6bb33ccd0da993a",
        "bytes": 275095
+      },
+      {
+       "id": "moonclock-1-4a",
+       "kind": "page",
+       "title": "The Moon Clock",
+       "file": "d/moonclock-1-4a.html",
+       "hash": "04f922fd1af08a4e4c9a79f67356800b1f7fd9ba8382a7629fd3a03cccae33c6",
+       "bytes": 4490170,
+       "sections": [
+        {
+         "id": "myths-explaining-the-unexplainable",
+         "text": "1 · Myths: explaining the unexplainable"
+        },
+        {
+         "id": "the-moon-at-a-glance",
+         "text": "2 · The Moon at a glance"
+        },
+        {
+         "id": "building-the-moon-clock",
+         "text": "3 · Building the Moon Clock"
+        },
+        {
+         "id": "match-each-phase-to-its-rising-time",
+         "text": "4 · Match each phase to its rising time"
+        },
+        {
+         "id": "self-check",
+         "text": "5 · Self-check"
+        }
+       ]
+      },
+      {
+       "id": "moonclock-sim",
+       "kind": "sim",
+       "title": "Moon Clock sim",
+       "file": "d/moonclock-sim.html",
+       "hash": "237dab31f20eb3e985f96c2add89619937bf12932ea70d95d1a2da7d3e4cb731",
+       "bytes": 54238
       }
      ]
     },
@@ -480,6 +518,32 @@
        "file": "p/hw-1-4b.pdf",
        "hash": "7792816bf874aff6c5f97ea8176fbabb97ebf8d549729e68e584b4503698dab8",
        "bytes": 2547203
+      },
+      {
+       "id": "eclipses-1-4b",
+       "kind": "page",
+       "title": "Eclipses",
+       "file": "d/eclipses-1-4b.html",
+       "hash": "269673e35e131776dca8b84af6a64bf059319470ded10225005bf20457ac6425",
+       "bytes": 5509324,
+       "sections": [
+        {
+         "id": "eclipses-at-a-glance",
+         "text": "1 · Eclipses at a glance"
+        },
+        {
+         "id": "eclipses",
+         "text": "2 · Eclipses"
+        },
+        {
+         "id": "name-that-eclipse",
+         "text": "3 · Name that eclipse"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
       }
      ]
     },
