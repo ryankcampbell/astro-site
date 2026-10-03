@@ -3007,8 +3007,8 @@ window.PH = (function(){
     document.getElementById('psFb').innerHTML= good===8? '<span class="okx">✓ All eight.</span> Waxing grows, waning shrinks, and the quarters sit between.' : good+' of 8 in the right place'; };
   document.getElementById('psShuf').onclick=function(){ order=sh(E.map(function(_,i){return i;})); render(); };
   order=sh(E.map(function(_,i){return i;})); render(); TEX.onReady(render);
-  document.getElementById('psDChk').onclick=function(){ var v=parseNum(document.getElementById('psD').value), el=document.getElementById('psD'), ok=within(v,14.76,0.02);
-    el.className='num '+(ok?'ok':'no'); document.getElementById('psDFb').innerHTML= ok? '<span class="okx">✓</span> 4 steps: $4\\times 3.69 = 14.8$ days, half a lunar month.' : 'Count the steps: First Quarter → Waxing Gibbous → Full → Waning Gibbous → Waning Crescent.'; renderM(document.getElementById('psDFb')); };
+  document.getElementById('psDChk').onclick=function(){ var v=parseNum(document.getElementById('psD').value), el=document.getElementById('psD'), ok=within(v,18.45,0.01);
+    el.className='num '+(ok?'ok':'no'); document.getElementById('psDFb').innerHTML= ok? '<span class="okx">✓</span> 5 steps: $5\\times 3.69 = 18.45$ days.' : 'Count the steps: First Quarter → Waxing Gibbous → Full → Waning Gibbous → Third Quarter → Waning Crescent.'; renderM(document.getElementById('psDFb')); };
 })();
 
 // ===================== 2 · phase vs rising and setting =====================
