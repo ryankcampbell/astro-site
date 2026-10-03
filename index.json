@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02",
+ "generated": "2026-10-03",
  "units": [
   {
    "unit": 1,
@@ -457,7 +457,7 @@
        "kind": "page",
        "title": "The Moon Clock",
        "file": "d/moonclock-1-4a.html",
-       "hash": "04f922fd1af08a4e4c9a79f67356800b1f7fd9ba8382a7629fd3a03cccae33c6",
+       "hash": "f8f73716b95d70432d405b489f266e1b5ab3150c80c41af7066107ca2cac1d02",
        "bytes": 4490170,
        "sections": [
         {

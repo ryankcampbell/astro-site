@@ -2780,7 +2780,7 @@ table.calc td.given { color:var(--muted); }
 <div class="panel">
   <div class="panel-head"><div class="sec-label">The eight phases, as you see them from Portland</div><button class="popout-btn" onclick="popOut(this)">⛶ Present</button></div>
   <canvas id="epC" width="860" height="300"></canvas>
-  <div class="hint">Top row: waxing, New to Full. Bottom row: waning, Full back to New. In the northern hemisphere a waxing Moon is lit on the right.</div>
+  <div class="hint">Top row: waning, Full back to New. Bottom row: waxing, New to Full. In the northern hemisphere a waxing Moon is lit on the right.</div>
 </div>
 <div class="panel">
   <div class="panel-head"><div class="sec-label">Put them in order, starting at New Moon</div><button class="popout-btn" onclick="popOut(this)">⛶ Present</button></div>
@@ -2950,10 +2950,10 @@ window.PH = (function(){
 // ===================== 1 · eight phases figure + thumbnails =====================
 (function(){
   var cv=document.getElementById('epC'), W=860, H=300;
-  var ROWS=[[0,45,90,135,180],[180,225,270,315,360]], SH=['New','Waxing Crescent','1st Quarter','Waxing Gibbous','Full','Waning Gibbous','3rd Quarter','Waning Crescent','New'];
+  var ROWS=[[180,225,270,315,360],[0,45,90,135,180]], SH=['New','Waxing Crescent','1st Quarter','Waxing Gibbous','Full','Waning Gibbous','3rd Quarter','Waning Crescent','New'];
   function draw(){ var C=RC.C, ctx=RC.setup(cv,W,H); ctx.fillStyle=C.space; ctx.fillRect(0,0,W,H); RC.stars(ctx,W,H,4,80);
     var n=Math.round(92*RC.dpr());
-    ROWS.forEach(function(row,r){ var y=18+r*140; RC.text(ctx,r?'waning →':'waxing →',14,y+52,{size:11,color:'#9fb0c8',weight:'700'});
+    ROWS.forEach(function(row,r){ var y=18+r*140; RC.text(ctx,r?'waxing →':'waning →',14,y+52,{size:11,color:'#9fb0c8',weight:'700'});
       row.forEach(function(E,k){ var x=110+k*150; ctx.drawImage(PH.img(n,E%360),x,y,92,92); RC.text(ctx,SH[E/45],x+46,y+112,{align:'center',size:12.5,color:'#eef2f8',weight:'600'}); }); }); }
   RC.register(draw); TEX.onReady(draw);
   // rail thumbnails: drawn, so they count as pictures without adding weight
