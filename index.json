@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03",
+ "generated": "2026-10-08",
  "units": [
   {
    "unit": 1,
@@ -943,6 +943,49 @@
       {
        "id": "which-moon-which-storm",
        "text": "Which moon, which storm?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "saturn",
+   "title": "Saturn",
+   "glyph": "♄",
+   "rows": [],
+   "blurb": "Its rings, shepherd moons, Titan and Enceladus. Up in the evening this fall.",
+   "items": [
+    {
+     "id": "saturnmap",
+     "kind": "app",
+     "title": "Saturnmap",
+     "file": "d/saturnmap.html",
+     "hash": "6f712a2ff9a3b38de064bc9cd22cc97d08b1235ecc3fb213f728ae7fd7fc61be",
+     "bytes": 2911397
+    },
+    {
+     "id": "saturn-features",
+     "kind": "page",
+     "title": "Saturn: seven things",
+     "file": "d/saturn-features.html",
+     "hash": "0ae2eb569d0d468a01a50988a367f12e52c06c56cdda9b64224b80730b6ff931",
+     "bytes": 8196330,
+     "sections": [
+      {
+       "id": "saturn-at-a-glance",
+       "text": "Saturn at a glance"
+      },
+      {
+       "id": "seven-things-to-explore",
+       "text": "Seven things to explore"
+      },
+      {
+       "id": "which-moon-is-it",
+       "text": "Which moon is it?"
+      },
+      {
+       "id": "sources-and-further-reading",
+       "text": "Sources and further reading"
       }
      ]
     }
