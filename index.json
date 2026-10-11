@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08",
+ "generated": "2026-10-11",
  "units": [
   {
    "unit": 1,
@@ -524,8 +524,8 @@
        "kind": "page",
        "title": "Eclipses",
        "file": "d/eclipses-1-4b.html",
-       "hash": "269673e35e131776dca8b84af6a64bf059319470ded10225005bf20457ac6425",
-       "bytes": 5509324,
+       "hash": "579582bb9d10754c2e9a06f2660164d78a5dba6cabd20a43e605d3d6180009b2",
+       "bytes": 6002735,
        "sections": [
         {
          "id": "eclipses-at-a-glance",
