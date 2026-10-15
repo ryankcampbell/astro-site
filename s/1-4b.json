@@ -1,0 +1,417 @@
+{
+ "code": "1.4b",
+ "title": "Eclipses and trig",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.4b-c1",
+   "tag": "DEF",
+   "front": "Lunar eclipse",
+   "back": "Earth passes between the Sun and the Moon, and <b>Earth's shadow falls on the Moon</b>. Only at <b>Full Moon</b>. Anyone on the night side of Earth can see it; in totality the Moon turns red."
+  },
+  {
+   "id": "1.4b-c2",
+   "tag": "DEF",
+   "front": "Solar eclipse",
+   "back": "The Moon passes between the Sun and Earth, and <b>the Moon's shadow falls on Earth</b>. Only at <b>New Moon</b>. The shadow is small, so only a narrow path sees it total."
+  },
+  {
+   "id": "1.4b-c3",
+   "tag": "DEF",
+   "front": "Umbra, penumbra, antumbra",
+   "back": "<b>Umbra</b>: the dark center of the shadow, all of the Sun blocked: <b>total</b>. <b>Penumbra</b>: part of the Sun blocked: <b>partial</b>. <b>Antumbra</b>: beyond the tip of the umbra, the Moon looks smaller than the Sun and leaves a ring: <b>annular</b>.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 150' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><circle cx='30' cy='75' r='26' fill='#facc15'/><text x='30' y='122' text-anchor='middle' font-size='11'>Sun</text><circle cx='210' cy='75' r='8' fill='currentColor' fill-opacity='.6'/><text x='210' y='58' text-anchor='middle' font-size='11'>Moon</text><path d='M210,67 L300,75 L210,83 Z' fill='currentColor' fill-opacity='.55'/><path d='M300,75 L400,66 L400,84 Z' fill='currentColor' fill-opacity='.22'/><path d='M210,67 L400,35 L400,66 L300,75 L400,84 L400,115 L210,83 Z' fill='currentColor' fill-opacity='.1'/><line x1='250' y1='112' x2='262' y2='76' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='250' y='126' text-anchor='middle' font-size='11'>umbra</text><line x1='330' y1='26' x2='370' y2='74' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='330' y='20' text-anchor='middle' font-size='11'>antumbra</text><line x1='370' y1='130' x2='385' y2='104' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='370' y='144' text-anchor='middle' font-size='11'>penumbra</text></svg>"
+  },
+  {
+   "id": "1.4b-c4",
+   "tag": "DEF",
+   "front": "Ecliptic",
+   "back": "The plane of Earth's orbit around the Sun. From Earth it is the Sun's path through the stars over the year; the planets stay close to it."
+  },
+  {
+   "id": "1.4b-c5",
+   "tag": "DEF",
+   "front": "Inclination of the Moon's orbit to the ecliptic",
+   "back": "$i = 5^\\circ$. The Moon's orbit is tipped 5° to the ecliptic, so it is usually a little above or below the Sun–Earth line."
+  },
+  {
+   "id": "1.4b-c6",
+   "tag": "DIAG",
+   "front": "Why don't we see a lunar eclipse every Full Moon?",
+   "back": "The 5° tilt. Most months the Full Moon passes above or below Earth's shadow, and the New Moon's shadow misses Earth. Only when New or Full lands where the Moon crosses the ecliptic do we get eclipses: an <b>eclipse season</b>.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 150' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-4b-c6' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='40' cy='75' r='22' fill='#facc15'/><circle cx='230' cy='75' r='14' fill='#3b82f6' fill-opacity='.5' stroke='currentColor'/><line x1='20' y1='75' x2='410' y2='75' stroke='currentColor' stroke-dasharray='4 4' stroke-opacity='.6'/><text x='408' y='70' text-anchor='end' font-size='11'>ecliptic</text><line x1='130' y1='106' x2='330' y2='44' stroke='currentColor' stroke-width='1.6'/><text x='334' y='40' font-size='11'>Moon's orbit</text><circle cx='330' cy='44' r='7' fill='currentColor' fill-opacity='.5'/><circle cx='130' cy='106' r='7' fill='currentColor' fill-opacity='.5'/><path d='M290,75 A60,60 0 0 0 288,57' fill='none' stroke='currentColor'/><text x='296' y='70' font-size='11'>5°</text><text x='230' y='136' text-anchor='middle' font-size='11'>Most months New and Full miss (tilt exaggerated)</text></svg>"
+  },
+  {
+   "id": "1.4b-c7",
+   "tag": "EQ",
+   "front": "SOH CAH TOA",
+   "back": "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$ · $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$ · $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$. The hypotenuse is across from the right angle; opposite and adjacent are named from $\\theta$.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>θ</text><text x='178' y='74' text-anchor='end'>hyp</text><text x='340' y='90'>opp</text><text x='190' y='160' text-anchor='middle'>adj</text></svg>"
+  },
+  {
+   "id": "1.4b-c8",
+   "tag": "EX",
+   "front": "Trig example: solve for an unknown side",
+   "back": "Hypotenuse 8, angle 25°, find the opposite side. Opp and hyp → SOH: $\\sin 25^\\circ = \\dfrac{x}{8}$, so $x = 8\\sin 25^\\circ = 3.38$. Calculator in <b>degree</b> mode."
+  },
+  {
+   "id": "1.4b-c9",
+   "tag": "EX",
+   "front": "Trig example: solve for an unknown angle",
+   "back": "Opposite 3, adjacent 5. Opp and adj → TOA: $\\tan\\theta = \\dfrac{3}{5}$, so $\\theta = \\tan^{-1}\\!\\left(\\dfrac{3}{5}\\right) = 31.0^\\circ$. Use the inverse button ($\\tan^{-1}$)."
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.4b-001",
+   "skills": [
+    "1.4b-c1"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "A lunar eclipse can only happen at which phase?",
+   "choices": [
+    "New",
+    "First Quarter",
+    "Full",
+    "Third Quarter"
+   ],
+   "answer": 2,
+   "explain": "Earth has to be between the Sun and the Moon, with the Moon on the far side from the Sun: Full."
+  },
+  {
+   "id": "1.4b-002",
+   "skills": [
+    "1.4b-c2"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "During a solar eclipse,",
+   "choices": [
+    "Earth's shadow falls on the Moon",
+    "the Moon's shadow falls on Earth",
+    "the Sun's light is blocked by Earth's atmosphere",
+    "the Moon is on the far side of Earth from the Sun"
+   ],
+   "answer": 1,
+   "explain": "The Moon passes between the Sun and Earth (New Moon) and its shadow lands on a small patch of Earth."
+  },
+  {
+   "id": "1.4b-003",
+   "skills": [
+    "1.4b-c5"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "The Moon's orbit is tilted to the ecliptic by about",
+   "choices": [
+    "0°",
+    "5°",
+    "23.5°",
+    "90°"
+   ],
+   "answer": 1,
+   "explain": "$i = 5^\\circ$. (23.5° is the tilt of Earth's axis, a different thing.)"
+  },
+  {
+   "id": "1.4b-004",
+   "skills": [
+    "1.4b-c4"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "The ecliptic is",
+   "choices": [
+    "the Moon's path around Earth",
+    "the plane of Earth's orbit around the Sun",
+    "the line between day and night on the Moon",
+    "the shadow of Earth on the Moon"
+   ],
+   "answer": 1,
+   "explain": "The ecliptic is the plane of Earth's orbit; from Earth it is the Sun's yearly path through the stars."
+  },
+  {
+   "id": "1.4b-005",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c8"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "h": {
+     "min": 3,
+     "max": 20,
+     "step": 1
+    },
+    "t": {
+     "min": 15,
+     "max": 70,
+     "step": 5
+    }
+   },
+   "stem": "A right triangle has hypotenuse {h} and angle $\\theta = {t}^\\circ$. Find the side opposite $\\theta$.",
+   "answer": "h*Math.sin(t*Math.PI/180)",
+   "tol": 0.02,
+   "explain": "Opp and hyp → SOH: $\\text{opp} = {h}\\sin {t}^\\circ =$ {answer}.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>{t}°</text><text x='178' y='74' text-anchor='end'>{h}</text><text x='340' y='90'>?</text></svg>"
+  },
+  {
+   "id": "1.4b-006",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c8"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "h": {
+     "min": 3,
+     "max": 20,
+     "step": 1
+    },
+    "t": {
+     "min": 15,
+     "max": 70,
+     "step": 5
+    }
+   },
+   "stem": "A right triangle has hypotenuse {h} and angle $\\theta = {t}^\\circ$. Find the side adjacent to $\\theta$.",
+   "answer": "h*Math.cos(t*Math.PI/180)",
+   "tol": 0.02,
+   "explain": "Adj and hyp → CAH: $\\text{adj} = {h}\\cos {t}^\\circ =$ {answer}.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>{t}°</text><text x='178' y='74' text-anchor='end'>{h}</text><text x='190' y='160' text-anchor='middle'>?</text></svg>"
+  },
+  {
+   "id": "1.4b-007",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c8"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "a": {
+     "min": 2,
+     "max": 15,
+     "step": 1
+    },
+    "t": {
+     "min": 15,
+     "max": 65,
+     "step": 5
+    }
+   },
+   "stem": "A right triangle has the side adjacent to $\\theta$ equal to {a} and $\\theta = {t}^\\circ$. Find the opposite side.",
+   "answer": "a*Math.tan(t*Math.PI/180)",
+   "tol": 0.02,
+   "explain": "Opp and adj → TOA: $\\tan {t}^\\circ = \\dfrac{x}{{a}}$, so $x = {a}\\tan {t}^\\circ =$ {answer}.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>{t}°</text><text x='340' y='90'>?</text><text x='190' y='160' text-anchor='middle'>{a}</text></svg>"
+  },
+  {
+   "id": "1.4b-008",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c9"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "o": {
+     "min": 1,
+     "max": 6,
+     "step": 1
+    },
+    "h": {
+     "min": 7,
+     "max": 12,
+     "step": 1
+    }
+   },
+   "stem": "A right triangle has the side opposite $\\theta$ equal to {o} and hypotenuse {h}. Find $\\theta$.",
+   "answer": "Math.asin(o/h)*180/Math.PI",
+   "tol": 0.02,
+   "units": "°",
+   "explain": "Opp and hyp → SOH: $\\theta = \\sin^{-1}\\!\\left(\\dfrac{{o}}{{h}}\\right) =$ {answer}°.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>θ</text><text x='178' y='74' text-anchor='end'>{h}</text><text x='340' y='90'>{o}</text></svg>"
+  },
+  {
+   "id": "1.4b-009",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c9"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "o": {
+     "min": 1,
+     "max": 9,
+     "step": 1
+    },
+    "a": {
+     "min": 2,
+     "max": 12,
+     "step": 1
+    }
+   },
+   "stem": "A right triangle has the side opposite $\\theta$ equal to {o} and the adjacent side equal to {a}. Find $\\theta$.",
+   "answer": "Math.atan(o/a)*180/Math.PI",
+   "tol": 0.02,
+   "units": "°",
+   "explain": "Opp and adj → TOA: $\\theta = \\tan^{-1}\\!\\left(\\dfrac{{o}}{{a}}\\right) =$ {answer}°.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M50,140 L330,140 L330,30 Z' fill='currentColor' fill-opacity='.08' stroke='currentColor' stroke-width='2'/><path d='M316,140 L316,126 L330,126' fill='none' stroke='currentColor'/><path d='M95,140 A45,45 0 0 0 91.9,123.6' fill='none' stroke='currentColor'/><text x='104' y='134'>θ</text><text x='340' y='90'>{o}</text><text x='190' y='160' text-anchor='middle'>{a}</text></svg>"
+  },
+  {
+   "id": "1.4b-010",
+   "skills": [
+    "1.4b-c7",
+    "1.4b-c8"
+   ],
+   "type": "procedural",
+   "dok": 3,
+   "format": "numeric",
+   "params": {
+    "h": {
+     "min": 5,
+     "max": 20,
+     "step": 1
+    },
+    "t": {
+     "min": 15,
+     "max": 60,
+     "step": 5
+    }
+   },
+   "stem": "The Sun is {t}° above the horizon. How long is the shadow of a {h} m flagpole?",
+   "answer": "h/Math.tan(t*Math.PI/180)",
+   "tol": 0.02,
+   "units": "m",
+   "explain": "The pole is opposite the angle and the shadow is adjacent → TOA: $\\tan {t}^\\circ = \\dfrac{{h}}{x}$, so $x = \\dfrac{{h}}{\\tan {t}^\\circ} =$ {answer} m. Lower Sun, longer shadow.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><line x1='20' y1='140' x2='380' y2='140' stroke='currentColor' stroke-width='2'/><line x1='300' y1='140' x2='300' y2='40' stroke='currentColor' stroke-width='3'/><path d='M300,40 L330,48 L300,56 Z' fill='#dc2626'/><line x1='60' y1='140' x2='300' y2='140' stroke='currentColor' stroke-width='6' stroke-opacity='.35'/><line x1='300' y1='40' x2='60' y2='140' stroke='#facc15' stroke-width='1.6' stroke-dasharray='5 4'/><path d='M100,140 A40,40 0 0 0 96.9,124.6' fill='none' stroke='currentColor'/><text x='108' y='134'>{t}°</text><text x='310' y='96'>{h} m</text><text x='180' y='160' text-anchor='middle'>shadow = ?</text></svg>"
+  },
+  {
+   "id": "1.4b-011",
+   "skills": [
+    "1.4b-c3"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "You see a ring of the Sun around the Moon: an annular eclipse. Which part of the Moon's shadow are you in?",
+   "choices": [
+    "Umbra",
+    "Penumbra",
+    "Antumbra",
+    "Earth's shadow"
+   ],
+   "answer": 2,
+   "explain": "The antumbra lies past the tip of the umbra. From there the Moon looks a little smaller than the Sun and leaves a ring of fire.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 150' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><circle cx='30' cy='75' r='26' fill='#facc15'/><text x='30' y='122' text-anchor='middle' font-size='11'>Sun</text><circle cx='210' cy='75' r='8' fill='currentColor' fill-opacity='.6'/><text x='210' y='58' text-anchor='middle' font-size='11'>Moon</text><path d='M210,67 L300,75 L210,83 Z' fill='currentColor' fill-opacity='.55'/><path d='M300,75 L400,66 L400,84 Z' fill='currentColor' fill-opacity='.22'/><path d='M210,67 L400,35 L400,66 L300,75 L400,84 L400,115 L210,83 Z' fill='currentColor' fill-opacity='.1'/><line x1='250' y1='112' x2='262' y2='76' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='250' y='126' text-anchor='middle' font-size='11'>umbra</text><line x1='330' y1='26' x2='370' y2='74' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='330' y='20' text-anchor='middle' font-size='11'>antumbra</text><line x1='370' y1='130' x2='385' y2='104' stroke='currentColor' stroke-width='1' stroke-opacity='.7'/><text x='370' y='144' text-anchor='middle' font-size='11'>penumbra</text></svg>"
+  },
+  {
+   "id": "1.4b-012",
+   "skills": [
+    "1.4b-c6",
+    "1.4b-c5"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why isn't there a lunar eclipse every Full Moon?",
+   "choices": [
+    "The Moon is too far away from Earth",
+    "The Moon's orbit is tilted 5°, so the Full Moon usually passes above or below Earth's shadow",
+    "Earth's shadow is too small to reach the Moon",
+    "The Sun is not always behind Earth at Full Moon"
+   ],
+   "answer": 1,
+   "explain": "The 5° tilt. Only when Full Moon happens near where the Moon's orbit crosses the ecliptic does it pass through Earth's shadow."
+  },
+  {
+   "id": "1.4b-013",
+   "skills": [
+    "1.4b-c1",
+    "1.4b-c2"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Who can see a total lunar eclipse?",
+   "choices": [
+    "Only people in a narrow path about 100 miles wide",
+    "Anyone on the night side of Earth with a clear sky",
+    "Only people at the equator",
+    "Only people where it is daytime"
+   ],
+   "answer": 1,
+   "explain": "The Moon itself goes dark, so everyone who can see the Moon sees it. A total solar eclipse is different: the Moon's small shadow makes a narrow path."
+  },
+  {
+   "id": "1.4b-014",
+   "skills": [
+    "1.4b-c6",
+    "1.4b-c1"
+   ],
+   "type": "conceptual",
+   "dok": 3,
+   "format": "mc",
+   "stem": "There is a solar eclipse today. When is the next chance for a lunar eclipse?",
+   "choices": [
+    "Tonight",
+    "In about 2 weeks, at the next Full Moon",
+    "In about 6 months",
+    "In about 18 years"
+   ],
+   "answer": 1,
+   "explain": "We are in an eclipse season, when the Moon is near the ecliptic. The next Full Moon is half a cycle later, $\\tfrac{29.5}{2} \\approx 15$ days, so it often passes through Earth's shadow too."
+  },
+  {
+   "id": "1.4b-015",
+   "skills": [
+    "1.4b-c2",
+    "1.4b-c3"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put what you see during a total solar eclipse in order.",
+   "items": [
+    "The Moon takes a growing bite out of the Sun (partial)",
+    "Baily's beads: the last sunlight shines through valleys on the Moon's edge",
+    "Totality: the corona shines around the black Moon",
+    "Beads again on the other edge",
+    "Partial again as the Moon moves off"
+   ],
+   "explain": "Partial, beads, totality with the corona (glasses off only now), beads on the far edge, then partial again."
+  },
+  {
+   "id": "1.4b-016",
+   "skills": [
+    "1.4b-c3",
+    "1.4b-c2"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why are some solar eclipses annular instead of total?",
+   "choices": [
+    "The Moon is farther from Earth than usual and looks a little smaller than the Sun",
+    "The Sun is closer than usual",
+    "Earth's atmosphere bends the light",
+    "It happens at Full Moon instead of New"
+   ],
+   "answer": 0,
+   "explain": "The Moon's distance changes over its orbit. When it is far, it doesn't quite cover the Sun, and Earth sits in the antumbra: a ring of fire."
+  }
+ ]
+}

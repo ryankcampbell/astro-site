@@ -1,0 +1,353 @@
+{
+ "code": "1.4a",
+ "title": "Phases and the moon clock",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.4a-c1",
+   "tag": "DEF",
+   "front": "The eight Moon phases, in order",
+   "back": "New, Waxing Crescent, First Quarter, Waxing Gibbous, Full, Waning Gibbous, Third Quarter, Waning Crescent, then New again. <b>Waxing</b> = the lit part grows; <b>waning</b> = it shrinks.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 96' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><circle cx='30' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><text x='30' y='74' text-anchor='middle' font-size='10'>New</text><text x='30' y='87' text-anchor='middle' font-size='10'></text><circle cx='90' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M90,14 A20,20 0 0 1 90,54 A14.14,20 0 0 0 90,14 Z' fill='#facc15'/><text x='90' y='74' text-anchor='middle' font-size='10'>Waxing</text><text x='90' y='87' text-anchor='middle' font-size='10'>Crescent</text><circle cx='150' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M150,14 A20,20 0 0 1 150,54 A0.0,20 0 0 1 150,14 Z' fill='#facc15'/><text x='150' y='74' text-anchor='middle' font-size='10'>First</text><text x='150' y='87' text-anchor='middle' font-size='10'>Quarter</text><circle cx='210' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M210,14 A20,20 0 0 1 210,54 A14.14,20 0 0 1 210,14 Z' fill='#facc15'/><text x='210' y='74' text-anchor='middle' font-size='10'>Waxing</text><text x='210' y='87' text-anchor='middle' font-size='10'>Gibbous</text><circle cx='270' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><circle cx='270' cy='34' r='20' fill='#facc15'/><text x='270' y='74' text-anchor='middle' font-size='10'>Full</text><text x='270' y='87' text-anchor='middle' font-size='10'></text><circle cx='330' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M330,14 A20,20 0 0 0 330,54 A14.14,20 0 0 0 330,14 Z' fill='#facc15'/><text x='330' y='74' text-anchor='middle' font-size='10'>Waning</text><text x='330' y='87' text-anchor='middle' font-size='10'>Gibbous</text><circle cx='390' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M390,14 A20,20 0 0 0 390,54 A0.0,20 0 0 0 390,14 Z' fill='#facc15'/><text x='390' y='74' text-anchor='middle' font-size='10'>Third</text><text x='390' y='87' text-anchor='middle' font-size='10'>Quarter</text><circle cx='450' cy='34' r='20' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M450,14 A20,20 0 0 0 450,54 A14.14,20 0 0 1 450,14 Z' fill='#facc15'/><text x='450' y='74' text-anchor='middle' font-size='10'>Waning</text><text x='450' y='87' text-anchor='middle' font-size='10'>Crescent</text></svg>"
+  },
+  {
+   "id": "1.4a-c2",
+   "tag": "CON",
+   "front": "The lunar month, and the time between two phases",
+   "back": "One cycle of phases takes $29.5$ days. There are 8 phases, so each step is $\\dfrac{29.5}{8} = 3.69$ days."
+  },
+  {
+   "id": "1.4a-c3",
+   "tag": "DEF",
+   "front": "Waxing vs waning",
+   "back": "<b>Waxing</b>: from New to Full, the lit part grows; from Portland the lit side is on the right. <b>Waning</b>: from Full back to New, it shrinks; the lit side is on the left."
+  },
+  {
+   "id": "1.4a-c4",
+   "tag": "DEF",
+   "front": "Why does the Moon have phases?",
+   "back": "The Moon is always <b>50% lit</b>: the half facing the Sun. As it goes around Earth we see a different amount of that lit half. It is <b>not</b> Earth's shadow."
+  },
+  {
+   "id": "1.4a-c5",
+   "tag": "DIAG",
+   "front": "The Moon Clock",
+   "back": "Look down on the North Pole, Sun to the left. Earth is the clock face: noon faces the Sun, then 6 pm, midnight, 6 am going counterclockwise. A phase is <b>highest</b> at its clock time and rises 6 hours before, sets 6 hours after. New 6 am / noon / 6 pm · First Quarter noon / 6 pm / midnight · Full 6 pm / midnight / 6 am · Third Quarter midnight / 6 am / noon (rise / highest / set).",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-4a-c5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='8' y1='50' x2='62' y2='50' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-c5)'/><line x1='8' y1='90' x2='62' y2='90' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-c5)'/><line x1='8' y1='130' x2='62' y2='130' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-c5)'/><line x1='8' y1='170' x2='62' y2='170' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-c5)'/><line x1='8' y1='210' x2='62' y2='210' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-c5)'/><text x='8' y='30' font-size='11' font-weight='700'>SUNLIGHT</text><circle cx='230' cy='130' r='95' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-dasharray='4 4'/><circle cx='230' cy='130' r='24' fill='#3b82f6' fill-opacity='.45' stroke='currentColor'/><path d='M230,106 A24,24 0 0 1 230,154 Z' fill='#000' fill-opacity='.45'/><text x='200' y='134' text-anchor='end' font-size='11'>noon</text><text x='230' y='170' text-anchor='middle' font-size='11'>6 pm</text><text x='260' y='134' text-anchor='start' font-size='11'>midnight</text><text x='230' y='98' text-anchor='middle' font-size='11'>6 am</text><path d='M337,160 A107,107 0 0 0 337,100' fill='none' stroke='currentColor' stroke-width='1.4' marker-end='url(#m-1-4a-c5)'/><circle cx='135.0' cy='130.0' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M135.0,120.0 A10,10 0 0 0 135.0,140.0 Z' fill='#facc15'/><circle cx='162.8' cy='197.2' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M162.8,187.2 A10,10 0 0 0 162.8,207.2 Z' fill='#facc15'/><circle cx='230.0' cy='225.0' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M230.0,215.0 A10,10 0 0 0 230.0,235.0 Z' fill='#facc15'/><circle cx='297.2' cy='197.2' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M297.2,187.2 A10,10 0 0 0 297.2,207.2 Z' fill='#facc15'/><circle cx='325.0' cy='130.0' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M325.0,120.0 A10,10 0 0 0 325.0,140.0 Z' fill='#facc15'/><circle cx='297.2' cy='62.8' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M297.2,52.8 A10,10 0 0 0 297.2,72.8 Z' fill='#facc15'/><circle cx='230.0' cy='35.0' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M230.0,25.0 A10,10 0 0 0 230.0,45.0 Z' fill='#facc15'/><circle cx='162.8' cy='62.8' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M162.8,52.8 A10,10 0 0 0 162.8,72.8 Z' fill='#facc15'/></svg>"
+  },
+  {
+   "id": "1.4a-c6",
+   "tag": "DEF",
+   "front": "Transit",
+   "back": "An object is <b>transiting</b> when it is at its highest in the sky that night, due south from Portland. The Moon transits halfway between its rise and set, 6 hours after rising."
+  },
+  {
+   "id": "1.4a-c7",
+   "tag": "EX",
+   "front": "Moon clock example: when does a First Quarter Moon rise and set?",
+   "back": "First Quarter sits at the 6 pm spot on the clock, so it is highest at 6 pm. Rise 6 hours before: <b>noon</b>. Set 6 hours after: <b>midnight</b>. You see it in the afternoon and evening."
+  },
+  {
+   "id": "1.4a-c8",
+   "tag": "EX",
+   "front": "Phase-days example: New Moon to the next Third Quarter",
+   "back": "Count the steps: New → WxC → 1Q → WxG → Full → WnG → 3Q is 6 steps. $6 \\times 3.69 = 22.1$ days."
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.4a-001",
+   "skills": [
+    "1.4a-c1"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "order",
+   "stem": "Put the Moon's phases in order, starting from New.",
+   "items": [
+    "New",
+    "Waxing Crescent",
+    "First Quarter",
+    "Waxing Gibbous",
+    "Full",
+    "Waning Gibbous",
+    "Third Quarter",
+    "Waning Crescent"
+   ],
+   "explain": "New, Waxing Crescent, First Quarter, Waxing Gibbous, Full, Waning Gibbous, Third Quarter, Waning Crescent. Waxing grows to Full, waning shrinks back to New."
+  },
+  {
+   "id": "1.4a-002",
+   "skills": [
+    "1.4a-c2"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "About how long does the Moon take to go from one phase to the next?",
+   "choices": [
+    "1 day",
+    "3.69 days",
+    "7.4 days",
+    "29.5 days"
+   ],
+   "answer": 1,
+   "explain": "$\\dfrac{29.5\\ \\text{days}}{8\\ \\text{phases}} = 3.69$ days per step. 29.5 days is the whole cycle."
+  },
+  {
+   "id": "1.4a-003",
+   "skills": [
+    "1.4a-c2",
+    "1.4a-c1"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "stem": "How many days does it take the Moon to go from Waxing Crescent to the next Waning Gibbous?",
+   "answer": "4*29.5/8",
+   "tol": 0.03,
+   "units": "days",
+   "explain": "WxC → 1Q → WxG → Full → WnG is 4 steps. $4 \\times 3.69 =$ {answer} days."
+  },
+  {
+   "id": "1.4a-004",
+   "skills": [
+    "1.4a-c2",
+    "1.4a-c1"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "stem": "How many days does it take the Moon to go from New to the next Waning Crescent?",
+   "answer": "7*29.5/8",
+   "tol": 0.03,
+   "units": "days",
+   "explain": "New to Waning Crescent is 7 steps, one short of a whole cycle. $7 \\times 3.69 =$ {answer} days."
+  },
+  {
+   "id": "1.4a-005",
+   "skills": [
+    "1.4a-c5",
+    "1.4a-c7"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "mc",
+   "stem": "About what time does a First Quarter Moon rise?",
+   "choices": [
+    "6 am",
+    "noon",
+    "6 pm",
+    "midnight"
+   ],
+   "answer": 1,
+   "explain": "First Quarter is highest at 6 pm, so it rises 6 hours earlier, at noon, and sets at midnight."
+  },
+  {
+   "id": "1.4a-006",
+   "skills": [
+    "1.4a-c5"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "mc",
+   "stem": "About what time does a Full Moon set?",
+   "choices": [
+    "6 am",
+    "noon",
+    "6 pm",
+    "midnight"
+   ],
+   "answer": 0,
+   "explain": "Full is highest at midnight (opposite the Sun), so it rises at 6 pm and sets at 6 am, just as the Sun comes up."
+  },
+  {
+   "id": "1.4a-007",
+   "skills": [
+    "1.4a-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "mc",
+   "stem": "About what time does a Waxing Crescent Moon set?",
+   "choices": [
+    "3 am",
+    "9 am",
+    "3 pm",
+    "9 pm"
+   ],
+   "answer": 3,
+   "explain": "Waxing Crescent is halfway between New (highest at noon) and First Quarter (highest at 6 pm), so it is highest at 3 pm. It sets 6 hours later: 9 pm. Look for it in the west after sunset."
+  },
+  {
+   "id": "1.4a-008",
+   "skills": [
+    "1.4a-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "mc",
+   "stem": "A New Moon rose 3 hours ago. What time is it?",
+   "choices": [
+    "3 am",
+    "9 am",
+    "3 pm",
+    "9 pm"
+   ],
+   "answer": 1,
+   "explain": "A New Moon rises with the Sun at 6 am. 3 hours later is 9 am. (You can't see it: its lit side faces away from us.)"
+  },
+  {
+   "id": "1.4a-009",
+   "skills": [
+    "1.4a-c5"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "The Moon is above the horizon from about 6 pm until about 6 am. What phase is it?",
+   "choices": [
+    "New",
+    "First Quarter",
+    "Full",
+    "Third Quarter"
+   ],
+   "answer": 2,
+   "explain": "Up from 6 pm to 6 am means highest at midnight, the far side of the clock from the Sun: Full."
+  },
+  {
+   "id": "1.4a-010",
+   "skills": [
+    "1.4a-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Looking south from Portland, you see a Full Moon sitting on the eastern horizon. About what time is it?",
+   "choices": [
+    "6 am",
+    "noon",
+    "6 pm",
+    "midnight"
+   ],
+   "answer": 2,
+   "explain": "On the eastern horizon means it is rising. A Full Moon rises at 6 pm.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M40,140 A160,120 0 0 1 360,140' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-dasharray='4 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='currentColor' stroke-width='2'/><text x='40' y='160' text-anchor='middle' font-weight='700'>E</text><text x='200' y='160' text-anchor='middle' font-weight='700'>S</text><text x='360' y='160' text-anchor='middle' font-weight='700'>W</text><circle cx='40.0' cy='128.0' r='14' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><circle cx='40.0' cy='128.0' r='14' fill='#facc15'/></svg>"
+  },
+  {
+   "id": "1.4a-011",
+   "skills": [
+    "1.4a-c5",
+    "1.4a-c6"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Looking south from Portland, you see a Third Quarter Moon at its highest point. About what time is it?",
+   "choices": [
+    "6 am",
+    "noon",
+    "6 pm",
+    "midnight"
+   ],
+   "answer": 0,
+   "explain": "Third Quarter sits at the 6 am spot on the clock, so it transits (is highest) at 6 am. It rose at midnight and sets at noon.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M40,140 A160,120 0 0 1 360,140' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-dasharray='4 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='currentColor' stroke-width='2'/><text x='40' y='160' text-anchor='middle' font-weight='700'>E</text><text x='200' y='160' text-anchor='middle' font-weight='700'>S</text><text x='360' y='160' text-anchor='middle' font-weight='700'>W</text><circle cx='200.0' cy='20.0' r='14' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M200.0,6.0 A14,14 0 0 0 200.0,34.0 A0.0,14 0 0 0 200.0,6.0 Z' fill='#facc15'/></svg>"
+  },
+  {
+   "id": "1.4a-012",
+   "skills": [
+    "1.4a-c5",
+    "1.4a-c3"
+   ],
+   "type": "conceptual",
+   "dok": 3,
+   "format": "mc",
+   "stem": "At 3 pm you see a half-lit Moon partway up the eastern sky, lit on its right side. What phase is it?",
+   "choices": [
+    "First Quarter",
+    "Third Quarter",
+    "Waxing Gibbous",
+    "Full"
+   ],
+   "answer": 0,
+   "explain": "Half lit is a quarter. Lit on the right is waxing, so First Quarter. Check with the clock: it rose at noon, so at 3 pm it is a quarter of the way across the sky, in the east.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><path d='M40,140 A160,120 0 0 1 360,140' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-dasharray='4 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='currentColor' stroke-width='2'/><text x='40' y='160' text-anchor='middle' font-weight='700'>E</text><text x='200' y='160' text-anchor='middle' font-weight='700'>S</text><text x='360' y='160' text-anchor='middle' font-weight='700'>W</text><circle cx='86.9' cy='55.1' r='14' fill='currentColor' fill-opacity='.18' stroke='currentColor' stroke-opacity='.5'/><path d='M86.9,41.1 A14,14 0 0 1 86.9,69.1 A0.0,14 0 0 1 86.9,41.1 Z' fill='#facc15'/></svg>"
+  },
+  {
+   "id": "1.4a-013",
+   "skills": [
+    "1.4a-c5",
+    "1.4a-c1"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Looking down on the North Pole with sunlight coming from the left, the Moon is at the spot shown. What phase do we see from Earth?",
+   "choices": [
+    "Waxing Crescent",
+    "First Quarter",
+    "Full",
+    "Third Quarter"
+   ],
+   "answer": 3,
+   "explain": "New is on the Sun side (left). Counterclockwise a quarter turn is First Quarter (bottom), then Full (right), then Third Quarter at the top. The Moon is at the 6 am spot, so it is highest at 6 am.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-4a-013' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='8' y1='50' x2='62' y2='50' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-013)'/><line x1='8' y1='90' x2='62' y2='90' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-013)'/><line x1='8' y1='130' x2='62' y2='130' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-013)'/><line x1='8' y1='170' x2='62' y2='170' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-013)'/><line x1='8' y1='210' x2='62' y2='210' stroke='#facc15' stroke-width='2' marker-end='url(#m-1-4a-013)'/><text x='8' y='30' font-size='11' font-weight='700'>SUNLIGHT</text><circle cx='230' cy='130' r='95' fill='none' stroke='currentColor' stroke-opacity='.35' stroke-dasharray='4 4'/><circle cx='230' cy='130' r='24' fill='#3b82f6' fill-opacity='.45' stroke='currentColor'/><path d='M230,106 A24,24 0 0 1 230,154 Z' fill='#000' fill-opacity='.45'/><text x='200' y='134' text-anchor='end' font-size='11'>noon</text><text x='230' y='170' text-anchor='middle' font-size='11'>6 pm</text><text x='260' y='134' text-anchor='start' font-size='11'>midnight</text><text x='230' y='98' text-anchor='middle' font-size='11'>6 am</text><path d='M337,160 A107,107 0 0 0 337,100' fill='none' stroke='currentColor' stroke-width='1.4' marker-end='url(#m-1-4a-013)'/><circle cx='230.0' cy='35.0' r='10' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><path d='M230.0,25.0 A10,10 0 0 0 230.0,45.0 Z' fill='#facc15'/></svg>"
+  },
+  {
+   "id": "1.4a-014",
+   "skills": [
+    "1.4a-c3"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "The Moon is Waxing Gibbous tonight. Tomorrow night will it be more or less lit?",
+   "choices": [
+    "More lit",
+    "Less lit",
+    "The same",
+    "It depends on the weather"
+   ],
+   "answer": 0,
+   "explain": "Waxing means growing: Waxing Gibbous is on its way to Full, so a little more is lit each night."
+  },
+  {
+   "id": "1.4a-015",
+   "skills": [
+    "1.4a-c4"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why does the Moon have phases?",
+   "choices": [
+    "Earth's shadow covers part of the Moon",
+    "The Moon is always half lit, and we see different amounts of the lit half as it goes around us",
+    "Clouds on the Moon block part of it",
+    "The Moon's distance from the Sun changes a lot during the month"
+   ],
+   "answer": 1,
+   "explain": "The half facing the Sun is always lit. Phases come from where the Moon is in its orbit, so how much of that lit half faces us. Earth's shadow only reaches the Moon during a lunar eclipse."
+  },
+  {
+   "id": "1.4a-016",
+   "skills": [
+    "1.4a-c1",
+    "1.4a-c2"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Tonight is a Third Quarter Moon. About what phase will it be in a week?",
+   "choices": [
+    "Full",
+    "First Quarter",
+    "New",
+    "Waxing Gibbous"
+   ],
+   "answer": 2,
+   "explain": "A week is about 2 steps ($2 \\times 3.69 = 7.4$ days): Third Quarter → Waning Crescent → New."
+  }
+ ]
+}

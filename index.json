@@ -490,7 +490,17 @@
        "hash": "237dab31f20eb3e985f96c2add89619937bf12932ea70d95d1a2da7d3e4cb731",
        "bytes": 54238
       }
-     ]
+     ],
+     "study": {
+      "id": "study-1-4a",
+      "kind": "study",
+      "title": "Phases and the moon clock",
+      "cards": 8,
+      "questions": 16,
+      "file": "s/1-4a.json",
+      "hash": "6f68a9c478b6eed42728929bbf62ccdd5045685dc2d9a9292532fa5b28c21e5b",
+      "bytes": 19673
+     }
     },
     {
      "n": 13,
@@ -545,7 +555,17 @@
         }
        ]
       }
-     ]
+     ],
+     "study": {
+      "id": "study-1-4b",
+      "kind": "study",
+      "title": "Eclipses and trig",
+      "cards": 9,
+      "questions": 16,
+      "file": "s/1-4b.json",
+      "hash": "56625b9f66e77dcc14a8107a34bd37d18742001a149a9cc5dd36efc84aaa5b1a",
+      "bytes": 19321
+     }
     },
     {
      "n": 14,
