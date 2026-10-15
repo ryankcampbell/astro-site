@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11",
+ "generated": "2026-10-15",
  "units": [
   {
    "unit": 1,
@@ -615,8 +615,44 @@
        "file": "p/hw-1-5a.pdf",
        "hash": "7cb478c155796e91cef11de852da7e8e7a44efb8a1ed40ebd943ff6c98a00a0c",
        "bytes": 157597
+      },
+      {
+       "id": "gravity-1-5a",
+       "kind": "page",
+       "title": "Forces and gravity",
+       "file": "d/gravity-1-5a.html",
+       "hash": "a660c2bf32e83b7641b302b7c0b2f9cb5ef6f1b9d72c623f6c475e7432cbb402",
+       "bytes": 5026149,
+       "sections": [
+        {
+         "id": "gravity-at-a-glance",
+         "text": "1 · Gravity at a glance"
+        },
+        {
+         "id": "forces-and-gravity",
+         "text": "2 · Forces and gravity"
+        },
+        {
+         "id": "rank-the-weights",
+         "text": "3 · Rank the weights"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
       }
-     ]
+     ],
+     "study": {
+      "id": "study-1-5a",
+      "kind": "study",
+      "title": "Forces and gravity",
+      "cards": 9,
+      "questions": 16,
+      "file": "s/1-5a.json",
+      "hash": "2c603ea41914ba46fd347ac7c09035b99a61e0753d2b4883b89aea35cde9ce68",
+      "bytes": 15975
+     }
     },
     {
      "n": 16,
@@ -644,8 +680,44 @@
        "file": "p/hw-1-5b.pdf",
        "hash": "acc31bde32fb6240d7991c087aa17d621ad580f1d68c59bb236f388b1f5537d6",
        "bytes": 122077
+      },
+      {
+       "id": "formation-1-5b",
+       "kind": "page",
+       "title": "Spin and the formation of the solar system",
+       "file": "d/formation-1-5b.html",
+       "hash": "f633e675fcdd7d1886fbac1e837f0f59cb1a633259a6481b10ccb8b7c64d5897",
+       "bytes": 4938906,
+       "sections": [
+        {
+         "id": "the-numbers-at-a-glance",
+         "text": "1 · The numbers at a glance"
+        },
+        {
+         "id": "formation-of-the-solar-system-and-the-moon",
+         "text": "2 · Formation of the solar system and the Moon"
+        },
+        {
+         "id": "put-the-solar-system-together",
+         "text": "3 · Put the solar system together"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
       }
-     ]
+     ],
+     "study": {
+      "id": "study-1-5b",
+      "kind": "study",
+      "title": "Spin and the formation of the solar system",
+      "cards": 8,
+      "questions": 16,
+      "file": "s/1-5b.json",
+      "hash": "0516448d59ef202e1abcdc4bceb81296d7448ddb35e47c740d7be517d1a59b86",
+      "bytes": 14018
+     }
     },
     {
      "n": 17,

@@ -1,0 +1,407 @@
+{
+ "code": "1.5b",
+ "title": "Spin and the formation of the solar system",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.5b-c1",
+   "tag": "EQ",
+   "front": "Angular momentum",
+   "back": "$L = I\\omega$. $I$ is the moment of inertia; $\\omega$ is the spin rate in degrees per second (°/sec)."
+  },
+  {
+   "id": "1.5b-c2",
+   "tag": "EQ",
+   "front": "Moment of inertia",
+   "back": "$I = mr^2$, in kg·m². The resistance to changing spin rate. Mass far from the spin axis counts much more ($r$ is squared). Two masses: add $mr^2$ for each."
+  },
+  {
+   "id": "1.5b-c3",
+   "tag": "EQ",
+   "front": "Conservation of angular momentum",
+   "back": "$I_1\\omega_1 = I_2\\omega_2$. <b>Ex.</b> Two 5 kg balls move from 4 m to 6 m from the axis, spinning at 30°/sec. $I_1 = 2(5)(4)^2 = 160$, $I_2 = 2(5)(6)^2 = 360$, $\\omega_2 = \\dfrac{(160)(30)}{360} = 13.3$°/sec.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5b-c3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='60' y1='70' x2='340' y2='70' stroke='currentColor' stroke-width='4'/><circle cx='60' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><circle cx='340' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><line x1='200' y1='20' x2='200' y2='122' stroke='currentColor' stroke-dasharray='5 4'/><path d='M186,26 A14,6 0 1,0 214,26' fill='none' stroke='currentColor' stroke-width='1.6' marker-end='url(#m-1-5b-c3)'/><text x='222' y='30'>30°/sec</text><line x1='200' y1='108' x2='340' y2='108' stroke='currentColor' marker-end='url(#m-1-5b-c3)'/><text x='270' y='126' text-anchor='middle'>4 m → 6 m</text><text x='60' y='104' text-anchor='middle'>5 kg</text><text x='340' y='100' text-anchor='middle'>5 kg</text></svg>"
+  },
+  {
+   "id": "1.5b-c4",
+   "tag": "DEF",
+   "front": "Hydrostatic Equilibrium",
+   "back": "Inward $F_{\\rm gravity}$ = outward pressure from heat. Kids and teachers: the hot atoms (the kids) bounce around and push out; gravity (the teachers) pulls everyone back together."
+  },
+  {
+   "id": "1.5b-c5",
+   "tag": "DEF",
+   "front": "Giant molecular cloud",
+   "back": "A huge, cold cloud of mostly hydrogen gas and dust. The solar system began as one, 4.56 Gyr ago."
+  },
+  {
+   "id": "1.5b-c6",
+   "tag": "OUT",
+   "front": "Formation of the Solar System (nebular hypothesis)",
+   "back": "1. A slowly spinning cloud radiates energy away and cools. 2. Pressure drops, gravity wins, the cloud shrinks. 3. Smaller $I$ means faster spin, and it flattens into a <b>protoplanetary disk</b>. 4. The center gets hot enough for fusion: the Sun. 5. Dust in the disk clumps into planetesimals, then planets, all orbiting the same way."
+  },
+  {
+   "id": "1.5b-c7",
+   "tag": "DEF",
+   "front": "Protoplanetary disk",
+   "back": "The flat, spinning disk of gas and dust around a newborn star, where planets form. ALMA has photographed them, for example around HL Tauri."
+  },
+  {
+   "id": "1.5b-c8",
+   "tag": "OUT",
+   "front": "Formation of the Moon: the evidence",
+   "back": "Giant Impact: a Mars-sized body hit the young Earth and the debris formed the Moon. It explains: Moon density 3.3 g/cm³ like Earth's crust (Earth 5.5); a small iron core; Moon rocks like Earth's mantle but missing volatiles; oxygen isotopes the same as Earth's. Fission would need a 2.65 hr day; a captured or sister body would have different isotopes or more iron."
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.5b-001",
+   "skills": [
+    "1.5b-c1"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "Which equation is angular momentum?",
+   "choices": [
+    "$L = mr^2$",
+    "$L = I\\omega$",
+    "$L = ma$",
+    "$L = \\frac{GMm}{r^2}$"
+   ],
+   "answer": 1,
+   "explain": "$L = I\\omega$: moment of inertia times spin rate. $I = mr^2$ is the moment of inertia itself."
+  },
+  {
+   "id": "1.5b-002",
+   "skills": [
+    "1.5b-c2"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 0.2,
+     "max": 3,
+     "step": 0.1
+    },
+    "r": {
+     "min": 0.5,
+     "max": 2.5,
+     "step": 0.1
+    }
+   },
+   "stem": "A {m} kg ball on a string swings in a circle of radius {r} m. What is its moment of inertia?",
+   "answer": "m*r*r",
+   "tol": 0.03,
+   "units": "kg·m²",
+   "explain": "$I = mr^2 = ({m}\\ \\text{kg})({r}\\ \\text{m})^2 =$ {answer} kg·m²."
+  },
+  {
+   "id": "1.5b-003",
+   "skills": [
+    "1.5b-c1"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "T": {
+     "min": 2,
+     "max": 20,
+     "step": 1
+    }
+   },
+   "stem": "A merry-go-round turns once every {T} s. What is its spin rate $\\omega$, in degrees per second?",
+   "answer": "360/T",
+   "tol": 0.03,
+   "units": "°/sec",
+   "explain": "One turn is 360°. $\\omega = \\dfrac{360^\\circ}{{T}\\ \\text{s}} =$ {answer} °/sec."
+  },
+  {
+   "id": "1.5b-004",
+   "skills": [
+    "1.5b-c1",
+    "1.5b-c2"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 0.5,
+     "max": 3,
+     "step": 0.5
+    },
+    "r": {
+     "min": 0.5,
+     "max": 2,
+     "step": 0.1
+    },
+    "T": {
+     "min": 2,
+     "max": 10,
+     "step": 1
+    }
+   },
+   "stem": "A {m} kg ball on a {r} m string goes around once every {T} s. What is its angular momentum, using $\\omega$ in °/sec?",
+   "answer": "m*r*r*360/T",
+   "tol": 0.03,
+   "units": "kg·m²·°/sec",
+   "explain": "$I = mr^2 = ({m})({r})^2$ kg·m², $\\omega = \\dfrac{360^\\circ}{{T}\\ \\text{s}}$, so $L = I\\omega =$ {answer} kg·m²·°/sec."
+  },
+  {
+   "id": "1.5b-005",
+   "skills": [
+    "1.5b-c3",
+    "1.5b-c2"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "a": {
+     "min": 1,
+     "max": 3,
+     "step": 0.5
+    },
+    "b": {
+     "min": 4,
+     "max": 6,
+     "step": 0.5
+    },
+    "w": {
+     "min": 10,
+     "max": 60,
+     "step": 5
+    }
+   },
+   "stem": "Two 3 kg balls on a very light rod spin at {w}°/sec, each {a} m from the axis. They slide out to {b} m. What is the new spin rate?",
+   "answer": "w*a*a/(b*b)",
+   "tol": 0.03,
+   "units": "°/sec",
+   "explain": "$I_1 = 2(3)({a})^2$, $I_2 = 2(3)({b})^2$. $I_1\\omega_1 = I_2\\omega_2$ gives $\\omega_2 = \\dfrac{I_1\\omega_1}{I_2} =$ {answer} °/sec. Farther out, slower spin.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5b-005' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='60' y1='70' x2='340' y2='70' stroke='currentColor' stroke-width='4'/><circle cx='60' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><circle cx='340' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><line x1='200' y1='20' x2='200' y2='122' stroke='currentColor' stroke-dasharray='5 4'/><path d='M186,26 A14,6 0 1,0 214,26' fill='none' stroke='currentColor' stroke-width='1.6' marker-end='url(#m-1-5b-005)'/><text x='222' y='30'>{w}°/sec</text><line x1='200' y1='108' x2='340' y2='108' stroke='currentColor' marker-end='url(#m-1-5b-005)'/><text x='270' y='126' text-anchor='middle'>{a} m → {b} m</text><text x='60' y='104' text-anchor='middle'>3 kg</text><text x='340' y='100' text-anchor='middle'>3 kg</text></svg>"
+  },
+  {
+   "id": "1.5b-006",
+   "skills": [
+    "1.5b-c3"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "I": {
+     "min": 3.5,
+     "max": 5,
+     "step": 0.1
+    },
+    "J": {
+     "min": 1,
+     "max": 2,
+     "step": 0.1
+    },
+    "w": {
+     "min": 90,
+     "max": 360,
+     "step": 10
+    }
+   },
+   "stem": "A skater spins at {w}°/sec with arms out ($I_1 = {I}$ kg·m²). She pulls her arms in, so $I_2 = {J}$ kg·m². What is her new spin rate?",
+   "answer": "I*w/J",
+   "tol": 0.03,
+   "units": "°/sec",
+   "explain": "$\\omega_2 = \\dfrac{I_1\\omega_1}{I_2} = \\dfrac{({I})({w})}{{J}} =$ {answer} °/sec."
+  },
+  {
+   "id": "1.5b-007",
+   "skills": [
+    "1.5b-c3",
+    "1.5b-c2"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why does a spinning skater speed up when she pulls her arms in?",
+   "choices": [
+    "She pushes off the ice harder",
+    "Her moment of inertia drops, and since $L$ is conserved, $\\omega$ goes up",
+    "Her mass gets smaller",
+    "Gravity pulls her arms in"
+   ],
+   "answer": 1,
+   "explain": "$I_1\\omega_1 = I_2\\omega_2$. Bringing mass close to the axis makes $I = mr^2$ smaller, so $\\omega$ must grow to keep $L$ the same."
+  },
+  {
+   "id": "1.5b-008",
+   "skills": [
+    "1.5b-c4"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "Hydrostatic Equilibrium is a balance between",
+   "choices": [
+    "the inward pull of gravity and the outward pressure from heat",
+    "spin and gravity",
+    "the Sun's light and the planets' orbits",
+    "magnetism and gravity"
+   ],
+   "answer": 0,
+   "explain": "Inward $F_{\\rm gravity}$ = outward pressure from heat: the teachers pulling in, the kids pushing out."
+  },
+  {
+   "id": "1.5b-009",
+   "skills": [
+    "1.5b-c4",
+    "1.5b-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "A cloud in Hydrostatic Equilibrium slowly radiates its energy away. What happens?",
+   "choices": [
+    "It heats up and grows",
+    "Its pressure drops, gravity wins, and it shrinks",
+    "Nothing: it stays balanced forever",
+    "It stops spinning"
+   ],
+   "answer": 1,
+   "explain": "Losing energy cools the gas, so the outward pressure drops. Gravity is now stronger and the cloud contracts."
+  },
+  {
+   "id": "1.5b-010",
+   "skills": [
+    "1.5b-c3",
+    "1.5b-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "As a slowly spinning cloud shrinks, its spin rate",
+   "choices": [
+    "slows down",
+    "stays the same",
+    "speeds up",
+    "reverses"
+   ],
+   "answer": 2,
+   "explain": "Smaller $r$ makes $I = mr^2$ smaller; $I_1\\omega_1 = I_2\\omega_2$ means $\\omega$ goes up. Big with little spin becomes small with lots of spin."
+  },
+  {
+   "id": "1.5b-011",
+   "skills": [
+    "1.5b-c3"
+   ],
+   "type": "procedural",
+   "dok": 3,
+   "format": "numeric",
+   "params": {
+    "k": {
+     "min": 2,
+     "max": 50,
+     "step": 1
+    }
+   },
+   "stem": "A spinning cloud shrinks to 1/{k} of its radius. Treating it like $I = mr^2$, its spin rate becomes how many times as fast?",
+   "answer": "k*k",
+   "tol": 0.03,
+   "units": "times",
+   "explain": "Relative form: $I$ becomes $\\left(\\frac{1}{{k}}\\right)^2$ as big, so $\\omega$ becomes $({k})^2 =$ {answer} times as fast."
+  },
+  {
+   "id": "1.5b-012",
+   "skills": [
+    "1.5b-c6",
+    "1.5b-c7"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Why is the solar system shaped like a flat disk rather than a ball?",
+   "choices": [
+    "Gravity is stronger in one direction",
+    "As the spinning cloud shrank, it spun faster and flattened into a disk",
+    "The planets were pushed flat by sunlight",
+    "It started out flat"
+   ],
+   "answer": 1,
+   "explain": "Gas can fall in freely along the spin axis, but in the midplane its spin keeps it out. The cloud collapses into a spinning protoplanetary disk, and the planets formed in it."
+  },
+  {
+   "id": "1.5b-013",
+   "skills": [
+    "1.5b-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put the formation of the solar system in order.",
+   "items": [
+    "A slowly spinning giant molecular cloud",
+    "The cloud cools and gravity wins",
+    "It shrinks, spins faster and flattens into a protoplanetary disk",
+    "Fusion starts at the center: the Sun",
+    "Dust clumps into planetesimals",
+    "Planetesimals collide and build planets"
+   ],
+   "explain": "Cloud, cooling, collapse and spin-up into a disk, the Sun lights up, then clumps grow into planets, all orbiting the same way the cloud spun."
+  },
+  {
+   "id": "1.5b-014",
+   "skills": [
+    "1.5b-c6"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "All eight planets orbit the Sun in the same direction, in nearly the same plane. This tells us they",
+   "choices": [
+    "formed at different times and were captured",
+    "formed from one spinning cloud of gas and dust",
+    "were thrown out of the Sun",
+    "formed in different galaxies"
+   ],
+   "answer": 1,
+   "explain": "They inherited the spin of the cloud and the flatness of its disk."
+  },
+  {
+   "id": "1.5b-015",
+   "skills": [
+    "1.5b-c8"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "The Moon's density (3.3 g/cm³) matches Earth's crust, not Earth as a whole (5.5 g/cm³): the Moon has very little iron. Which idea is hardest to fit with this?",
+   "choices": [
+    "Giant Impact",
+    "Sister Planet",
+    "Fission Fragment",
+    "Captured Asteroid"
+   ],
+   "answer": 1,
+   "explain": "A sister planet built next to Earth from the same material should have Earth's overall density and a big iron core. A Giant Impact or fission throws off mostly Earth's rocky outer layers, which have little iron."
+  },
+  {
+   "id": "1.5b-016",
+   "skills": [
+    "1.5b-c8"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Apollo Moon rocks have the same oxygen isotopes as Earth rocks. Which idea is hardest to fit with this?",
+   "choices": [
+    "Giant Impact",
+    "Captured asteroid",
+    "Fission fragment",
+    "They all fit"
+   ],
+   "answer": 1,
+   "explain": "Bodies that formed in different parts of the solar system have different oxygen isotope mixes. A captured asteroid would not match Earth's."
+  }
+ ]
+}

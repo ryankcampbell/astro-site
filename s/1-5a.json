@@ -1,0 +1,413 @@
+{
+ "code": "1.5a",
+ "title": "Forces and gravity",
+ "version": 1,
+ "cards": [
+  {
+   "id": "1.5a-c1",
+   "tag": "CON",
+   "front": "Gravitational constant, $G$",
+   "back": "$G = 6.67\\times10^{-11}$ N·m²/kg². The constant in Newton's Law of Gravity. It is tiny, so you only notice gravity when at least one mass is huge, like a planet."
+  },
+  {
+   "id": "1.5a-c2",
+   "tag": "CON",
+   "front": "Acceleration due to gravity on Earth, $g$",
+   "back": "$g = 9.8$ m/s². Anything you drop on Earth speeds up by 9.8 m/s every second (ignoring air)."
+  },
+  {
+   "id": "1.5a-c3",
+   "tag": "DEF",
+   "front": "Newton's First Law (inertia)",
+   "back": "An object at rest stays at rest, and an object moving at constant velocity keeps the same speed and direction, as long as no net force acts on it. This laziness is called <b>inertia</b>."
+  },
+  {
+   "id": "1.5a-c4",
+   "tag": "EQ",
+   "front": "Newton's Second Law, single force",
+   "back": "$F = ma$. Force in Newtons (N), mass in kg, acceleration in m/s². 1 N $=$ 1 kg·m/s². <b>Ex.</b> A 70 kg person at 2.0 m/s²: $F = (70)(2.0) = 140$ N.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5a-c4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='40' y1='100' x2='360' y2='100' stroke='currentColor' stroke-width='2'/><rect x='170' y='52' width='60' height='48' fill='currentColor' fill-opacity='.12' stroke='currentColor' stroke-width='1.6'/><text x='200' y='81' text-anchor='middle'>m</text><line x1='230' y1='76' x2='320' y2='76' stroke='#dc2626' stroke-width='3' marker-end='url(#m-1-5a-c4)'/><text x='275' y='66' text-anchor='middle'>F</text></svg>"
+  },
+  {
+   "id": "1.5a-c5",
+   "tag": "EQ",
+   "front": "Newton's Second Law with more than one force",
+   "back": "$\\sum F = ma$. Add the forces with signs (pick $+x$), then divide by the mass. Equal and opposite pushes give $\\sum F = 0$: no acceleration."
+  },
+  {
+   "id": "1.5a-c6",
+   "tag": "EQ",
+   "front": "The Universal Law of Gravity",
+   "back": "$F = \\dfrac{GM_1M_2}{r^2}$, $r$ = distance between the centers. Gravity is always attractive, acts along the center line, and the pull on each body is equal and opposite.",
+   "figure_back": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5a-c6' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='80' cy='70' r='36' fill='#3b82f6' fill-opacity='.35' stroke='currentColor'/><circle cx='320' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><line x1='40' y1='70' x2='360' y2='70' stroke='currentColor' stroke-dasharray='3 4' stroke-opacity='.6'/><line x1='122' y1='56' x2='180' y2='56' stroke='#dc2626' stroke-width='2.5' marker-end='url(#m-1-5a-c6)'/><line x1='300' y1='56' x2='242' y2='56' stroke='#dc2626' stroke-width='2.5' marker-end='url(#m-1-5a-c6)'/><text x='80' y='126' text-anchor='middle'>M₁</text><text x='320' y='106' text-anchor='middle'>M₂</text><text x='211' y='92' text-anchor='middle'>F</text></svg>"
+  },
+  {
+   "id": "1.5a-c7",
+   "tag": "DEF",
+   "front": "Relative form of an equation",
+   "back": "When you are told how many <b>times</b> each value changes, put in those factors and drop the constants. <b>Ex.</b> Mars: 8.77× the Moon's mass, 1.95× its radius. $F = \\dfrac{(1)(8.77)(1)}{(1.95)^2} = 2.3$ times your weight on the Moon."
+  },
+  {
+   "id": "1.5a-c8",
+   "tag": "EQ",
+   "front": "Acceleration due to gravity of any world",
+   "back": "$g = \\dfrac{GM}{r^2}$. Set $F = ma$ equal to $F = \\dfrac{GMm}{r^2}$; the falling object's mass $m$ cancels. Earth: $g = \\dfrac{(6.67\\times10^{-11})(5.97\\times10^{24})}{(6.37\\times10^{6})^2} = 9.8$ m/s²."
+  },
+  {
+   "id": "1.5a-c9",
+   "tag": "EQ",
+   "front": "Weight",
+   "back": "$F_g = mg$. Weight is the force of gravity on you, in Newtons. Your mass (kg) is the same everywhere; your weight depends on the world's $g$."
+  }
+ ],
+ "questions": [
+  {
+   "id": "1.5a-001",
+   "skills": [
+    "1.5a-c1"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "What is the gravitational constant, $G$?",
+   "choices": [
+    "$9.8$ m/s²",
+    "$6.67\\times10^{-11}$ N·m²/kg²",
+    "$6.67\\times10^{11}$ N·m²/kg²",
+    "$3\\times10^{8}$ m/s"
+   ],
+   "answer": 1,
+   "explain": "$G = 6.67\\times10^{-11}$ N·m²/kg². 9.8 m/s² is $g$ on Earth, a different thing: an acceleration, not a constant of nature."
+  },
+  {
+   "id": "1.5a-002",
+   "skills": [
+    "1.5a-c2"
+   ],
+   "type": "memory",
+   "dok": 1,
+   "format": "mc",
+   "stem": "What is the acceleration due to gravity on Earth's surface?",
+   "choices": [
+    "$6.67\\times10^{-11}$ m/s²",
+    "$1.6$ m/s²",
+    "$9.8$ m/s²",
+    "$30$ m/s²"
+   ],
+   "answer": 2,
+   "explain": "$g = 9.8$ m/s². 1.6 m/s² is the Moon's $g$, about 1/6 of Earth's."
+  },
+  {
+   "id": "1.5a-003",
+   "skills": [
+    "1.5a-c4"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 2,
+     "max": 40,
+     "step": 1
+    },
+    "F": {
+     "min": 10,
+     "max": 200,
+     "step": 5
+    }
+   },
+   "stem": "A {F} N force pushes a {m} kg cart. What is the cart's acceleration?",
+   "answer": "F/m",
+   "tol": 0.03,
+   "units": "m/s²",
+   "explain": "$F = ma$, so $a = \\dfrac{F}{m} = \\dfrac{{F}\\ \\text{N}}{{m}\\ \\text{kg}} =$ {answer} m/s².",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5a-003' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='40' y1='100' x2='360' y2='100' stroke='currentColor' stroke-width='2'/><rect x='170' y='52' width='60' height='48' fill='currentColor' fill-opacity='.12' stroke='currentColor' stroke-width='1.6'/><text x='200' y='81' text-anchor='middle'>{m} kg</text><line x1='230' y1='76' x2='320' y2='76' stroke='#dc2626' stroke-width='3' marker-end='url(#m-1-5a-003)'/><text x='275' y='66' text-anchor='middle'>{F} N</text></svg>"
+  },
+  {
+   "id": "1.5a-004",
+   "skills": [
+    "1.5a-c4"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 40,
+     "max": 120,
+     "step": 1
+    },
+    "a": {
+     "min": 0.5,
+     "max": 4,
+     "step": 0.1
+    }
+   },
+   "stem": "How much force is needed to accelerate a {m} kg sprinter at {a} m/s²?",
+   "answer": "m*a",
+   "tol": 0.03,
+   "units": "N",
+   "explain": "$F = ma = ({m}\\ \\text{kg})({a}\\ \\text{m/s}^2) =$ {answer} N."
+  },
+  {
+   "id": "1.5a-005",
+   "skills": [
+    "1.5a-c5"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "R": {
+     "min": 60,
+     "max": 150,
+     "step": 5
+    },
+    "L": {
+     "min": 10,
+     "max": 55,
+     "step": 5
+    },
+    "m": {
+     "min": 10,
+     "max": 80,
+     "step": 5
+    }
+   },
+   "stem": "Two people push a {m} kg crate: {R} N to the right and {L} N to the left. Taking right as $+x$, what is the crate's acceleration?",
+   "answer": "(R-L)/m",
+   "tol": 0.03,
+   "units": "m/s²",
+   "explain": "$\\sum F_x = (+{R}) + (-{L})$ N. Then $a_x = \\dfrac{\\sum F_x}{m}$, divided by {m} kg: {answer} m/s², to the right.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5a-005' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><line x1='40' y1='100' x2='360' y2='100' stroke='currentColor' stroke-width='2'/><rect x='170' y='52' width='60' height='48' fill='currentColor' fill-opacity='.12' stroke='currentColor' stroke-width='1.6'/><text x='200' y='81' text-anchor='middle'>{m} kg</text><line x1='230' y1='76' x2='320' y2='76' stroke='#dc2626' stroke-width='3' marker-end='url(#m-1-5a-005)'/><text x='275' y='66' text-anchor='middle'>{R} N</text><line x1='170' y1='76' x2='90' y2='76' stroke='#dc2626' stroke-width='3' marker-end='url(#m-1-5a-005)'/><text x='130' y='66' text-anchor='middle'>{L} N</text></svg>"
+  },
+  {
+   "id": "1.5a-006",
+   "skills": [
+    "1.5a-c3"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "A hockey puck slides across frictionless ice at 5 m/s with no net force on it. What happens next?",
+   "choices": [
+    "It slows down and stops",
+    "It keeps going at 5 m/s in the same direction",
+    "It speeds up",
+    "It curves to one side"
+   ],
+   "answer": 1,
+   "explain": "Newton's First Law: with no net force, the velocity does not change. Objects are lazy (inertia); a force is needed to slow it down."
+  },
+  {
+   "id": "1.5a-007",
+   "skills": [
+    "1.5a-c4",
+    "1.5a-c7"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "A cart accelerates at 6 m/s². The force is tripled and the mass is doubled. What is the new acceleration?",
+   "choices": [
+    "2 m/s²",
+    "4 m/s²",
+    "9 m/s²",
+    "36 m/s²"
+   ],
+   "answer": 2,
+   "explain": "Relative form: $a = \\dfrac{F}{m} = \\dfrac{3}{2} = 1.5$ times as big, so $1.5\\times6 = 9$ m/s²."
+  },
+  {
+   "id": "1.5a-008",
+   "skills": [
+    "1.5a-c9",
+    "1.5a-c2"
+   ],
+   "type": "procedural",
+   "dok": 1,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 2,
+     "max": 90,
+     "step": 1
+    }
+   },
+   "stem": "What is the weight, on Earth, of a {m} kg backpack?",
+   "answer": "m*9.8",
+   "tol": 0.03,
+   "units": "N",
+   "explain": "$F_g = mg = ({m}\\ \\text{kg})(9.8\\ \\text{m/s}^2) =$ {answer} N."
+  },
+  {
+   "id": "1.5a-009",
+   "skills": [
+    "1.5a-c6",
+    "1.5a-c1"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "m": {
+     "min": 50,
+     "max": 120,
+     "step": 1
+    }
+   },
+   "stem": "An astronaut with a mass of {m} kg stands on the Moon ($M = 7.30\\times10^{22}$ kg, $R = 1.74\\times10^{6}$ m). Use the Law of Gravity to find the force of the Moon's gravity on them.",
+   "answer": "6.67e-11*7.3e22*m/(1.74e6*1.74e6)",
+   "tol": 0.03,
+   "units": "N",
+   "explain": "$F = \\dfrac{GMm}{r^2} = \\dfrac{(6.67\\times10^{-11})(7.30\\times10^{22})({m})}{(1.74\\times10^{6})^2} =$ {answer} N, about 1/6 of their weight on Earth.",
+   "figure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 140' font-family='system-ui, -apple-system, sans-serif' font-size='13' fill='currentColor'><defs><marker id='m-1-5a-009' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,1L9,5L0,9z' fill='currentColor'/></marker></defs><circle cx='80' cy='70' r='36' fill='#3b82f6' fill-opacity='.35' stroke='currentColor'/><circle cx='320' cy='70' r='14' fill='currentColor' fill-opacity='.25' stroke='currentColor'/><line x1='40' y1='70' x2='360' y2='70' stroke='currentColor' stroke-dasharray='3 4' stroke-opacity='.6'/><line x1='122' y1='56' x2='180' y2='56' stroke='#dc2626' stroke-width='2.5' marker-end='url(#m-1-5a-009)'/><line x1='300' y1='56' x2='242' y2='56' stroke='#dc2626' stroke-width='2.5' marker-end='url(#m-1-5a-009)'/><text x='80' y='126' text-anchor='middle'>Moon</text><text x='320' y='106' text-anchor='middle'>{m} kg</text><text x='211' y='92' text-anchor='middle'>F</text></svg>"
+  },
+  {
+   "id": "1.5a-010",
+   "skills": [
+    "1.5a-c8",
+    "1.5a-c1"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "k": {
+     "min": 1,
+     "max": 20,
+     "step": 1
+    },
+    "r": {
+     "min": 3,
+     "max": 12,
+     "step": 0.5
+    }
+   },
+   "stem": "A planet around another star has $M = {k}\\times10^{24}$ kg and radius $R = {r}\\times10^{6}$ m. What is $g$ on its surface?",
+   "answer": "6.67e-11*k*1e24/(r*1e6*r*1e6)",
+   "tol": 0.03,
+   "units": "m/s²",
+   "explain": "$g = \\dfrac{GM}{r^2} = \\dfrac{(6.67\\times10^{-11})({k}\\times10^{24})}{({r}\\times10^{6})^2} =$ {answer} m/s². Square the radius, including its $10^{6}$."
+  },
+  {
+   "id": "1.5a-011",
+   "skills": [
+    "1.5a-c7",
+    "1.5a-c6"
+   ],
+   "type": "procedural",
+   "dok": 2,
+   "format": "numeric",
+   "params": {
+    "a": {
+     "min": 0.5,
+     "max": 10,
+     "step": 0.5
+    },
+    "b": {
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1
+    }
+   },
+   "stem": "A planet has {a} times Earth's mass and {b} times Earth's radius. Use the relative form: your weight there is how many times your weight on Earth?",
+   "answer": "a/(b*b)",
+   "tol": 0.03,
+   "units": "times",
+   "explain": "$F = \\dfrac{GMm}{r^2}$ in relative form: $\\dfrac{(1)({a})(1)}{({b})^2} =$ {answer} times. The radius is squared, so it matters more than the mass."
+  },
+  {
+   "id": "1.5a-012",
+   "skills": [
+    "1.5a-c6"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "The Moon is about 60 times farther from Earth's center than you are. Compared with an apple at Earth's surface, Earth's gravity at the Moon's distance is",
+   "choices": [
+    "60 times weaker",
+    "120 times weaker",
+    "3600 times weaker",
+    "the same"
+   ],
+   "answer": 2,
+   "explain": "$F \\propto \\dfrac{1}{r^2}$: 60 times farther means $60^2 = 3600$ times weaker. Newton checked this against the Moon's orbit."
+  },
+  {
+   "id": "1.5a-013",
+   "skills": [
+    "1.5a-c8"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "On the Moon, an astronaut drops a hammer and a feather at the same time. What happens?",
+   "choices": [
+    "The hammer lands first: it is heavier",
+    "The feather lands first",
+    "They land together: $g = \\frac{GM}{r^2}$ does not depend on the falling object's mass",
+    "Neither falls: there is no gravity on the Moon"
+   ],
+   "answer": 2,
+   "explain": "$g = \\dfrac{GM}{r^2}$ uses only the Moon's mass and radius; the falling mass cancels. On Earth air slows the feather; the Moon has no air. Apollo 15 did this in 1971."
+  },
+  {
+   "id": "1.5a-014",
+   "skills": [
+    "1.5a-c6"
+   ],
+   "type": "conceptual",
+   "dok": 1,
+   "format": "mc",
+   "stem": "Earth pulls on the Moon with a gravitational force $F$. How hard does the Moon pull on Earth?",
+   "choices": [
+    "Much less than $F$, because the Moon is smaller",
+    "Exactly $F$, in the opposite direction",
+    "More than $F$",
+    "Zero: only big things pull"
+   ],
+   "answer": 1,
+   "explain": "Gravity's pull on each body is equal and opposite, along the center line. The Moon moves more because its mass is smaller ($a = F/m$), not because the force is."
+  },
+  {
+   "id": "1.5a-015",
+   "skills": [
+    "1.5a-c6",
+    "1.5a-c7"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "mc",
+   "stem": "Two asteroids are moved twice as far apart. The gravitational force between them becomes",
+   "choices": [
+    "2 times as large",
+    "1/2 as large",
+    "1/4 as large",
+    "4 times as large"
+   ],
+   "answer": 2,
+   "explain": "Relative form: $F = \\dfrac{(1)(1)}{(2)^2} = \\dfrac{1}{4}$ as large."
+  },
+  {
+   "id": "1.5a-016",
+   "skills": [
+    "1.5a-c8"
+   ],
+   "type": "conceptual",
+   "dok": 2,
+   "format": "order",
+   "stem": "Put these worlds in order of surface gravity $g$, weakest first.",
+   "items": [
+    "Pluto",
+    "The Moon",
+    "Mars",
+    "Earth",
+    "Jupiter"
+   ],
+   "explain": "From $g = \\dfrac{GM}{r^2}$: Pluto about 0.6 m/s², Moon 1.6, Mars 3.7, Earth 9.8, Jupiter about 25. Jupiter has 318 Earth masses but 11 times Earth's radius, so its $g$ is only about 2.5 times ours."
+  }
+ ]
+}
