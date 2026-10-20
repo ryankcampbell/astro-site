@@ -618,12 +618,7 @@
      "kind": "lesson",
      "code": "1.5a",
      "title": "The Formation of the Moon",
-     "labels": [
-      {
-       "text": "HW 1.5a",
-       "kind": "hw"
-      }
-     ],
+     "labels": [],
      "keys": [
       "1.5a"
      ],
@@ -680,12 +675,38 @@
      "dow": "Thu",
      "short": "10/15",
      "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "The Formation of the Moon",
+     "labels": [],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 17,
+     "date": "2026-10-19",
+     "dow": "Mon",
+     "short": "10/19",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "The Formation of the Moon",
+     "labels": [],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 18,
+     "date": "2026-10-20",
+     "dow": "Tue",
+     "short": "10/20",
+     "note": "",
      "kind": "lesson",
      "code": "1.5b",
      "title": "The Formation of the Moon",
      "labels": [
       {
-       "text": "HW 1.5b",
+       "text": "HW 1.5a",
        "kind": "hw"
       }
      ],
@@ -740,10 +761,28 @@
      }
     },
     {
-     "n": 17,
-     "date": "2026-10-19",
-     "dow": "Mon",
-     "short": "10/19",
+     "n": 19,
+     "date": "2026-10-22",
+     "dow": "Thu",
+     "short": "10/22",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "The Formation of the Moon",
+     "labels": [
+      {
+       "text": "HW 1.5b",
+       "kind": "hw"
+      }
+     ],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 20,
+     "date": "2026-10-27",
+     "dow": "Tue",
+     "short": "10/27",
      "note": "",
      "kind": "lab",
      "code": null,
@@ -777,10 +816,10 @@
      ]
     },
     {
-     "n": 18,
-     "date": "2026-10-20",
-     "dow": "Tue",
-     "short": "10/20",
+     "n": 21,
+     "date": "2026-10-29",
+     "dow": "Thu",
+     "short": "10/29",
      "note": "",
      "kind": "review",
      "code": null,
@@ -849,10 +888,10 @@
      ]
     },
     {
-     "n": 19,
-     "date": "2026-10-22",
-     "dow": "Thu",
-     "short": "10/22",
+     "n": 22,
+     "date": "2026-11-02",
+     "dow": "Mon",
+     "short": "11/2",
      "note": "",
      "kind": "test",
      "code": null,
@@ -873,15 +912,245 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit1-schedule.pdf",
-    "hash": "e4bcf7c9aba357a775b12fec503bdbdb4ee27dfe058b57bdd57033a0d151315d",
-    "bytes": 64812
+    "hash": "bc851d301c49d5e207ccf8e986ef6d15a7c623f5fc85ee7d6b948c7757bbc55b",
+    "bytes": 64949
    }
   },
   {
    "unit": 2,
-   "title": "Unit 2",
-   "live": false,
-   "rows": []
+   "title": "Unit 2: The Night Sky",
+   "live": true,
+   "rows": [
+    {
+     "n": 23,
+     "date": "2026-11-03",
+     "dow": "Tue",
+     "short": "11/3",
+     "note": "",
+     "kind": "lesson",
+     "code": "2.1",
+     "title": "Constellations",
+     "labels": [
+      {
+       "text": "HW 2.1a",
+       "kind": "hw"
+      }
+     ],
+     "keys": [
+      "2.1"
+     ],
+     "items": []
+    },
+    {
+     "n": 24,
+     "date": "2026-11-05",
+     "dow": "Thu",
+     "short": "11/5",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "Night Sky",
+     "labels": [],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 25,
+     "date": "2026-11-09",
+     "dow": "Mon",
+     "short": "11/9",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "Night Sky",
+     "labels": [],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 26,
+     "date": "2026-11-10",
+     "dow": "Tue",
+     "short": "11/10",
+     "note": "",
+     "kind": "quiz",
+     "code": null,
+     "title": "Night Sky",
+     "labels": [
+      {
+       "text": "Quiz 3: Night Sky",
+       "kind": "quiz"
+      }
+     ],
+     "keys": [
+      "quiz3"
+     ],
+     "items": []
+    },
+    {
+     "n": 27,
+     "date": "2026-11-12",
+     "dow": "Thu",
+     "short": "11/12",
+     "note": "",
+     "kind": "lesson",
+     "code": "2.2",
+     "title": "Celestial Sphere",
+     "labels": [
+      {
+       "text": "HW 2.2a",
+       "kind": "hw"
+      }
+     ],
+     "keys": [
+      "2.2"
+     ],
+     "items": []
+    },
+    {
+     "n": 28,
+     "date": "2026-11-16",
+     "dow": "Mon",
+     "short": "11/16",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "Celestial Sphere",
+     "labels": [
+      {
+       "text": "HW 2.2b",
+       "kind": "hw"
+      }
+     ],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 29,
+     "date": "2026-11-17",
+     "dow": "Tue",
+     "short": "11/17",
+     "note": "",
+     "kind": "lab",
+     "code": null,
+     "title": "Lab 5: Rotating Sky · Quiz 4: Celestial Sphere",
+     "labels": [
+      {
+       "text": "Lab 5: Rotating Sky",
+       "kind": "lab"
+      },
+      {
+       "text": "Quiz 4: Celestial Sphere",
+       "kind": "quiz"
+      }
+     ],
+     "keys": [
+      "lab5",
+      "quiz4"
+     ],
+     "items": []
+    },
+    {
+     "n": 30,
+     "date": "2026-11-30",
+     "dow": "Mon",
+     "short": "11/30",
+     "note": "",
+     "kind": "lesson",
+     "code": "2.3",
+     "title": "The Seasons",
+     "labels": [
+      {
+       "text": "HW 2.3a",
+       "kind": "hw"
+      }
+     ],
+     "keys": [
+      "2.3"
+     ],
+     "items": []
+    },
+    {
+     "n": 31,
+     "date": "2026-12-01",
+     "dow": "Tue",
+     "short": "12/1",
+     "note": "",
+     "kind": "other",
+     "code": null,
+     "title": "The Seasons",
+     "labels": [
+      {
+       "text": "HW 2.3b",
+       "kind": "hw"
+      }
+     ],
+     "keys": [],
+     "items": []
+    },
+    {
+     "n": 32,
+     "date": "2026-12-03",
+     "dow": "Thu",
+     "short": "12/3",
+     "note": "",
+     "kind": "lab",
+     "code": null,
+     "title": "Lab 6: The Seasons",
+     "labels": [
+      {
+       "text": "Lab 6: The Seasons",
+       "kind": "lab"
+      }
+     ],
+     "keys": [
+      "lab6"
+     ],
+     "items": []
+    },
+    {
+     "n": 33,
+     "date": "2026-12-07",
+     "dow": "Mon",
+     "short": "12/7",
+     "note": "",
+     "kind": "review",
+     "code": null,
+     "title": "Review Day",
+     "labels": [],
+     "keys": [
+      "review2"
+     ],
+     "items": []
+    },
+    {
+     "n": 34,
+     "date": "2026-12-08",
+     "dow": "Tue",
+     "short": "12/8",
+     "note": "",
+     "kind": "test",
+     "code": null,
+     "title": "Test Day",
+     "labels": [
+      {
+       "text": "Unit 2 Test",
+       "kind": "test"
+      }
+     ],
+     "keys": [
+      "test2"
+     ],
+     "items": []
+    }
+   ],
+   "schedule": {
+    "kind": "schedule",
+    "title": "Unit schedule",
+    "file": "p/unit2-schedule.pdf",
+    "hash": "e93e17efad69ba540ae240110a832002e16e8ba44adf88c6ad6917d8977b158c",
+    "bytes": 62425
+   }
   },
   {
    "unit": 3,
