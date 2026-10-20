@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15",
+ "generated": "2026-10-20",
  "units": [
   {
    "unit": 1,
@@ -706,8 +706,8 @@
        "kind": "page",
        "title": "Spin and the formation of the solar system",
        "file": "d/formation-1-5b.html",
-       "hash": "f633e675fcdd7d1886fbac1e837f0f59cb1a633259a6481b10ccb8b7c64d5897",
-       "bytes": 4938906,
+       "hash": "1af3529a075e76e649512d5336060c854131a25c979902c862cd6b5bcf8ae534",
+       "bytes": 5112867,
        "sections": [
         {
          "id": "the-numbers-at-a-glance",
@@ -732,11 +732,11 @@
       "id": "study-1-5b",
       "kind": "study",
       "title": "Spin and the formation of the solar system",
-      "cards": 8,
-      "questions": 16,
+      "cards": 7,
+      "questions": 14,
       "file": "s/1-5b.json",
-      "hash": "0516448d59ef202e1abcdc4bceb81296d7448ddb35e47c740d7be517d1a59b86",
-      "bytes": 14018
+      "hash": "b3e9e79d9f24f8e081079a37a60d2ff7c0d406fb615e5f4c06d171bb796c855b",
+      "bytes": 12367
      }
     },
     {
@@ -763,8 +763,16 @@
        "kind": "lab",
        "title": "Lab 4: Formation of the Moon",
        "file": "p/lab4-formation.pdf",
-       "hash": "2b28cf1e870fee21d731d9ec7c47562e06d38087e3159a9a0b654added57feab",
-       "bytes": 9946442
+       "hash": "13e087055378e1a8fc5e1c19c66bcc4cefdf44f7b411cf20c757ccc06606b831",
+       "bytes": 711840
+      },
+      {
+       "id": "moonorigin",
+       "kind": "app",
+       "title": "Lab 4 app: Where did the Moon come from?",
+       "file": "d/moonorigin.html",
+       "hash": "04a7364733172cb2fde415ca3fa14740c0f68bc55d652382c9665ed85dc93973",
+       "bytes": 10335856
       }
      ]
     },
@@ -942,6 +950,14 @@
        "text": "3 · Name that feature"
       }
      ]
+    },
+    {
+     "id": "moonorigin",
+     "kind": "app",
+     "title": "Lab 4 app: Where did the Moon come from?",
+     "file": "d/moonorigin.html",
+     "hash": "04a7364733172cb2fde415ca3fa14740c0f68bc55d652382c9665ed85dc93973",
+     "bytes": 10335856
     }
    ]
   },

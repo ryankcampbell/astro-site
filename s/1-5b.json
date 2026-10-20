@@ -45,12 +45,6 @@
    "tag": "DEF",
    "front": "Protoplanetary disk",
    "back": "The flat, spinning disk of gas and dust around a newborn star, where planets form. ALMA has photographed them, for example around HL Tauri."
-  },
-  {
-   "id": "1.5b-c8",
-   "tag": "OUT",
-   "front": "Formation of the Moon: the evidence",
-   "back": "Giant Impact: a Mars-sized body hit the young Earth and the debris formed the Moon. It explains: Moon density 3.3 g/cm³ like Earth's crust (Earth 5.5); a small iron core; Moon rocks like Earth's mantle but missing volatiles; oxygen isotopes the same as Earth's. Fission would need a 2.65 hr day; a captured or sister body would have different isotopes or more iron."
   }
  ],
  "questions": [
@@ -366,42 +360,6 @@
    ],
    "answer": 1,
    "explain": "They inherited the spin of the cloud and the flatness of its disk."
-  },
-  {
-   "id": "1.5b-015",
-   "skills": [
-    "1.5b-c8"
-   ],
-   "type": "conceptual",
-   "dok": 2,
-   "format": "mc",
-   "stem": "The Moon's density (3.3 g/cm³) matches Earth's crust, not Earth as a whole (5.5 g/cm³): the Moon has very little iron. Which idea is hardest to fit with this?",
-   "choices": [
-    "Giant Impact",
-    "Sister Planet",
-    "Fission Fragment",
-    "Captured Asteroid"
-   ],
-   "answer": 1,
-   "explain": "A sister planet built next to Earth from the same material should have Earth's overall density and a big iron core. A Giant Impact or fission throws off mostly Earth's rocky outer layers, which have little iron."
-  },
-  {
-   "id": "1.5b-016",
-   "skills": [
-    "1.5b-c8"
-   ],
-   "type": "conceptual",
-   "dok": 2,
-   "format": "mc",
-   "stem": "Apollo Moon rocks have the same oxygen isotopes as Earth rocks. Which idea is hardest to fit with this?",
-   "choices": [
-    "Giant Impact",
-    "Captured asteroid",
-    "Fission fragment",
-    "They all fit"
-   ],
-   "answer": 1,
-   "explain": "Bodies that formed in different parts of the solar system have different oxygen isotope mixes. A captured asteroid would not match Earth's."
   }
  ]
 }
