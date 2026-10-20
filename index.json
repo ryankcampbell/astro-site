@@ -1094,6 +1094,52 @@
      "dow": "Thu",
      "short": "12/3",
      "note": "",
+     "kind": "featured",
+     "code": null,
+     "title": "Mars: ice caps, dust storms and seasons",
+     "labels": [],
+     "keys": [
+      "mars"
+     ],
+     "items": [
+      {
+       "id": "marsmap",
+       "kind": "app",
+       "title": "Marsmap",
+       "file": "d/marsmap.html",
+       "hash": "0d926b21ac0ec50523c4ad6d465ef919af3c151ab12b3a22821da12e3e405ba9",
+       "bytes": 18716912
+      },
+      {
+       "id": "mars-features",
+       "kind": "page",
+       "title": "Mars: six things",
+       "file": "d/mars-features.html",
+       "hash": "f6e7df09dc5a42b7fa2fb1afa95cc7e58dc541ea329fe2f0a3d5e0864cfec621",
+       "bytes": 10333239,
+       "sections": [
+        {
+         "id": "mars-at-a-glance",
+         "text": "Mars at a glance"
+        },
+        {
+         "id": "six-things-to-explore",
+         "text": "Six things to explore"
+        },
+        {
+         "id": "name-that-place",
+         "text": "Name that place"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "date": "2026-12-07",
+     "dow": "Mon",
+     "short": "12/7",
+     "note": "",
      "kind": "lab",
      "code": null,
      "title": "Lab 6: The Seasons",
@@ -1109,10 +1155,10 @@
      "items": []
     },
     {
-     "n": 33,
-     "date": "2026-12-07",
-     "dow": "Mon",
-     "short": "12/7",
+     "n": 34,
+     "date": "2026-12-08",
+     "dow": "Tue",
+     "short": "12/8",
      "note": "",
      "kind": "review",
      "code": null,
@@ -1124,10 +1170,10 @@
      "items": []
     },
     {
-     "n": 34,
-     "date": "2026-12-08",
-     "dow": "Tue",
-     "short": "12/8",
+     "n": 35,
+     "date": "2026-12-10",
+     "dow": "Thu",
+     "short": "12/10",
      "note": "",
      "kind": "test",
      "code": null,
@@ -1148,8 +1194,8 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit2-schedule.pdf",
-    "hash": "e93e17efad69ba540ae240110a832002e16e8ba44adf88c6ad6917d8977b158c",
-    "bytes": 62425
+    "hash": "23471773f13e473ccfd2b1cfd9cb737157fbafdc8da81aa9f7dd1305500e5bc0",
+    "bytes": 63041
    }
   },
   {
@@ -1251,7 +1297,9 @@
    "key": "mars",
    "title": "Mars",
    "glyph": "♂",
-   "rows": [],
+   "rows": [
+    "mars"
+   ],
    "blurb": "Geography, giant volcanoes, ice caps and dust storms.",
    "items": [
     {
