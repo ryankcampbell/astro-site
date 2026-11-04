@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28",
+ "generated": "2026-11-04",
  "units": [
   {
    "unit": 1,
@@ -1056,7 +1056,7 @@
      "short": "11/12",
      "note": "",
      "kind": "lesson",
-     "code": "2.2",
+     "code": "2.2a",
      "title": "Celestial Sphere",
      "labels": [
       {
@@ -1065,9 +1065,44 @@
       }
      ],
      "keys": [
-      "2.2"
+      "2.2a"
      ],
-     "items": []
+     "items": [
+      {
+       "id": "hw-2-2a",
+       "kind": "hw",
+       "title": "HW 2.2a",
+       "file": "p/hw-2-2a.pdf",
+       "hash": "83babc6fae36a78ecdff5552b53585e6785349698598b6f44f94bd955e01e50a",
+       "bytes": 8627266
+      },
+      {
+       "id": "daily-motion-2-2a",
+       "kind": "page",
+       "title": "Daily motion",
+       "file": "d/daily-motion-2-2a.html",
+       "hash": "972e70d6d21055b030cd1be4b84ebee6b68ae0b41b4a5774032cd112e56a725f",
+       "bytes": 4823920,
+       "sections": [
+        {
+         "id": "daily-motion-at-a-glance",
+         "text": "1 · Daily motion at a glance"
+        },
+        {
+         "id": "how-the-stars-move",
+         "text": "2 · How the stars move"
+        },
+        {
+         "id": "where-am-i",
+         "text": "3 · Where am I?"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
+      }
+     ]
     },
     {
      "n": 28,
@@ -1075,8 +1110,8 @@
      "dow": "Mon",
      "short": "11/16",
      "note": "",
-     "kind": "other",
-     "code": null,
+     "kind": "lesson",
+     "code": "2.2b",
      "title": "Celestial Sphere",
      "labels": [
       {
@@ -1084,8 +1119,45 @@
        "kind": "hw"
       }
      ],
-     "keys": [],
-     "items": []
+     "keys": [
+      "2.2b"
+     ],
+     "items": [
+      {
+       "id": "hw-2-2b",
+       "kind": "hw",
+       "title": "HW 2.2b",
+       "file": "p/hw-2-2b.pdf",
+       "hash": "f7288d02dde093067ed3ae2f26f88be1caa5bb6f0f118fad1743a5c068a15d2e",
+       "bytes": 124622
+      },
+      {
+       "id": "yearly-motion-2-2b",
+       "kind": "page",
+       "title": "Yearly motion",
+       "file": "d/yearly-motion-2-2b.html",
+       "hash": "d911a2320dfe1801addbdd5e767189f4a4fba43c1a31a1e9eebb0ea23a19e4bd",
+       "bytes": 3847717,
+       "sections": [
+        {
+         "id": "yearly-motion-at-a-glance",
+         "text": "1 · Yearly motion at a glance"
+        },
+        {
+         "id": "why-the-sky-changes",
+         "text": "2 · Why the sky changes"
+        },
+        {
+         "id": "whats-on-the-meridian",
+         "text": "3 · What’s on the meridian?"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
+      }
+     ]
     },
     {
      "n": 29,
@@ -1256,8 +1328,8 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit2-schedule.pdf",
-    "hash": "7441e8ab892e6bb542d3df901b8f8a2e1be5afe2e1c8feac9eaa3967b9fa7a31",
-    "bytes": 63041
+    "hash": "ec9545429977387b44dc0d460b50b0609ee81af7b31c5b318c05149e1145169c",
+    "bytes": 63057
    }
   },
   {
