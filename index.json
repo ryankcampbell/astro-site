@@ -1026,35 +1026,6 @@
      "dow": "Tue",
      "short": "11/10",
      "note": "",
-     "kind": "quiz",
-     "code": null,
-     "title": "Night Sky",
-     "labels": [
-      {
-       "text": "Quiz 3: Night Sky",
-       "kind": "quiz"
-      }
-     ],
-     "keys": [
-      "quiz3"
-     ],
-     "items": [
-      {
-       "id": "skymap",
-       "kind": "app",
-       "title": "Skymap",
-       "file": "d/skymap.html",
-       "hash": "38eea23da27348fd9418c77306666947a66b2797d3f1052a1b358559d4630b4e",
-       "bytes": 1060878
-      }
-     ]
-    },
-    {
-     "n": 27,
-     "date": "2026-11-12",
-     "dow": "Thu",
-     "short": "11/12",
-     "note": "",
      "kind": "lesson",
      "code": "2.2a",
      "title": "Celestial Sphere",
@@ -1062,10 +1033,15 @@
       {
        "text": "HW 2.2a",
        "kind": "hw"
+      },
+      {
+       "text": "Quiz 3: Night Sky",
+       "kind": "quiz"
       }
      ],
      "keys": [
-      "2.2a"
+      "2.2a",
+      "quiz3"
      ],
      "items": [
       {
@@ -1081,8 +1057,8 @@
        "kind": "page",
        "title": "Daily motion",
        "file": "d/daily-motion-2-2a.html",
-       "hash": "972e70d6d21055b030cd1be4b84ebee6b68ae0b41b4a5774032cd112e56a725f",
-       "bytes": 4823920,
+       "hash": "0df6845998bd8609947de20327ca195cc178e6875be3f5ee702bf7e98dc62584",
+       "bytes": 4836808,
        "sections": [
         {
          "id": "daily-motion-at-a-glance",
@@ -1101,14 +1077,22 @@
          "text": "4 · Self-check"
         }
        ]
+      },
+      {
+       "id": "skymap",
+       "kind": "app",
+       "title": "Skymap",
+       "file": "d/skymap.html",
+       "hash": "38eea23da27348fd9418c77306666947a66b2797d3f1052a1b358559d4630b4e",
+       "bytes": 1060878
       }
      ]
     },
     {
-     "n": 28,
-     "date": "2026-11-16",
-     "dow": "Mon",
-     "short": "11/16",
+     "n": 27,
+     "date": "2026-11-12",
+     "dow": "Thu",
+     "short": "11/12",
      "note": "",
      "kind": "lesson",
      "code": "2.2b",
@@ -1136,8 +1120,8 @@
        "kind": "page",
        "title": "Yearly motion",
        "file": "d/yearly-motion-2-2b.html",
-       "hash": "d911a2320dfe1801addbdd5e767189f4a4fba43c1a31a1e9eebb0ea23a19e4bd",
-       "bytes": 3847717,
+       "hash": "04651365f4630233629f98cdf88b157d00a5eb1a858065726e7ca7c277dd45d2",
+       "bytes": 3860298,
        "sections": [
         {
          "id": "yearly-motion-at-a-glance",
@@ -1160,26 +1144,41 @@
      ]
     },
     {
+     "n": 28,
+     "date": "2026-11-16",
+     "dow": "Mon",
+     "short": "11/16",
+     "note": "",
+     "kind": "lab",
+     "code": null,
+     "title": "Lab 5: Rotating Sky",
+     "labels": [
+      {
+       "text": "Lab 5: Rotating Sky",
+       "kind": "lab"
+      }
+     ],
+     "keys": [
+      "lab5"
+     ],
+     "items": []
+    },
+    {
      "n": 29,
      "date": "2026-11-17",
      "dow": "Tue",
      "short": "11/17",
      "note": "",
-     "kind": "lab",
+     "kind": "quiz",
      "code": null,
-     "title": "Lab 5: Rotating Sky · Quiz 4: Celestial Sphere",
+     "title": "Quiz 4: Celestial Sphere",
      "labels": [
-      {
-       "text": "Lab 5: Rotating Sky",
-       "kind": "lab"
-      },
       {
        "text": "Quiz 4: Celestial Sphere",
        "kind": "quiz"
       }
      ],
      "keys": [
-      "lab5",
       "quiz4"
      ],
      "items": []
@@ -1328,8 +1327,8 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit2-schedule.pdf",
-    "hash": "ec9545429977387b44dc0d460b50b0609ee81af7b31c5b318c05149e1145169c",
-    "bytes": 63057
+    "hash": "af7de7277031e0d0771fc5ee38c5a7b04d1e7297f0512a948bf093c525ae3bff",
+    "bytes": 63063
    }
   },
   {
