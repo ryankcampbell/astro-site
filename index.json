@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "units": [
   {
    "unit": 1,
@@ -1209,6 +1209,32 @@
        "file": "p/hw-2-3a.pdf",
        "hash": "44a3b4b792dc9c3fac4be247c64e4d926f2bb593477a50106d9ab6999720f2bb",
        "bytes": 237534
+      },
+      {
+       "id": "why-seasons-2-3a",
+       "kind": "page",
+       "title": "Why do we have Seasons?",
+       "file": "d/why-seasons-2-3a.html",
+       "hash": "3bffd605e15a04c8b687401fe98c8bb766220fa3da1a6f6ccd91a8119044d12f",
+       "bytes": 4545453,
+       "sections": [
+        {
+         "id": "the-seasons-at-a-glance",
+         "text": "1 · The seasons at a glance"
+        },
+        {
+         "id": "why-do-we-have-seasons",
+         "text": "2 · Why do we have Seasons?"
+        },
+        {
+         "id": "name-that-circle",
+         "text": "3 · Name that circle"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
       }
      ]
     },
@@ -1238,6 +1264,32 @@
        "file": "p/hw-2-3b.pdf",
        "hash": "b02641c7ec61de76558d9e176ba249bb2136b256cc4652a1331795d613c2d216",
        "bytes": 383227
+      },
+      {
+       "id": "where-is-the-sun-2-3b",
+       "kind": "page",
+       "title": "Where is the Sun overhead?",
+       "file": "d/where-is-the-sun-2-3b.html",
+       "hash": "5d68469a81185d01679304906f1620027a1101ce820af41b879dc8ff63ca6f68",
+       "bytes": 4072057,
+       "sections": [
+        {
+         "id": "warm-up-at-a-glance",
+         "text": "1 · Warm-up at a glance"
+        },
+        {
+         "id": "the-sun-around-the-world",
+         "text": "2 · The Sun around the world"
+        },
+        {
+         "id": "which-zone",
+         "text": "3 · Which zone?"
+        },
+        {
+         "id": "self-check",
+         "text": "4 · Self-check"
+        }
+       ]
       }
      ]
     },
