@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04",
+ "generated": "2026-11-12",
  "units": [
   {
    "unit": 1,
@@ -1190,7 +1190,7 @@
      "short": "11/30",
      "note": "",
      "kind": "lesson",
-     "code": "2.3",
+     "code": "2.3a",
      "title": "The Seasons",
      "labels": [
       {
@@ -1199,9 +1199,18 @@
       }
      ],
      "keys": [
-      "2.3"
+      "2.3a"
      ],
-     "items": []
+     "items": [
+      {
+       "id": "hw-2-3a",
+       "kind": "hw",
+       "title": "HW 2.3a",
+       "file": "p/hw-2-3a.pdf",
+       "hash": "44a3b4b792dc9c3fac4be247c64e4d926f2bb593477a50106d9ab6999720f2bb",
+       "bytes": 237534
+      }
+     ]
     },
     {
      "n": 31,
@@ -1209,8 +1218,8 @@
      "dow": "Tue",
      "short": "12/1",
      "note": "",
-     "kind": "other",
-     "code": null,
+     "kind": "lesson",
+     "code": "2.3b",
      "title": "The Seasons",
      "labels": [
       {
@@ -1218,8 +1227,19 @@
        "kind": "hw"
       }
      ],
-     "keys": [],
-     "items": []
+     "keys": [
+      "2.3b"
+     ],
+     "items": [
+      {
+       "id": "hw-2-3b",
+       "kind": "hw",
+       "title": "HW 2.3b",
+       "file": "p/hw-2-3b.pdf",
+       "hash": "b02641c7ec61de76558d9e176ba249bb2136b256cc4652a1331795d613c2d216",
+       "bytes": 383227
+      }
+     ]
     },
     {
      "n": 32,
@@ -1327,8 +1347,8 @@
     "kind": "schedule",
     "title": "Unit schedule",
     "file": "p/unit2-schedule.pdf",
-    "hash": "af7de7277031e0d0771fc5ee38c5a7b04d1e7297f0512a948bf093c525ae3bff",
-    "bytes": 63063
+    "hash": "10339b758cdd47a05ae238832c817cd3bda01216a7f346cfb866e7b24da77d33",
+    "bytes": 63068
    }
   },
   {
